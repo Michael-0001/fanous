@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 10, 2021 at 08:49 PM
+-- Generation Time: May 16, 2021 at 06:32 PM
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.4.7
 
@@ -333,40 +333,6 @@ CREATE TABLE `oc_category` (
   `date_modified` datetime NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `oc_category`
---
-
-INSERT INTO `oc_category` (`category_id`, `image`, `parent_id`, `top`, `column`, `sort_order`, `status`, `date_added`, `date_modified`) VALUES
-(57, 'catalog/products/product-44.png', 42, 1, 1, 4, 1, '2017-08-31 14:24:35', '2017-09-21 12:47:22'),
-(56, 'catalog/products/product-38.png', 0, 1, 1, 9, 1, '2017-08-31 14:23:31', '2017-09-21 12:52:34'),
-(55, 'catalog/products/product-42.png', 45, 1, 1, 1, 1, '2017-08-31 14:22:35', '2017-09-21 12:49:41'),
-(54, 'catalog/products/product-41.png', 44, 1, 1, 2, 1, '2017-08-31 14:21:39', '2017-09-21 12:51:18'),
-(53, 'catalog/products/product-16.png', 44, 1, 1, 1, 1, '2017-08-31 14:20:45', '2017-09-21 12:51:38'),
-(52, 'catalog/products/product-27.png', 43, 1, 1, 3, 1, '2017-08-31 14:20:00', '2017-09-21 12:45:11'),
-(51, 'catalog/products/product-32.png', 42, 1, 1, 3, 1, '2017-08-31 12:47:08', '2017-09-21 12:47:41'),
-(50, 'catalog/products/product-29.png', 42, 1, 1, 2, 1, '2017-08-31 12:45:53', '2017-09-21 12:48:01'),
-(49, 'catalog/products/product-22.png', 42, 1, 1, 1, 1, '2017-08-31 12:45:02', '2017-09-21 12:47:04'),
-(48, 'catalog/products/product-25.png', 0, 1, 1, 7, 1, '2017-08-31 12:43:58', '2017-09-21 12:52:55'),
-(46, 'catalog/products/product-18.png', 0, 1, 1, 5, 1, '2017-08-31 12:42:26', '2017-09-21 12:43:20'),
-(47, 'catalog/products/product-16.png', 0, 1, 1, 6, 1, '2017-08-31 12:43:09', '2017-09-21 12:45:30'),
-(45, 'catalog/products/product-12.png', 0, 1, 1, 4, 1, '2017-08-31 12:41:41', '2017-09-21 12:49:20'),
-(44, 'catalog/products/product-1.png', 0, 1, 1, 3, 1, '2017-08-31 12:40:43', '2017-09-21 12:50:57'),
-(43, 'catalog/products/product-25.png', 0, 1, 1, 2, 1, '2017-08-30 19:36:16', '2017-09-21 12:44:14'),
-(42, 'catalog/products/product-16.png', 0, 1, 1, 1, 1, '2017-08-30 19:35:32', '2017-09-21 19:12:09'),
-(58, 'catalog/products/product-12.png', 0, 1, 1, 8, 1, '2017-08-31 14:25:50', '2017-09-21 12:45:49'),
-(59, 'catalog/products/product-18.png', 50, 1, 1, 1, 1, '2017-08-31 14:33:10', '2017-09-21 12:48:39'),
-(60, 'catalog/products/product-33.png', 46, 1, 1, 1, 1, '2017-08-31 14:34:03', '2017-09-21 12:43:37'),
-(61, 'catalog/products/product-45.png', 50, 1, 1, 2, 1, '2017-08-31 14:36:17', '2017-09-21 12:48:21'),
-(62, 'catalog/products/product-46.png', 46, 1, 1, 2, 1, '2017-08-31 14:37:07', '2017-09-21 12:43:56'),
-(63, 'catalog/products/product-47.png', 50, 1, 1, 3, 1, '2017-08-31 14:37:59', '2017-09-21 12:49:00'),
-(64, 'catalog/products/product-50.png', 0, 1, 1, 10, 1, '2017-08-31 14:38:41', '2017-09-21 12:46:06'),
-(65, 'catalog/products/product-19.png', 45, 1, 1, 2, 1, '2017-08-31 14:39:56', '2017-09-21 12:49:59'),
-(66, 'catalog/products/product-16.png', 45, 1, 1, 3, 1, '2017-08-31 14:40:42', '2017-09-21 12:50:18'),
-(67, 'catalog/products/product-48.png', 45, 1, 1, 4, 1, '2017-08-31 14:41:49', '2017-09-21 12:50:36'),
-(68, 'catalog/products/product-73.png', 43, 1, 1, 1, 1, '2017-08-31 16:26:22', '2017-09-21 12:44:35'),
-(69, 'catalog/products/product-70.png', 43, 1, 1, 2, 1, '2017-08-31 16:27:26', '2017-09-21 12:44:53');
-
 -- --------------------------------------------------------
 
 --
@@ -383,98 +349,6 @@ CREATE TABLE `oc_category_description` (
   `meta_keyword` varchar(255) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `oc_category_description`
---
-
-INSERT INTO `oc_category_description` (`category_id`, `language_id`, `name`, `description`, `meta_title`, `meta_description`, `meta_keyword`) VALUES
-(54, 2, 'Mirror Replacement Glass', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Mirror Replacement Glass', '', ''),
-(55, 2, 'Audi grille', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Audi grille', '', ''),
-(55, 3, 'Audi grille', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Audi grille', '', ''),
-(56, 2, 'Seats, Seat Covers', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Seats, Seat Covers', '', ''),
-(56, 3, 'Seats, Seat Covers', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Seats, Seat Covers', '', ''),
-(57, 2, 'Exhaust Headers', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Exhaust Headers', '', ''),
-(54, 3, 'Mirror Replacement Glass', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Mirror Replacement Glass', '', ''),
-(42, 3, 'Exhaust Tips', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Exhaust Tips', '', ''),
-(42, 1, 'Exhaust Tips', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Exhaust Tips', '', ''),
-(42, 2, 'Exhaust Tips', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Exhaust Tips', '', ''),
-(43, 2, 'Bumpers &amp; Components', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Bumpers &amp; Components', '', ''),
-(43, 3, 'Bumpers &amp; Components', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Bumpers &amp; Components', '', ''),
-(44, 2, 'Mirrors &amp; Components', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Mirrors &amp; Components', '', ''),
-(44, 3, 'Mirrors &amp; Components', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Mirrors &amp; Components', '', ''),
-(45, 2, 'Grilles &amp; Components', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Grilles &amp; Components', '', ''),
-(45, 3, 'Grilles &amp; Components', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Grilles &amp; Components', '', ''),
-(46, 1, 'Brake Discs', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Brake Discs', '', ''),
-(46, 2, 'Brake Discs', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Brake Discs', '', ''),
-(46, 3, 'Brake Discs', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Brake Discs', '', ''),
-(47, 2, 'Calipers', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Calipers', '', ''),
-(47, 3, 'Calipers', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Calipers', '', ''),
-(48, 2, 'Shocks, Struts', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Shocks, Struts', '', ''),
-(48, 3, 'Shocks, Struts', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Shocks, Struts', '', ''),
-(49, 2, 'Catalytic Converter', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Catalytic Converter', '', ''),
-(49, 3, 'Catalytic Converter', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Catalytic Converter', '', ''),
-(53, 2, 'Outside Mirror Cover', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Outside Mirror Cover', '', ''),
-(53, 3, 'Outside Mirror Cover', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Outside Mirror Cover', '', ''),
-(50, 1, 'Mufflers', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Mufflers', '', ''),
-(50, 2, 'Mufflers', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Mufflers', '', ''),
-(50, 3, 'Mufflers', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Mufflers', '', ''),
-(51, 1, 'Exhaust Pipes', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Exhaust Pipes', '', ''),
-(51, 2, 'Exhaust Pipes', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Exhaust Pipes', '', ''),
-(51, 3, 'Exhaust Pipes', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Exhaust Pipes', '', ''),
-(52, 1, 'Ford Bumper', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Ford Bumper', '', ''),
-(52, 2, 'Ford Bumper', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Ford Bumper', '', ''),
-(52, 3, 'Ford Bumper', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Ford Bumper', '', ''),
-(57, 3, 'Exhaust Headers', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Exhaust Headers', '', ''),
-(58, 2, 'Car Covers', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Car Covers', '', ''),
-(58, 3, 'Car Covers', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Car Covers', '', ''),
-(59, 2, 'Muffler - 2-1/4&quot; ID Inlet', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Muffler - 2-1/4&quot; ID Inlet', '', '');
-INSERT INTO `oc_category_description` (`category_id`, `language_id`, `name`, `description`, `meta_title`, `meta_description`, `meta_keyword`) VALUES
-(59, 3, 'Muffler - 2-1/4&quot; ID Inlet', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Muffler - 2-1/4&quot; ID Inlet', '', ''),
-(60, 1, 'Mazda Brake Disc', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Mazda Brake Disc', '', ''),
-(60, 2, 'Mazda Brake Disc', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Mazda Brake Disc', '', ''),
-(60, 3, 'Mazda Brake Disc', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Mazda Brake Disc', '', ''),
-(61, 2, 'Muffler - 2-1/2&quot; ID Inlet', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Muffler - 2-1/2&quot; ID Inlet', '', ''),
-(61, 3, 'Muffler - 2-1/2&quot; ID Inlet', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Muffler - 2-1/2&quot; ID Inlet', '', ''),
-(62, 1, 'Toyota Brake Disc', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Toyota Brake Disc', '', ''),
-(62, 2, 'Toyota Brake Disc', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Toyota Brake Disc', '', ''),
-(62, 3, 'Toyota Brake Disc', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Toyota Brake Disc', '', ''),
-(63, 2, 'Muffler - 3&quot; ID Inlet', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Muffler - 3&quot; ID Inlet', '', ''),
-(63, 3, 'Muffler - 3&quot; ID Inlet', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Muffler - 3&quot; ID Inlet', '', ''),
-(64, 1, 'Carpet Kits', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Carpet Kits', '', ''),
-(64, 2, 'Carpet Kits', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Carpet Kits', '', ''),
-(64, 3, 'Carpet Kits', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Carpet Kits', '', ''),
-(65, 1, 'BMW grille', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'BMW grille', '', ''),
-(65, 2, 'BMW grille', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'BMW grille', '', ''),
-(65, 3, 'BMW grille', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'BMW grille', '', ''),
-(66, 1, 'Buick grille', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Buick grille', '', ''),
-(66, 2, 'Buick grille', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Buick grille', '', ''),
-(66, 3, 'Buick grille', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Buick grille', '', ''),
-(67, 1, 'Cadillac grille', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Cadillac grille', '', ''),
-(67, 2, 'Cadillac grille', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Cadillac grille', '', ''),
-(67, 3, 'Cadillac grille', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Cadillac grille', '', ''),
-(68, 1, 'Audi Bumper', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Audi Bumper', '', ''),
-(68, 2, 'Audi Bumper', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Audi Bumper', '', ''),
-(68, 3, 'Audi Bumper', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Audi Bumper', '', ''),
-(69, 1, 'BMW Bumper', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'BMW Bumper', '', ''),
-(69, 2, 'BMW Bumper', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'BMW Bumper', '', ''),
-(69, 3, 'BMW Bumper', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'BMW Bumper', '', ''),
-(43, 1, 'Bumpers &amp; Components', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Bumpers &amp; Components', '', ''),
-(44, 1, 'Mirrors &amp; Components', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Mirrors &amp; Components', '', ''),
-(45, 1, 'Grilles &amp; Components', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Grilles &amp; Components', '', ''),
-(47, 1, 'Calipers', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Calipers', '', ''),
-(48, 1, 'Shocks, Struts', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Shocks, Struts', '', ''),
-(58, 1, 'Car Covers', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Car Covers', '', ''),
-(56, 1, 'Seats, Seat Covers', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Seats, Seat Covers', '', ''),
-(49, 1, 'Catalytic Converter', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Catalytic Converter', '', ''),
-(57, 1, 'Exhaust Headers', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Exhaust Headers', '', ''),
-(55, 1, 'Audi grille', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Audi grille', '', '');
-INSERT INTO `oc_category_description` (`category_id`, `language_id`, `name`, `description`, `meta_title`, `meta_description`, `meta_keyword`) VALUES
-(59, 1, 'Muffler - 2-1/4&quot; ID Inlet', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Muffler - 2-1/4&quot; ID Inlet', '', ''),
-(61, 1, 'Muffler - 2-1/2&quot; ID Inlet', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Muffler - 2-1/2&quot; ID Inlet', '', ''),
-(63, 1, 'Muffler - 3&quot; ID Inlet', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Muffler - 3&quot; ID Inlet', '', ''),
-(54, 1, 'Mirror Replacement Glass', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Mirror Replacement Glass', '', ''),
-(53, 1, 'Outside Mirror Cover', '&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Outside Mirror Cover', '', '');
-
 -- --------------------------------------------------------
 
 --
@@ -485,15 +359,6 @@ CREATE TABLE `oc_category_filter` (
   `category_id` int(11) NOT NULL,
   `filter_id` int(11) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `oc_category_filter`
---
-
-INSERT INTO `oc_category_filter` (`category_id`, `filter_id`) VALUES
-(42, 1),
-(42, 2),
-(42, 3);
 
 -- --------------------------------------------------------
 
@@ -512,57 +377,8 @@ CREATE TABLE `oc_category_path` (
 --
 
 INSERT INTO `oc_category_path` (`category_id`, `path_id`, `level`) VALUES
-(51, 51, 1),
-(69, 69, 1),
-(44, 44, 0),
-(68, 43, 0),
-(43, 43, 0),
-(42, 42, 0),
-(46, 46, 0),
 (24, 24, 0),
-(63, 63, 2),
-(63, 50, 1),
-(63, 42, 0),
-(17, 17, 0),
-(49, 42, 0),
-(62, 46, 0),
-(61, 61, 2),
-(52, 52, 1),
-(62, 62, 1),
-(50, 50, 1),
-(61, 50, 1),
-(69, 43, 0),
-(68, 68, 1),
-(64, 64, 0),
-(65, 65, 1),
-(65, 45, 0),
-(66, 66, 1),
-(66, 45, 0),
-(67, 67, 1),
-(67, 45, 0),
-(60, 60, 1),
-(60, 46, 0),
-(59, 59, 2),
-(59, 50, 1),
-(58, 58, 0),
-(56, 56, 0),
-(55, 55, 1),
-(54, 54, 1),
-(53, 53, 1),
-(57, 57, 1),
-(61, 42, 0),
-(59, 42, 0),
-(57, 42, 0),
-(55, 45, 0),
-(54, 44, 0),
-(47, 47, 0),
-(45, 45, 0),
-(53, 44, 0),
-(52, 43, 0),
-(50, 42, 0),
-(51, 42, 0),
-(48, 48, 0),
-(49, 49, 1);
+(17, 17, 0);
 
 -- --------------------------------------------------------
 
@@ -576,40 +392,6 @@ CREATE TABLE `oc_category_to_layout` (
   `layout_id` int(11) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `oc_category_to_layout`
---
-
-INSERT INTO `oc_category_to_layout` (`category_id`, `store_id`, `layout_id`) VALUES
-(44, 0, 0),
-(54, 0, 0),
-(55, 0, 0),
-(58, 0, 0),
-(43, 0, 0),
-(42, 0, 0),
-(56, 0, 0),
-(47, 0, 0),
-(46, 0, 0),
-(45, 0, 0),
-(51, 0, 0),
-(50, 0, 0),
-(49, 0, 0),
-(48, 0, 0),
-(52, 0, 0),
-(53, 0, 0),
-(59, 0, 0),
-(60, 0, 0),
-(61, 0, 0),
-(62, 0, 0),
-(63, 0, 0),
-(64, 0, 0),
-(65, 0, 0),
-(66, 0, 0),
-(67, 0, 0),
-(68, 0, 0),
-(69, 0, 0),
-(57, 0, 0);
-
 -- --------------------------------------------------------
 
 --
@@ -620,39 +402,6 @@ CREATE TABLE `oc_category_to_store` (
   `category_id` int(11) NOT NULL,
   `store_id` int(11) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `oc_category_to_store`
---
-
-INSERT INTO `oc_category_to_store` (`category_id`, `store_id`) VALUES
-(42, 0),
-(43, 0),
-(44, 0),
-(45, 0),
-(46, 0),
-(47, 0),
-(48, 0),
-(49, 0),
-(50, 0),
-(51, 0),
-(52, 0),
-(53, 0),
-(54, 0),
-(55, 0),
-(56, 0),
-(58, 0),
-(59, 0),
-(60, 0),
-(61, 0),
-(62, 0),
-(63, 0),
-(64, 0),
-(65, 0),
-(66, 0),
-(67, 0),
-(68, 0),
-(69, 0);
 
 -- --------------------------------------------------------
 
@@ -1022,7 +771,7 @@ CREATE TABLE `oc_currency` (
 --
 
 INSERT INTO `oc_currency` (`currency_id`, `title`, `code`, `symbol_left`, `symbol_right`, `decimal_place`, `value`, `status`, `date_modified`) VALUES
-(2, 'US Dollar', 'USD', '$', '', '2', 1.00000000, 1, '2021-05-10 17:53:46');
+(2, 'US Dollar', 'USD', '$', '', '2', 1.00000000, 1, '2021-05-16 16:13:49');
 
 -- --------------------------------------------------------
 
@@ -1517,7 +1266,8 @@ INSERT INTO `oc_extension` (`extension_id`, `type`, `code`) VALUES
 (57, 'module', 'jetimpex_category'),
 (59, 'module', 'filter'),
 (60, 'module', 'special'),
-(61, 'module', 'bestseller');
+(61, 'module', 'bestseller'),
+(65, 'module', 'html');
 
 -- --------------------------------------------------------
 
@@ -2097,9 +1847,9 @@ INSERT INTO `oc_layout_module` (`layout_module_id`, `layout_id`, `code`, `positi
 (426, 2, 'jetimpex_social_list.44', 'footer_3', 0),
 (430, 13, 'bestseller.50', 'column_left', 1),
 (440, 9, 'jetimpex_social_list.44', 'footer_3', 0),
-(247, 1, 'jetimpex_social_list.44', 'footer_3', 0),
-(248, 1, 'jetimpex_footer_links.43', 'footer_4', 0),
-(245, 1, 'jetimpex_footer_links.41', 'footer_1', 0),
+(492, 1, 'jetimpex_footer_links.43', 'footer_4', 0),
+(491, 1, 'jetimpex_social_list.44', 'footer_3', 0),
+(490, 1, 'jetimpex_footer_links.42', 'footer_2', 0),
 (365, 6, 'jetimpex_footer_links.42', 'footer_2', 0),
 (364, 6, 'jetimpex_footer_links.41', 'footer_1', 0),
 (363, 6, 'jetimpex_color_switcher', 'content_top', 0),
@@ -2150,10 +1900,9 @@ INSERT INTO `oc_layout_module` (`layout_module_id`, `layout_id`, `code`, `positi
 (468, 8, 'jetimpex_color_switcher', 'content_top', 1),
 (467, 8, 'jetimpex_google_map.47', 'content_top', 0),
 (466, 8, 'jetimpex_megamenu.34', 'navigation', 0),
-(246, 1, 'jetimpex_footer_links.42', 'footer_2', 0),
-(244, 1, 'jetimpex_color_switcher', 'content_top', 0),
-(243, 1, 'jetimpex_layout_builder.33', 'top', 0),
-(242, 1, 'jetimpex_megamenu.34', 'navigation', 0),
+(489, 1, 'jetimpex_footer_links.41', 'footer_1', 0),
+(488, 1, 'jetimpex_color_switcher', 'content_top', 0),
+(487, 1, 'jetimpex_layout_builder.33', 'top', 0),
 (380, 3, 'jetimpex_footer_links.42', 'footer_2', 0),
 (374, 3, 'jetimpex_megamenu.34', 'navigation', 0),
 (375, 3, 'jetimpex_category.48', 'column_left', 0),
@@ -2180,7 +1929,8 @@ INSERT INTO `oc_layout_module` (`layout_module_id`, `layout_id`, `code`, `positi
 (427, 2, 'jetimpex_footer_links.43', 'footer_4', 0),
 (441, 9, 'jetimpex_footer_links.43', 'footer_4', 0),
 (452, 4, 'jetimpex_category.48', 'column_left', 0),
-(451, 4, 'jetimpex_megamenu.34', 'navigation', 0);
+(451, 4, 'jetimpex_megamenu.34', 'navigation', 0),
+(486, 1, 'jetimpex_megamenu.34', 'navigation', 0);
 
 -- --------------------------------------------------------
 
@@ -2203,7 +1953,7 @@ INSERT INTO `oc_layout_route` (`layout_route_id`, `layout_id`, `store_id`, `rout
 (113, 6, 0, 'account/%'),
 (112, 10, 0, 'affiliate/%'),
 (116, 3, 0, 'product/category'),
-(94, 1, 0, 'common/home'),
+(135, 1, 0, 'common/home'),
 (123, 2, 0, 'product/product'),
 (121, 11, 0, 'information/information'),
 (117, 7, 0, 'checkout/%'),
@@ -2427,14 +2177,14 @@ CREATE TABLE `oc_module` (
 --
 
 INSERT INTO `oc_module` (`module_id`, `name`, `code`, `setting`) VALUES
-(32, 'Featured', 'featured', '{\"name\":\"Featured\",\"product_name\":\"\",\"product\":[\"29\",\"40\",\"35\"],\"limit\":\"3\",\"width\":\"270\",\"height\":\"300\",\"status\":\"1\"}'),
+(32, 'Featured', 'featured', '{\"name\":\"Featured\",\"product_name\":\"\",\"product\":[\"52\"],\"limit\":\"3\",\"width\":\"270\",\"height\":\"300\",\"status\":\"1\"}'),
 (33, 'Home Page', 'jetimpex_layout_builder', '{\"status\":\"1\",\"name\":\"Home Page\",\"class\":\"\",\"id\":\"\",\"layout\":\"[{\\\"cls\\\":\\\"\\\",\\\"bgcolor\\\":\\\"\\\",\\\"bgimage\\\":\\\"\\\",\\\"fullwidth\\\":\\\"0\\\",\\\"sfxcls\\\":null,\\\"padding\\\":\\\"\\\",\\\"margin\\\":\\\"\\\",\\\"iposition\\\":null,\\\"iattachment\\\":null,\\\"cols\\\":[{\\\"index\\\":0,\\\"cls\\\":\\\"\\\",\\\"sfxcls\\\":\\\"\\\",\\\"bgcolor\\\":\\\"\\\",\\\"bgimage\\\":\\\"\\\",\\\"padding\\\":\\\"\\\",\\\"margin\\\":\\\"\\\",\\\"iposition\\\":\\\"\\\",\\\"iattachment\\\":\\\"\\\",\\\"inrow\\\":0,\\\"lgcol\\\":12,\\\"mdcol\\\":12,\\\"smcol\\\":12,\\\"xscol\\\":12,\\\"widgets\\\":[{\\\"name\\\":\\\"JETIMPEX Slideshow > Slideshow\\\",\\\"module\\\":\\\"jetimpex_slideshow.36\\\",\\\"tyle\\\":\\\"module\\\"}],\\\"rows\\\":[]}]},{\\\"index\\\":0,\\\"cls\\\":\\\"\\\",\\\"bgcolor\\\":\\\"\\\",\\\"bgimage\\\":\\\"\\\",\\\"fullwidth\\\":0,\\\"parallax\\\":0,\\\"sfxcls\\\":\\\"\\\",\\\"padding\\\":\\\"\\\",\\\"margin\\\":\\\"\\\",\\\"iposition\\\":\\\"\\\",\\\"iattachment\\\":\\\"\\\",\\\"cols\\\":[{\\\"index\\\":0,\\\"cls\\\":\\\"\\\",\\\"sfxcls\\\":\\\"\\\",\\\"bgcolor\\\":\\\"\\\",\\\"bgimage\\\":\\\"\\\",\\\"padding\\\":\\\"\\\",\\\"margin\\\":\\\"\\\",\\\"iposition\\\":\\\"\\\",\\\"iattachment\\\":\\\"\\\",\\\"inrow\\\":0,\\\"lgcol\\\":3,\\\"mdcol\\\":3,\\\"smcol\\\":3,\\\"xscol\\\":12,\\\"widgets\\\":[{\\\"name\\\":\\\"Jetimpex Category > Category\\\",\\\"module\\\":\\\"jetimpex_category.48\\\",\\\"tyle\\\":\\\"module\\\"},{\\\"name\\\":\\\"Banner > Banner Sale\\\",\\\"module\\\":\\\"banner.45\\\",\\\"tyle\\\":\\\"module\\\"}],\\\"rows\\\":[]},{\\\"index\\\":0,\\\"cls\\\":\\\"\\\",\\\"sfxcls\\\":\\\"\\\",\\\"bgcolor\\\":\\\"\\\",\\\"bgimage\\\":\\\"\\\",\\\"padding\\\":\\\"\\\",\\\"margin\\\":\\\"\\\",\\\"iposition\\\":\\\"\\\",\\\"iattachment\\\":\\\"\\\",\\\"inrow\\\":0,\\\"lgcol\\\":9,\\\"mdcol\\\":9,\\\"smcol\\\":9,\\\"xscol\\\":12,\\\"widgets\\\":[{\\\"name\\\":\\\"Banner > Banners\\\",\\\"module\\\":\\\"banner.46\\\",\\\"tyle\\\":\\\"module\\\"},{\\\"name\\\":\\\"Featured > Featured\\\",\\\"module\\\":\\\"featured.32\\\",\\\"tyle\\\":\\\"module\\\"}],\\\"rows\\\":[]}]}]\"}'),
 (34, 'Megamenu', 'jetimpex_megamenu', '{\"name\":\"Megamenu\",\"status\":\"1\",\"menu_item\":{\"0\":{\"type\":\"1\",\"1\":{\"title\":\"Home\"},\"link\":\"index.php?route=common\\/home\",\"submenu_show\":\"0\",\"submenu_type\":\"0\",\"columns\":\"4\",\"columns-per-row\":\"4\",\"image\":\"\",\"image_width\":\"\",\"image_height\":\"\",\"column\":[{\"width\":\"20%\",\"content\":\"3\",\"limit\":\"6\",\"prod_limit\":\"0\",\"module_id\":\"32\",\"category_id\":\"42\",\"category_show\":\"0\"},{\"width\":\"23%\",\"content\":\"3\",\"limit\":\"6\",\"prod_limit\":\"0\",\"module_id\":\"32\",\"category_id\":\"42\",\"category_show\":\"0\"},{\"width\":\"19.8%\",\"content\":\"3\",\"limit\":\"6\",\"prod_limit\":\"0\",\"module_id\":\"32\",\"category_id\":\"42\",\"category_show\":\"0\"},{\"width\":\"37.2%\",\"content\":\"0\",\"limit\":\"6\",\"prod_limit\":\"0\",\"module_id\":\"45\",\"category_id\":\"42\",\"category_show\":\"0\"}]},\"2\":{\"type\":\"1\",\"1\":{\"title\":\"Specials\"},\"link\":\"index.php?route=product\\/special\",\"submenu_show\":\"0\",\"submenu_type\":\"0\",\"columns\":\"0\",\"columns-per-row\":\"0\",\"image\":\"\",\"image_width\":\"\",\"image_height\":\"\"},\"5\":{\"type\":\"1\",\"1\":{\"title\":\"Contact Us\"},\"link\":\"index.php?route=information\\/contact\",\"submenu_show\":\"0\",\"submenu_type\":\"0\",\"columns\":\"0\",\"columns-per-row\":\"0\",\"image\":\"\",\"image_width\":\"\",\"image_height\":\"\"}}}'),
 (47, 'Google Map', 'jetimpex_google_map', '{\"name\":\"Google Map\",\"jetimpex_google_map_key\":\"\",\"status\":\"1\",\"jetimpex_google_map_zoom\":\"14\",\"jetimpex_google_map_type\":\"1\",\"jetimpex_google_map_sensor\":\"true\",\"jetimpex_google_map_width\":\"100%\",\"jetimpex_google_map_height\":\"400px\",\"jetimpex_google_map_styles\":\"[\\r\\n    {\\r\\n        &quot;featureType&quot;: &quot;water&quot;,\\r\\n        &quot;elementType&quot;: &quot;all&quot;,\\r\\n        &quot;stylers&quot;: [\\r\\n            {\\r\\n                &quot;hue&quot;: &quot;#7fc8ed&quot;\\r\\n            },\\r\\n            {\\r\\n                &quot;saturation&quot;: 55\\r\\n            },\\r\\n            {\\r\\n                &quot;lightness&quot;: -6\\r\\n            },\\r\\n            {\\r\\n                &quot;visibility&quot;: &quot;on&quot;\\r\\n            }\\r\\n        ]\\r\\n    },\\r\\n    {\\r\\n        &quot;featureType&quot;: &quot;water&quot;,\\r\\n        &quot;elementType&quot;: &quot;labels&quot;,\\r\\n        &quot;stylers&quot;: [\\r\\n            {\\r\\n                &quot;hue&quot;: &quot;#7fc8ed&quot;\\r\\n            },\\r\\n            {\\r\\n                &quot;saturation&quot;: 55\\r\\n            },\\r\\n            {\\r\\n                &quot;lightness&quot;: -6\\r\\n            },\\r\\n            {\\r\\n                &quot;visibility&quot;: &quot;off&quot;\\r\\n            }\\r\\n        ]\\r\\n    },\\r\\n    {\\r\\n        &quot;featureType&quot;: &quot;poi.park&quot;,\\r\\n        &quot;elementType&quot;: &quot;geometry&quot;,\\r\\n        &quot;stylers&quot;: [\\r\\n            {\\r\\n                &quot;hue&quot;: &quot;#83cead&quot;\\r\\n            },\\r\\n            {\\r\\n                &quot;saturation&quot;: 1\\r\\n            },\\r\\n            {\\r\\n                &quot;lightness&quot;: -15\\r\\n            },\\r\\n            {\\r\\n                &quot;visibility&quot;: &quot;on&quot;\\r\\n            }\\r\\n        ]\\r\\n    },\\r\\n    {\\r\\n        &quot;featureType&quot;: &quot;landscape&quot;,\\r\\n        &quot;elementType&quot;: &quot;geometry&quot;,\\r\\n        &quot;stylers&quot;: [\\r\\n            {\\r\\n                &quot;hue&quot;: &quot;#f3f4f4&quot;\\r\\n            },\\r\\n            {\\r\\n                &quot;saturation&quot;: -84\\r\\n            },\\r\\n            {\\r\\n                &quot;lightness&quot;: 59\\r\\n            },\\r\\n            {\\r\\n                &quot;visibility&quot;: &quot;on&quot;\\r\\n            }\\r\\n        ]\\r\\n    },\\r\\n    {\\r\\n        &quot;featureType&quot;: &quot;landscape&quot;,\\r\\n        &quot;elementType&quot;: &quot;labels&quot;,\\r\\n        &quot;stylers&quot;: [\\r\\n            {\\r\\n                &quot;hue&quot;: &quot;#ffffff&quot;\\r\\n            },\\r\\n            {\\r\\n                &quot;saturation&quot;: -100\\r\\n            },\\r\\n            {\\r\\n                &quot;lightness&quot;: 100\\r\\n            },\\r\\n            {\\r\\n                &quot;visibility&quot;: &quot;off&quot;\\r\\n            }\\r\\n        ]\\r\\n    },\\r\\n    {\\r\\n        &quot;featureType&quot;: &quot;road&quot;,\\r\\n        &quot;elementType&quot;: &quot;geometry&quot;,\\r\\n        &quot;stylers&quot;: [\\r\\n            {\\r\\n                &quot;hue&quot;: &quot;#ffffff&quot;\\r\\n            },\\r\\n            {\\r\\n                &quot;saturation&quot;: -100\\r\\n            },\\r\\n            {\\r\\n                &quot;lightness&quot;: 100\\r\\n            },\\r\\n            {\\r\\n                &quot;visibility&quot;: &quot;on&quot;\\r\\n            }\\r\\n        ]\\r\\n    },\\r\\n    {\\r\\n        &quot;featureType&quot;: &quot;road&quot;,\\r\\n        &quot;elementType&quot;: &quot;labels&quot;,\\r\\n        &quot;stylers&quot;: [\\r\\n            {\\r\\n                &quot;hue&quot;: &quot;#bbbbbb&quot;\\r\\n            },\\r\\n            {\\r\\n                &quot;saturation&quot;: -100\\r\\n            },\\r\\n            {\\r\\n                &quot;lightness&quot;: 26\\r\\n            },\\r\\n            {\\r\\n                &quot;visibility&quot;: &quot;on&quot;\\r\\n            }\\r\\n        ]\\r\\n    },\\r\\n    {\\r\\n        &quot;featureType&quot;: &quot;road.arterial&quot;,\\r\\n        &quot;elementType&quot;: &quot;geometry&quot;,\\r\\n        &quot;stylers&quot;: [\\r\\n            {\\r\\n                &quot;hue&quot;: &quot;#ffcc00&quot;\\r\\n            },\\r\\n            {\\r\\n                &quot;saturation&quot;: 100\\r\\n            },\\r\\n            {\\r\\n                &quot;lightness&quot;: -35\\r\\n            },\\r\\n            {\\r\\n                &quot;visibility&quot;: &quot;simplified&quot;\\r\\n            }\\r\\n        ]\\r\\n    },\\r\\n    {\\r\\n        &quot;featureType&quot;: &quot;road.highway&quot;,\\r\\n        &quot;elementType&quot;: &quot;geometry&quot;,\\r\\n        &quot;stylers&quot;: [\\r\\n            {\\r\\n                &quot;hue&quot;: &quot;#ffcc00&quot;\\r\\n            },\\r\\n            {\\r\\n                &quot;saturation&quot;: 100\\r\\n            },\\r\\n            {\\r\\n                &quot;lightness&quot;: -22\\r\\n            },\\r\\n            {\\r\\n                &quot;visibility&quot;: &quot;on&quot;\\r\\n            }\\r\\n        ]\\r\\n    },\\r\\n    {\\r\\n        &quot;featureType&quot;: &quot;poi.school&quot;,\\r\\n        &quot;elementType&quot;: &quot;all&quot;,\\r\\n        &quot;stylers&quot;: [\\r\\n            {\\r\\n                &quot;hue&quot;: &quot;#d7e4e4&quot;\\r\\n            },\\r\\n            {\\r\\n                &quot;saturation&quot;: -60\\r\\n            },\\r\\n            {\\r\\n                &quot;lightness&quot;: 23\\r\\n            },\\r\\n            {\\r\\n                &quot;visibility&quot;: &quot;on&quot;\\r\\n            }\\r\\n        ]\\r\\n    }\\r\\n]\",\"jetimpex_google_map_disable_ui\":\"false\",\"jetimpex_google_map_scrollwheel\":\"false\",\"jetimpex_google_map_draggable\":\"false\",\"jetimpex_google_map_marker\":\"catalog\\/marker_map.png\",\"jetimpex_google_map_marker_active\":\"catalog\\/marker_map_active.png\",\"jetimpex_google_map_marker_width\":\"45\",\"jetimpex_google_map_marker_height\":\"45\"}'),
 (36, 'Slideshow', 'jetimpex_slideshow', '{\"name\":\"Slideshow\",\"status\":\"1\",\"width\":\"1170\",\"height\":\"303\",\"min_height\":\"303\",\"effect\":\"1\",\"speed\":\"800\",\"autoplay\":\"1\",\"keyboard_control\":\"0\",\"mousewheel_control\":\"0\",\"mousewheel_release_on_edges\":\"0\",\"next_button\":\"0\",\"prev_button\":\"0\",\"pagination\":\"1\",\"pagination_clickable\":\"1\",\"pagination_bullet_render\":\"0\",\"scrollbar\":\"0\",\"scrollbar_draggable\":\"0\",\"loop\":\"1\",\"slides\":[{\"slide_type\":\"0\",\"video_loop\":\"0\",\"video_autoplay\":\"0\",\"video_playback_rate\":\"\",\"video_muted\":\"1\",\"video_volume\":\"\",\"image\":\"catalog\\/slide-1.jpg\",\"title\":{\"1\":\"slide-1\",\"2\":\"slide-1\",\"3\":\"slide-1\"},\"description\":{\"1\":\"\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t&lt;p&gt;&lt;br&gt;&lt;\\/p&gt;\\r\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\r\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\",\"2\":\"\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t&lt;p&gt;&lt;br&gt;&lt;\\/p&gt;\\r\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\r\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\",\"3\":\"\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t&lt;p&gt;&lt;br&gt;&lt;\\/p&gt;\\r\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\r\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\"},\"link\":\"\"},{\"slide_type\":\"0\",\"video_loop\":\"0\",\"video_autoplay\":\"0\",\"video_playback_rate\":\"\",\"video_muted\":\"1\",\"video_volume\":\"\",\"image\":\"catalog\\/slide-2.jpg\",\"title\":{\"1\":\"slide-2\",\"2\":\"slide-2\",\"3\":\"slide-2\"},\"description\":{\"1\":\"\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t&lt;p&gt;&lt;br&gt;&lt;\\/p&gt;\\r\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\r\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\",\"2\":\"\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t&lt;p&gt;&lt;br&gt;&lt;\\/p&gt;\\r\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\r\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\",\"3\":\"\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t&lt;p&gt;&lt;br&gt;&lt;\\/p&gt;\\r\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\r\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\"},\"link\":\"\"},{\"slide_type\":\"0\",\"video_loop\":\"0\",\"video_autoplay\":\"0\",\"video_playback_rate\":\"\",\"video_muted\":\"1\",\"video_volume\":\"\",\"image\":\"catalog\\/slide-3.jpg\",\"title\":{\"1\":\"\",\"2\":\"\",\"3\":\"\"},\"description\":{\"1\":\"\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t&lt;p&gt;&lt;br&gt;&lt;\\/p&gt;\\r\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\r\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\",\"2\":\"\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t&lt;p&gt;&lt;br&gt;&lt;\\/p&gt;\\r\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\r\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\",\"3\":\"\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t&lt;p&gt;&lt;br&gt;&lt;\\/p&gt;\\r\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\r\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\"},\"link\":\"\"}]}'),
 (46, 'Banners', 'banner', '{\"name\":\"Banners\",\"banner_id\":\"9\",\"width\":\"418\",\"height\":\"128\",\"status\":\"1\"}'),
 (48, 'Category', 'jetimpex_category', '{\"name\":\"Category\",\"status\":\"1\"}'),
-(39, 'Latest', 'latest', '{\"name\":\"Latest\",\"limit\":\"3\",\"width\":\"270\",\"height\":\"300\",\"status\":\"1\"}'),
+(51, 'latest', 'latest', '{\"name\":\"latest\",\"limit\":\"5\",\"width\":\"200\",\"height\":\"200\",\"status\":\"1\"}'),
 (40, 'Newsletter', 'jetimpex_newsletter', '{\"name\":\"Newsletter\",\"status\":\"1\",\"jetimpex_newsletter_description\":{\"1\":{\"description\":\"\"},\"2\":{\"description\":\"\"},\"3\":{\"description\":\"\"}}}'),
 (41, 'Footer Links Information', 'jetimpex_footer_links', '{\"name\":\"Footer Links Information\",\"type\":\"0\",\"status\":\"1\"}'),
 (42, 'Footer Links My account', 'jetimpex_footer_links', '{\"name\":\"Footer Links My account\",\"type\":\"1\",\"status\":\"1\"}'),
@@ -2442,7 +2192,8 @@ INSERT INTO `oc_module` (`module_id`, `name`, `code`, `setting`) VALUES
 (44, 'Social List', 'jetimpex_social_list', '{\"name\":\"Social List\",\"status\":\"1\",\"title\":{\"1\":\"Follow Us\",\"2\":\"\\u041f\\u043e\\u0434\\u043f\\u0438\\u0441\\u043a\\u0430\",\"3\":\"Folge uns\"},\"description\":{\"1\":\"\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t \\r\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t \\r\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t \\r\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\",\"2\":\"\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t \\r\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t \\r\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t \\r\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\",\"3\":\"\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t \\r\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t \\r\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t \\r\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\"},\"socials\":{\"1\":{\"1\":{\"name\":\"Facebook\",\"link\":\"\\/\\/www.facebook.com\\/TemplateMonster\",\"css\":\"\"},\"2\":{\"name\":\"Twitter\",\"link\":\"\\/\\/twitter.com\\/templatemonster\",\"css\":\"\"},\"3\":{\"name\":\"Rss\",\"link\":\"\\/\\/www.templatemonster.com\\/rss-survey.php#gref\",\"css\":\"\"}},\"2\":{\"1\":{\"name\":\"Facebook\",\"link\":\"\\/\\/www.facebook.com\\/TemplateMonster\",\"css\":\"\"},\"2\":{\"name\":\"Twitter\",\"link\":\"\\/\\/twitter.com\\/templatemonster\",\"css\":\"\"},\"3\":{\"name\":\"Rss\",\"link\":\"\\/\\/www.templatemonster.com\\/rss-survey.php#gref\",\"css\":\"\"}},\"3\":{\"1\":{\"name\":\"Facebook\",\"link\":\"\\/\\/www.facebook.com\\/TemplateMonster\",\"css\":\"\"},\"2\":{\"name\":\"Twitter\",\"link\":\"\\/\\/twitter.com\\/templatemonster\",\"css\":\"\"},\"3\":{\"name\":\"Rss\",\"link\":\"\\/\\/www.templatemonster.com\\/rss-survey.php#gref\",\"css\":\"\"}}}}'),
 (49, 'Specials', 'special', '{\"name\":\"Specials\",\"limit\":\"1\",\"width\":\"270\",\"height\":\"300\",\"status\":\"1\"}'),
 (50, 'Bestsellers', 'bestseller', '{\"name\":\"Bestsellers\",\"limit\":\"1\",\"width\":\"270\",\"height\":\"300\",\"status\":\"1\"}'),
-(45, 'Banner Sale', 'banner', '{\"name\":\"Banner Sale\",\"banner_id\":\"7\",\"width\":\"270\",\"height\":\"287\",\"status\":\"1\"}');
+(45, 'Banner Sale', 'banner', '{\"name\":\"Banner Sale\",\"banner_id\":\"7\",\"width\":\"270\",\"height\":\"287\",\"status\":\"1\"}'),
+(52, 'html module', 'html', '{\"name\":\"html module\",\"module_description\":{\"1\":{\"title\":\"\",\"description\":\"\"}},\"status\":\"1\"}');
 
 -- --------------------------------------------------------
 
@@ -3013,26 +2764,7 @@ CREATE TABLE `oc_product` (
 --
 
 INSERT INTO `oc_product` (`product_id`, `model`, `sku`, `upc`, `ean`, `jan`, `isbn`, `mpn`, `location`, `quantity`, `stock_status_id`, `image`, `manufacturer_id`, `shipping`, `price`, `points`, `tax_class_id`, `date_available`, `weight`, `weight_class_id`, `length`, `width`, `height`, `length_class_id`, `subtract`, `minimum`, `sort_order`, `status`, `viewed`, `date_added`, `date_modified`) VALUES
-(36, 'Deluxe', '', '', '', '', '', '', '', 10, 6, 'catalog/products/product-33.png', 18, 1, '2400.0000', 0, 9, '2015-10-17', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 0, 1, 0, '2015-02-03 18:09:19', '2017-09-22 16:02:40'),
-(35, 'Collectible', '', '', '', '', '', '', '', 10, 5, 'catalog/products/product-29.png', 17, 1, '296.0000', 0, 9, '2015-10-18', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 0, 1, 0, '2015-02-03 18:08:31', '2017-09-22 16:02:23'),
-(34, 'Classic', '', '', '', '', '', '', '', 10, 6, 'catalog/products/product-25.png', 16, 1, '248.0000', 0, 9, '2015-10-19', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 0, 1, 0, '2015-02-03 18:07:54', '2017-09-22 16:02:05'),
-(33, 'Deluxe', '', '', '', '', '', '', '', 10, 5, 'catalog/products/product-21.png', 21, 1, '2600.0000', 0, 9, '2015-10-20', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 0, 1, 0, '2015-02-03 17:08:31', '2017-09-22 18:14:33'),
-(32, 'Premium', '', '', '', '', '', '', '', 10, 6, 'catalog/products/product-17.png', 20, 1, '460.0000', 0, 9, '2015-10-21', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 0, 1, 0, '2015-02-03 17:07:26', '2017-09-22 16:01:32'),
-(31, 'Collectible', '', '', '', '', '', '', '', 10, 6, 'catalog/products/product-13.png', 19, 1, '288.0000', 0, 9, '2015-10-22', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 0, 1, 0, '2015-02-03 17:00:10', '2017-09-22 16:01:19'),
-(30, 'Premium', '', '', '', '', '', '', '', 10, 6, 'catalog/products/product-9.png', 18, 1, '44.0000', 0, 9, '2015-10-23', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 0, 1, 0, '2015-02-03 16:59:00', '2017-09-22 16:00:55'),
-(29, 'Deluxe', '', '', '', '', '', '', '', 9, 6, 'catalog/products/product-5.png', 17, 1, '97.0000', 0, 9, '2015-10-24', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 0, 1, 0, '2015-02-03 16:42:17', '2017-09-22 16:18:47'),
-(28, 'Classic', '', '', '', '', '', '', '', 10, 7, 'catalog/products/product-1.png', 14, 1, '19.0000', 0, 9, '2015-10-25', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 0, 1, 0, '2015-02-03 16:06:50', '2017-09-25 11:12:52'),
-(40, 'Classic', '', '', '', '', '', '', '', 9, 5, 'catalog/products/product-37.png', 19, 1, '3500.0000', 0, 9, '2015-10-16', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 0, 1, 0, '2015-02-03 21:07:12', '2017-09-21 15:20:30'),
-(41, 'Premium', '', '', '', '', '', '', '', 10, 5, 'catalog/products/product-41.png', 20, 1, '80.0000', 0, 9, '2015-10-15', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 0, 1, 0, '2015-02-03 21:07:26', '2017-09-22 16:03:07'),
-(42, 'Collectible', '', '', '', '', '', '', '', 10, 5, 'catalog/products/product-45.png', 21, 1, '120.0000', 0, 9, '2015-10-14', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 1, 1, 2, 0, 1, 0, '2015-02-03 21:07:37', '2017-09-22 16:03:26'),
-(43, 'Premium', '', '', '', '', '', '', '', 10, 5, 'catalog/products/product-49.png', 16, 1, '3400.0000', 0, 9, '2015-10-13', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 0, 1, 0, '2015-02-03 21:07:49', '2017-09-22 16:03:40'),
-(44, 'Deluxe', '', '', '', '', '', '', '', 10, 5, 'catalog/products/product-53.png', 17, 1, '40.0000', 0, 9, '2015-10-12', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 0, 1, 0, '2015-02-03 21:08:00', '2017-09-22 16:03:55'),
-(45, 'Collectible', '', '', '', '', '', '', '', 10, 5, 'catalog/products/product-57.png', 15, 1, '460.0000', 0, 0, '2015-10-11', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 0, 1, 0, '2015-02-03 21:08:17', '2017-09-25 11:13:58'),
-(46, 'Classic', '', '', '', '', '', '', '', 10, 5, 'catalog/products/product-61.png', 12, 1, '50.0000', 0, 9, '2015-10-10', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 0, 1, 0, '2015-02-03 21:08:29', '2017-09-25 11:09:36'),
-(47, 'Premium', '', '', '', '', '', '', '', 10, 5, 'catalog/products/product-65.png', 20, 1, '40.0000', 0, 9, '2015-10-09', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 0, 1, 0, '2015-02-03 21:08:40', '2017-09-22 16:05:17'),
-(48, 'Collectible', '', '', '', '', '', '', '', 10, 5, 'catalog/products/product-69.png', 13, 1, '10.0000', 0, 9, '2015-10-08', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 0, 1, 0, '2015-02-08 17:21:51', '2017-09-25 11:10:19'),
-(49, 'Deluxe', '', '', '', '', '', '', '', 10, 8, 'catalog/products/product-73.png', 11, 1, '11.0000', 0, 9, '2015-10-07', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 0, 1, 0, '2015-04-26 08:57:34', '2017-09-25 11:11:50'),
-(50, 'Classic', '', '', '', '', '', '', '', 10, 6, 'catalog/products/product-77.png', 17, 1, '90.0000', 0, 0, '2015-10-06', '0.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 0, 1, 0, '2015-10-06 12:57:09', '2017-09-22 16:05:43');
+(52, 'test product 101', '', '', '', '', '', '', '', 20, 6, 'catalog/miki.jpg', 0, 1, '199.0000', 0, 0, '2021-05-16', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 0, '2021-05-16 18:23:48', '2021-05-16 18:23:48');
 
 -- --------------------------------------------------------
 
@@ -3046,612 +2778,6 @@ CREATE TABLE `oc_product_attribute` (
   `language_id` int(11) NOT NULL,
   `text` text NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `oc_product_attribute`
---
-
-INSERT INTO `oc_product_attribute` (`product_id`, `attribute_id`, `language_id`, `text`) VALUES
-(43, 20, 2, 'Yes'),
-(47, 17, 2, 'Yes'),
-(43, 21, 1, 'Front-Wheel Drive'),
-(42, 15, 3, 'Kanada'),
-(47, 17, 3, 'Ja'),
-(43, 15, 3, 'Kanada'),
-(42, 17, 1, 'Yes'),
-(47, 19, 1, '2 kg'),
-(47, 19, 2, '2 kg'),
-(43, 20, 3, 'Ja'),
-(42, 16, 1, '100x200'),
-(47, 13, 3, 'Metall'),
-(28, 19, 1, '2 kg'),
-(28, 18, 3, 'Europe'),
-(28, 18, 2, 'Europe'),
-(28, 18, 1, 'Europe'),
-(28, 17, 3, 'Ja'),
-(28, 17, 2, 'Yes'),
-(28, 17, 1, 'Yes'),
-(28, 16, 3, '100x200'),
-(28, 16, 2, '100x200'),
-(28, 16, 1, '100x200'),
-(28, 15, 3, 'Kanada'),
-(29, 19, 2, '2 kg'),
-(29, 19, 1, '2 kg'),
-(29, 18, 3, 'Europe'),
-(29, 18, 2, 'Europe'),
-(29, 18, 1, 'Europe'),
-(29, 17, 3, 'Ja'),
-(29, 17, 2, 'Yes'),
-(29, 17, 1, 'Yes'),
-(29, 16, 3, '100x200'),
-(29, 16, 2, '100x200'),
-(30, 19, 3, '2 kg'),
-(30, 19, 2, '2 kg'),
-(30, 19, 1, '2 kg'),
-(30, 18, 3, 'Europe'),
-(30, 18, 2, 'Europe'),
-(30, 18, 1, 'Europe'),
-(30, 17, 3, 'Ja'),
-(30, 17, 2, 'Yes'),
-(30, 17, 1, 'Yes'),
-(30, 16, 3, '100x200'),
-(31, 19, 2, '2 kg'),
-(31, 19, 1, '2 kg'),
-(31, 18, 3, 'Europe'),
-(31, 18, 2, 'Europe'),
-(31, 18, 1, 'Europe'),
-(31, 17, 3, 'Ja'),
-(31, 17, 2, 'Yes'),
-(31, 17, 1, 'Yes'),
-(31, 16, 3, '100x200'),
-(31, 16, 2, '100x200'),
-(31, 16, 1, '100x200'),
-(32, 14, 3, 'Ja'),
-(32, 15, 1, 'Kanada'),
-(32, 15, 2, 'Kanada'),
-(32, 15, 3, 'Kanada'),
-(32, 16, 1, '100x200'),
-(32, 16, 2, '100x200'),
-(32, 16, 3, '100x200'),
-(32, 17, 1, 'Yes'),
-(32, 17, 2, 'Yes'),
-(32, 17, 3, 'Ja'),
-(32, 18, 1, 'Europe'),
-(33, 14, 2, 'Yes'),
-(33, 14, 3, 'Ja'),
-(33, 15, 1, 'Kanada'),
-(33, 15, 2, 'Kanada'),
-(33, 15, 3, 'Kanada'),
-(33, 16, 1, '100x200'),
-(33, 16, 2, '100x200'),
-(33, 16, 3, '100x200'),
-(33, 17, 1, 'Yes'),
-(33, 17, 2, 'Yes'),
-(33, 17, 3, 'Ja'),
-(34, 18, 3, 'Europe'),
-(34, 18, 2, 'Europe'),
-(34, 18, 1, 'Europe'),
-(34, 17, 3, 'Ja'),
-(34, 17, 2, 'Yes'),
-(34, 17, 1, 'Yes'),
-(34, 16, 3, '100x200'),
-(34, 16, 2, '100x200'),
-(34, 16, 1, '100x200'),
-(34, 15, 3, 'Kanada'),
-(34, 15, 2, 'Kanada'),
-(35, 14, 3, 'Ja'),
-(35, 15, 1, 'Kanada'),
-(35, 15, 2, 'Kanada'),
-(35, 15, 3, 'Kanada'),
-(35, 16, 1, '100x200'),
-(35, 16, 2, '100x200'),
-(35, 16, 3, '100x200'),
-(35, 17, 1, 'Yes'),
-(35, 17, 2, 'Yes'),
-(35, 17, 3, 'Ja'),
-(35, 18, 1, 'Europe'),
-(36, 19, 2, '2 kg'),
-(36, 19, 1, '2 kg'),
-(36, 18, 3, 'Europe'),
-(36, 18, 2, 'Europe'),
-(36, 18, 1, 'Europe'),
-(36, 17, 3, 'Ja'),
-(36, 17, 2, 'Yes'),
-(36, 17, 1, 'Yes'),
-(36, 16, 3, '100x200'),
-(36, 16, 2, '100x200'),
-(36, 16, 1, '100x200'),
-(40, 19, 2, '2 kg'),
-(40, 19, 1, '2 kg'),
-(40, 18, 3, 'Europe'),
-(40, 18, 2, 'Europe'),
-(40, 18, 1, 'Europe'),
-(40, 17, 3, 'Ja'),
-(40, 17, 2, 'Yes'),
-(40, 17, 1, 'Yes'),
-(40, 16, 3, '100x200'),
-(40, 16, 2, '100x200'),
-(40, 16, 1, '100x200'),
-(41, 14, 3, 'Ja'),
-(41, 15, 1, 'Kanada'),
-(41, 15, 2, 'Kanada'),
-(41, 15, 3, 'Kanada'),
-(41, 16, 1, '100x200'),
-(41, 16, 2, '100x200'),
-(41, 16, 3, '100x200'),
-(41, 17, 1, 'Yes'),
-(41, 17, 2, 'Yes'),
-(41, 17, 3, 'Ja'),
-(41, 18, 1, 'Europe'),
-(42, 20, 2, 'Yes'),
-(42, 20, 1, 'Yes'),
-(42, 19, 3, '2 kg'),
-(42, 19, 2, '2 kg'),
-(42, 19, 1, '2 kg'),
-(42, 18, 3, 'Europe'),
-(42, 18, 2, 'Europe'),
-(42, 18, 1, 'Europe'),
-(42, 17, 3, 'Ja'),
-(43, 20, 1, 'Yes'),
-(43, 19, 3, '2 kg'),
-(43, 19, 2, '2 kg'),
-(43, 19, 1, '2 kg'),
-(43, 18, 3, 'Europe'),
-(43, 18, 2, 'Europe'),
-(43, 18, 1, 'Europe'),
-(43, 17, 3, 'Ja'),
-(43, 17, 2, 'Yes'),
-(43, 17, 1, 'Yes'),
-(44, 14, 3, 'Ja'),
-(44, 15, 1, 'Kanada'),
-(44, 15, 2, 'Kanada'),
-(44, 15, 3, 'Kanada'),
-(44, 16, 1, '100x200'),
-(44, 16, 2, '100x200'),
-(44, 16, 3, '100x200'),
-(44, 17, 1, 'Yes'),
-(44, 17, 2, 'Yes'),
-(44, 17, 3, 'Ja'),
-(44, 18, 1, 'Europe'),
-(45, 19, 2, '2 kg'),
-(45, 19, 1, '2 kg'),
-(45, 18, 3, 'Europe'),
-(45, 18, 2, 'Europe'),
-(45, 18, 1, 'Europe'),
-(45, 17, 3, 'Ja'),
-(45, 17, 2, 'Yes'),
-(45, 17, 1, 'Yes'),
-(45, 16, 3, '100x200'),
-(45, 16, 2, '100x200'),
-(45, 16, 1, '100x200'),
-(46, 14, 3, 'Ja'),
-(46, 15, 1, 'Kanada'),
-(46, 15, 2, 'Kanada'),
-(46, 15, 3, 'Kanada'),
-(46, 16, 1, '100x200'),
-(46, 16, 2, '100x200'),
-(46, 16, 3, '100x200'),
-(46, 17, 1, 'Yes'),
-(46, 17, 2, 'Yes'),
-(46, 17, 3, 'Ja'),
-(46, 18, 1, 'Europe'),
-(47, 17, 1, 'Yes'),
-(47, 16, 3, '100x200'),
-(47, 16, 2, '100x200'),
-(47, 16, 1, '100x200'),
-(47, 15, 3, 'Kanada'),
-(47, 15, 2, 'Kanada'),
-(47, 15, 1, 'Kanada'),
-(47, 14, 3, 'Ja'),
-(47, 14, 2, 'Yes'),
-(47, 14, 1, 'Yes'),
-(48, 19, 2, '2 kg'),
-(48, 19, 1, '2 kg'),
-(48, 18, 3, 'Europe'),
-(48, 18, 2, 'Europe'),
-(48, 18, 1, 'Europe'),
-(48, 17, 3, 'Ja'),
-(48, 17, 2, 'Yes'),
-(48, 17, 1, 'Yes'),
-(48, 16, 3, '100x200'),
-(48, 16, 2, '100x200'),
-(48, 16, 1, '100x200'),
-(49, 13, 3, 'Metall'),
-(49, 14, 1, 'Yes'),
-(49, 14, 2, 'Yes'),
-(49, 14, 3, 'Ja'),
-(49, 15, 1, 'Kanada'),
-(49, 15, 2, 'Kanada'),
-(49, 15, 3, 'Kanada'),
-(49, 16, 1, '100x200'),
-(49, 16, 2, '100x200'),
-(49, 16, 3, '100x200'),
-(49, 17, 1, 'Yes'),
-(50, 14, 3, 'Ja'),
-(50, 15, 1, 'Kanada'),
-(50, 15, 2, 'Kanada'),
-(50, 15, 3, 'Kanada'),
-(50, 16, 1, '100x200'),
-(50, 16, 2, '100x200'),
-(50, 16, 3, '100x200'),
-(50, 17, 1, 'Yes'),
-(50, 17, 2, 'Yes'),
-(50, 17, 3, 'Ja'),
-(50, 18, 1, 'Europe'),
-(28, 20, 1, 'Yes'),
-(28, 19, 3, '2 kg'),
-(28, 19, 2, '2 kg'),
-(29, 14, 3, 'Ja'),
-(29, 15, 1, 'Kanada'),
-(29, 15, 2, 'Kanada'),
-(29, 15, 3, 'Kanada'),
-(30, 15, 1, 'Kanada'),
-(30, 15, 2, 'Kanada'),
-(30, 15, 3, 'Kanada'),
-(30, 16, 1, '100x200'),
-(31, 15, 3, 'Kanada'),
-(31, 15, 2, 'Kanada'),
-(31, 15, 1, 'Kanada'),
-(31, 14, 3, 'Ja'),
-(32, 19, 3, '2 kg'),
-(32, 19, 1, '2 kg'),
-(32, 19, 2, '2 kg'),
-(33, 19, 2, '2 kg'),
-(33, 19, 1, '2 kg'),
-(33, 18, 3, 'Europe'),
-(33, 18, 2, 'Europe'),
-(34, 13, 3, 'Metall'),
-(34, 14, 2, 'Yes'),
-(34, 14, 1, 'Yes'),
-(35, 19, 3, '2 kg'),
-(35, 19, 1, '2 kg'),
-(35, 19, 2, '2 kg'),
-(36, 15, 3, 'Kanada'),
-(36, 15, 2, 'Kanada'),
-(36, 15, 1, 'Kanada'),
-(36, 14, 3, 'Ja'),
-(42, 16, 3, '100x200'),
-(42, 16, 2, '100x200'),
-(43, 16, 1, '100x200'),
-(43, 16, 2, '100x200'),
-(43, 16, 3, '100x200'),
-(40, 15, 3, 'Kanada'),
-(40, 15, 2, 'Kanada'),
-(40, 15, 1, 'Kanada'),
-(40, 14, 3, 'Ja'),
-(41, 19, 3, '2 kg'),
-(41, 19, 1, '2 kg'),
-(41, 19, 2, '2 kg'),
-(49, 18, 2, 'Europe'),
-(49, 18, 1, 'Europe'),
-(49, 17, 3, 'Ja'),
-(44, 19, 3, '2 kg'),
-(44, 19, 1, '2 kg'),
-(44, 19, 2, '2 kg'),
-(45, 14, 2, 'Yes'),
-(45, 14, 3, 'Ja'),
-(45, 15, 1, 'Kanada'),
-(45, 15, 2, 'Kanada'),
-(46, 19, 3, '2 kg'),
-(46, 19, 1, '2 kg'),
-(46, 19, 2, '2 kg'),
-(47, 18, 1, 'Europe'),
-(47, 18, 2, 'Europe'),
-(47, 18, 3, 'Europe'),
-(48, 14, 2, 'Yes'),
-(48, 14, 3, 'Ja'),
-(48, 15, 1, 'Kanada'),
-(48, 15, 2, 'Kanada'),
-(50, 19, 3, '2 kg'),
-(50, 19, 1, '2 kg'),
-(50, 19, 2, '2 kg'),
-(28, 15, 1, 'Kanada'),
-(28, 15, 2, 'Kanada'),
-(29, 19, 3, '2 kg'),
-(30, 20, 1, 'Yes'),
-(42, 21, 1, 'Front-Wheel Drive'),
-(42, 20, 3, 'Ja'),
-(47, 13, 2, 'Metallic'),
-(49, 13, 1, 'Metallic'),
-(49, 13, 2, 'Metallic'),
-(30, 14, 3, 'Ja'),
-(50, 18, 3, 'Europe'),
-(50, 18, 2, 'Europe'),
-(42, 15, 2, 'Kanada'),
-(28, 20, 3, 'Ja'),
-(29, 14, 2, 'Yes'),
-(31, 20, 1, 'Yes'),
-(31, 19, 3, '2 kg'),
-(32, 18, 3, 'Europe'),
-(32, 18, 2, 'Europe'),
-(33, 18, 1, 'Europe'),
-(34, 14, 3, 'Ja'),
-(34, 15, 1, 'Kanada'),
-(35, 18, 3, 'Europe'),
-(35, 18, 2, 'Europe'),
-(36, 20, 1, 'Yes'),
-(36, 19, 3, '2 kg'),
-(43, 15, 2, 'Kanada'),
-(40, 20, 1, 'Yes'),
-(40, 19, 3, '2 kg'),
-(41, 18, 3, 'Europe'),
-(41, 18, 2, 'Europe'),
-(44, 18, 3, 'Europe'),
-(44, 18, 2, 'Europe'),
-(45, 15, 3, 'Kanada'),
-(46, 18, 3, 'Europe'),
-(46, 18, 2, 'Europe'),
-(48, 15, 3, 'Kanada'),
-(28, 20, 2, 'Yes'),
-(30, 16, 2, '100x200'),
-(32, 20, 1, 'Yes'),
-(33, 19, 3, '2 kg'),
-(34, 13, 2, 'Metallic'),
-(35, 20, 1, 'Yes'),
-(42, 17, 2, 'Yes'),
-(41, 20, 1, 'Yes'),
-(49, 17, 2, 'Yes'),
-(44, 20, 1, 'Yes'),
-(45, 14, 1, 'Yes'),
-(46, 20, 1, 'Yes'),
-(48, 14, 1, 'Yes'),
-(50, 20, 1, 'Yes'),
-(29, 16, 1, '100x200'),
-(28, 13, 1, 'Metallic'),
-(28, 13, 2, 'Metallic'),
-(28, 13, 3, 'Metall'),
-(28, 14, 1, 'Yes'),
-(28, 14, 2, 'Yes'),
-(28, 14, 3, 'Ja'),
-(30, 21, 2, 'Front-Wheel Drive'),
-(29, 12, 1, '00986123'),
-(29, 12, 2, '00986123'),
-(29, 12, 3, '00986123'),
-(29, 13, 1, 'Metallic'),
-(29, 13, 2, 'Metallic'),
-(29, 13, 3, 'Metall'),
-(29, 14, 1, 'Yes'),
-(30, 12, 2, '00986123'),
-(30, 12, 3, '00986123'),
-(30, 13, 1, 'Metallic'),
-(30, 13, 2, 'Metallic'),
-(30, 13, 3, 'Metall'),
-(30, 14, 2, 'Yes'),
-(30, 14, 1, 'Yes'),
-(31, 12, 2, '00986123'),
-(31, 12, 3, '00986123'),
-(31, 13, 1, 'Metallic'),
-(31, 13, 2, 'Metallic'),
-(31, 13, 3, 'Metall'),
-(31, 14, 2, 'Yes'),
-(31, 14, 1, 'Yes'),
-(32, 12, 2, '00986123'),
-(32, 12, 3, '00986123'),
-(32, 13, 1, 'Metallic'),
-(32, 13, 2, 'Metallic'),
-(32, 13, 3, 'Metall'),
-(32, 14, 2, 'Yes'),
-(32, 14, 1, 'Yes'),
-(34, 21, 3, 'Frontantrieb'),
-(33, 12, 1, '00986123'),
-(33, 12, 2, '00986123'),
-(33, 12, 3, '00986123'),
-(33, 13, 1, 'Metallic'),
-(33, 13, 2, 'Metallic'),
-(33, 13, 3, 'Metall'),
-(33, 14, 1, 'Yes'),
-(34, 21, 2, 'Front-Wheel Drive'),
-(34, 19, 1, '2 kg'),
-(34, 19, 2, '2 kg'),
-(34, 19, 3, '2 kg'),
-(34, 20, 1, 'Yes'),
-(34, 20, 2, 'Yes'),
-(34, 20, 3, 'Ja'),
-(34, 21, 1, 'Front-Wheel Drive'),
-(35, 12, 2, '00986123'),
-(35, 12, 3, '00986123'),
-(35, 13, 1, 'Metallic'),
-(35, 13, 2, 'Metallic'),
-(35, 13, 3, 'Metall'),
-(35, 14, 2, 'Yes'),
-(35, 14, 1, 'Yes'),
-(36, 12, 2, '00986123'),
-(36, 12, 3, '00986123'),
-(36, 13, 1, 'Metallic'),
-(36, 13, 2, 'Metallic'),
-(36, 13, 3, 'Metall'),
-(36, 14, 2, 'Yes'),
-(36, 14, 1, 'Yes'),
-(40, 12, 2, '00986123'),
-(40, 12, 3, '00986123'),
-(40, 13, 1, 'Metallic'),
-(40, 13, 2, 'Metallic'),
-(40, 13, 3, 'Metall'),
-(40, 14, 2, 'Yes'),
-(40, 14, 1, 'Yes'),
-(41, 12, 2, '00986123'),
-(41, 12, 3, '00986123'),
-(41, 13, 1, 'Metallic'),
-(41, 13, 2, 'Metallic'),
-(41, 13, 3, 'Metall'),
-(41, 14, 2, 'Yes'),
-(41, 14, 1, 'Yes'),
-(42, 15, 1, 'Kanada'),
-(42, 14, 3, 'Ja'),
-(42, 14, 2, 'Yes'),
-(42, 14, 1, 'Yes'),
-(42, 13, 3, 'Metall'),
-(42, 13, 2, 'Metallic'),
-(42, 13, 1, 'Metallic'),
-(42, 12, 2, '00986123'),
-(42, 12, 3, '00986123'),
-(43, 15, 1, 'Kanada'),
-(43, 14, 3, 'Ja'),
-(43, 14, 2, 'Yes'),
-(43, 14, 1, 'Yes'),
-(43, 13, 3, 'Metall'),
-(43, 13, 2, 'Metallic'),
-(43, 13, 1, 'Metallic'),
-(43, 12, 2, '00986123'),
-(43, 12, 3, '00986123'),
-(44, 12, 2, '00986123'),
-(44, 12, 3, '00986123'),
-(44, 13, 1, 'Metallic'),
-(44, 13, 2, 'Metallic'),
-(44, 13, 3, 'Metall'),
-(44, 14, 2, 'Yes'),
-(44, 14, 1, 'Yes'),
-(45, 21, 3, 'Frontantrieb'),
-(45, 21, 2, 'Front-Wheel Drive'),
-(45, 21, 1, 'Front-Wheel Drive'),
-(45, 20, 2, 'Yes'),
-(45, 20, 3, 'Ja'),
-(45, 19, 3, '2 kg'),
-(45, 20, 1, 'Yes'),
-(46, 12, 2, '00986123'),
-(46, 12, 3, '00986123'),
-(46, 13, 1, 'Metallic'),
-(46, 13, 2, 'Metallic'),
-(46, 13, 3, 'Metall'),
-(46, 14, 2, 'Yes'),
-(46, 14, 1, 'Yes'),
-(50, 21, 2, 'Front-Wheel Drive'),
-(47, 21, 3, 'Frontantrieb'),
-(47, 21, 2, 'Front-Wheel Drive'),
-(47, 21, 1, 'Front-Wheel Drive'),
-(47, 20, 2, 'Yes'),
-(47, 20, 3, 'Ja'),
-(47, 19, 3, '2 kg'),
-(47, 20, 1, 'Yes'),
-(49, 21, 3, 'Frontantrieb'),
-(48, 21, 3, 'Frontantrieb'),
-(48, 21, 2, 'Front-Wheel Drive'),
-(48, 21, 1, 'Front-Wheel Drive'),
-(48, 20, 2, 'Yes'),
-(48, 20, 3, 'Ja'),
-(48, 19, 3, '2 kg'),
-(48, 20, 1, 'Yes'),
-(49, 18, 3, 'Europe'),
-(49, 19, 1, '2 kg'),
-(49, 19, 2, '2 kg'),
-(49, 19, 3, '2 kg'),
-(49, 20, 1, 'Yes'),
-(49, 20, 2, 'Yes'),
-(49, 20, 3, 'Ja'),
-(49, 21, 1, 'Front-Wheel Drive'),
-(49, 21, 2, 'Front-Wheel Drive'),
-(50, 12, 2, '00986123'),
-(50, 12, 3, '00986123'),
-(50, 13, 1, 'Metallic'),
-(50, 13, 2, 'Metallic'),
-(50, 13, 3, 'Metall'),
-(50, 14, 2, 'Yes'),
-(50, 14, 1, 'Yes'),
-(28, 21, 1, 'Front-Wheel Drive'),
-(28, 21, 2, 'Front-Wheel Drive'),
-(28, 21, 3, 'Frontantrieb'),
-(31, 21, 3, 'Frontantrieb'),
-(29, 20, 1, 'Yes'),
-(29, 20, 2, 'Yes'),
-(29, 20, 3, 'Ja'),
-(29, 21, 1, 'Front-Wheel Drive'),
-(30, 20, 2, 'Yes'),
-(30, 20, 3, 'Ja'),
-(30, 21, 1, 'Front-Wheel Drive'),
-(31, 20, 2, 'Yes'),
-(31, 20, 3, 'Ja'),
-(31, 21, 1, 'Front-Wheel Drive'),
-(31, 21, 2, 'Front-Wheel Drive'),
-(32, 20, 2, 'Yes'),
-(32, 20, 3, 'Ja'),
-(32, 21, 1, 'Front-Wheel Drive'),
-(33, 20, 1, 'Yes'),
-(33, 20, 2, 'Yes'),
-(33, 20, 3, 'Ja'),
-(33, 21, 1, 'Front-Wheel Drive'),
-(34, 13, 1, 'Metallic'),
-(34, 12, 3, '00986123'),
-(34, 12, 2, '00986123'),
-(34, 12, 1, '00986123'),
-(35, 20, 2, 'Yes'),
-(35, 20, 3, 'Ja'),
-(35, 21, 1, 'Front-Wheel Drive'),
-(36, 20, 2, 'Yes'),
-(36, 20, 3, 'Ja'),
-(36, 21, 1, 'Front-Wheel Drive'),
-(36, 21, 2, 'Front-Wheel Drive'),
-(40, 20, 2, 'Yes'),
-(40, 20, 3, 'Ja'),
-(40, 21, 1, 'Front-Wheel Drive'),
-(40, 21, 2, 'Front-Wheel Drive'),
-(41, 20, 2, 'Yes'),
-(41, 20, 3, 'Ja'),
-(41, 21, 1, 'Front-Wheel Drive'),
-(42, 21, 2, 'Front-Wheel Drive'),
-(42, 21, 3, 'Frontantrieb'),
-(43, 21, 2, 'Front-Wheel Drive'),
-(43, 21, 3, 'Frontantrieb'),
-(44, 20, 2, 'Yes'),
-(44, 20, 3, 'Ja'),
-(44, 21, 1, 'Front-Wheel Drive'),
-(45, 13, 3, 'Metall'),
-(45, 13, 2, 'Metallic'),
-(45, 12, 3, '00986123'),
-(45, 13, 1, 'Metallic'),
-(46, 20, 2, 'Yes'),
-(46, 20, 3, 'Ja'),
-(46, 21, 1, 'Front-Wheel Drive'),
-(48, 13, 3, 'Metall'),
-(48, 13, 2, 'Metallic'),
-(48, 12, 3, '00986123'),
-(48, 13, 1, 'Metallic'),
-(49, 12, 3, '00986123'),
-(49, 12, 2, '00986123'),
-(49, 12, 1, '00986123'),
-(47, 13, 1, 'Metallic'),
-(47, 12, 3, '00986123'),
-(47, 12, 2, '00986123'),
-(50, 20, 2, 'Yes'),
-(50, 20, 3, 'Ja'),
-(50, 21, 1, 'Front-Wheel Drive'),
-(30, 21, 3, 'Frontantrieb'),
-(31, 12, 1, '00986123'),
-(35, 21, 2, 'Front-Wheel Drive'),
-(42, 12, 1, '00986123'),
-(30, 12, 1, '00986123'),
-(32, 12, 1, '00986123'),
-(35, 12, 1, '00986123'),
-(36, 12, 1, '00986123'),
-(40, 12, 1, '00986123'),
-(40, 21, 3, 'Frontantrieb'),
-(41, 12, 1, '00986123'),
-(43, 12, 1, '00986123'),
-(44, 12, 1, '00986123'),
-(46, 12, 1, '00986123'),
-(50, 12, 1, '00986123'),
-(29, 21, 2, 'Front-Wheel Drive'),
-(47, 12, 1, '00986123'),
-(33, 21, 2, 'Front-Wheel Drive'),
-(32, 21, 2, 'Front-Wheel Drive'),
-(32, 21, 3, 'Frontantrieb'),
-(35, 21, 3, 'Frontantrieb'),
-(36, 21, 3, 'Frontantrieb'),
-(41, 21, 2, 'Front-Wheel Drive'),
-(41, 21, 3, 'Frontantrieb'),
-(44, 21, 2, 'Front-Wheel Drive'),
-(44, 21, 3, 'Frontantrieb'),
-(45, 12, 2, '00986123'),
-(45, 12, 1, '00986123'),
-(48, 12, 2, '00986123'),
-(48, 12, 1, '00986123'),
-(50, 21, 3, 'Frontantrieb'),
-(28, 12, 3, '00986123'),
-(28, 12, 2, '00986123'),
-(28, 12, 1, '00986123'),
-(29, 21, 3, 'Frontantrieb'),
-(33, 21, 3, 'Frontantrieb'),
-(46, 21, 2, 'Front-Wheel Drive'),
-(46, 21, 3, 'Frontantrieb');
 
 -- --------------------------------------------------------
 
@@ -3675,69 +2801,7 @@ CREATE TABLE `oc_product_description` (
 --
 
 INSERT INTO `oc_product_description` (`product_id`, `language_id`, `name`, `description`, `tag`, `meta_title`, `meta_description`, `meta_keyword`) VALUES
-(40, 1, 'Maserati Granturismo Gearbox Transmission', '&lt;iframe src=&quot;//www.youtube.com/embed/CHsMnE_iUWQ?Rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;wmode=transparent&quot; allowfullscreen=&quot;&quot; height=&quot;415&quot; width=&quot;738&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place. Even if you don’t like speed and power, racing and all this stuff, but you love your car, you are still in the right place because you might be interested in professional spare parts. Nowadays car is not just a vehicle, it is a part of you, it influences your style and your character. Car is a part of culture because we spend a significant amount of time of our lives by the steering wheel. We spend endless hours in traffic jams; we like to eat in a car, like to listen to music and so on. Our industry made a great number of legendary cars, and this is a true argument that it is essential part of our life. You know, psychologists claim that style of driving shows some striking features of character. And you know it is true. Car is more than a piece of a metal, it became a social phenomenon. Have you ever noticed that we often try to talk to the car as if it was a human?&lt;/p&gt;\r\n&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Maserati Granturismo Gearbox Transmission', 'Maserati Granturismo Gearbox Transmission', 'Maserati Granturismo Gearbox Transmission', 'Maserati Granturismo Gearbox Transmission'),
-(40, 2, 'Maserati Granturismo Gearbox Transmission', '&lt;iframe src=&quot;//www.youtube.com/embed/CHsMnE_iUWQ?Rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;wmode=transparent&quot; allowfullscreen=&quot;&quot; height=&quot;415&quot; width=&quot;738&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place. Even if you don’t like speed and power, racing and all this stuff, but you love your car, you are still in the right place because you might be interested in professional spare parts. Nowadays car is not just a vehicle, it is a part of you, it influences your style and your character. Car is a part of culture because we spend a significant amount of time of our lives by the steering wheel. We spend endless hours in traffic jams; we like to eat in a car, like to listen to music and so on. Our industry made a great number of legendary cars, and this is a true argument that it is essential part of our life. You know, psychologists claim that style of driving shows some striking features of character. And you know it is true. Car is more than a piece of a metal, it became a social phenomenon. Have you ever noticed that we often try to talk to the car as if it was a human?&lt;/p&gt;\r\n&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Maserati Granturismo Gearbox Transmission', 'Maserati Granturismo Gearbox Transmission', 'Maserati Granturismo Gearbox Transmission', 'Maserati Granturismo Gearbox Transmission'),
-(36, 1, 'Lamborghini Gallardo LP 520 Front Differential', '&lt;iframe src=&quot;//www.youtube.com/embed/CHsMnE_iUWQ?Rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;wmode=transparent&quot; allowfullscreen=&quot;&quot; height=&quot;415&quot; width=&quot;738&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place. Even if you don’t like speed and power, racing and all this stuff, but you love your car, you are still in the right place because you might be interested in professional spare parts. Nowadays car is not just a vehicle, it is a part of you, it influences your style and your character. Car is a part of culture because we spend a significant amount of time of our lives by the steering wheel. We spend endless hours in traffic jams; we like to eat in a car, like to listen to music and so on. Our industry made a great number of legendary cars, and this is a true argument that it is essential part of our life. You know, psychologists claim that style of driving shows some striking features of character. And you know it is true. Car is more than a piece of a metal, it became a social phenomenon. Have you ever noticed that we often try to talk to the car as if it was a human?&lt;/p&gt;\r\n&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Lamborghini Gallardo LP 520 Front Differential', 'Lamborghini Gallardo LP 520 Front Differential', 'Lamborghini Gallardo LP 520 Front Differential', 'Lamborghini Gallardo LP 520 Front Differential'),
-(32, 1, 'FK Duplex Sports Exhaust Complete System For Audi', '&lt;iframe src=&quot;//www.youtube.com/embed/CHsMnE_iUWQ?Rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;wmode=transparent&quot; allowfullscreen=&quot;&quot; height=&quot;415&quot; width=&quot;738&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place. Even if you don’t like speed and power, racing and all this stuff, but you love your car, you are still in the right place because you might be interested in professional spare parts. Nowadays car is not just a vehicle, it is a part of you, it influences your style and your character. Car is a part of culture because we spend a significant amount of time of our lives by the steering wheel. We spend endless hours in traffic jams; we like to eat in a car, like to listen to music and so on. Our industry made a great number of legendary cars, and this is a true argument that it is essential part of our life. You know, psychologists claim that style of driving shows some striking features of character. And you know it is true. Car is more than a piece of a metal, it became a social phenomenon. Have you ever noticed that we often try to talk to the car as if it was a human?&lt;/p&gt;\r\n&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'FK Duplex Sports Exhaust Complete System For Audi', 'FK Duplex Sports Exhaust Complete System For Audi', 'FK Duplex Sports Exhaust Complete System For Audi', 'FK Duplex Sports Exhaust Complete System For Audi'),
-(32, 2, 'FK Duplex Sports Exhaust Complete System For Audi', '&lt;iframe src=&quot;//www.youtube.com/embed/CHsMnE_iUWQ?Rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;wmode=transparent&quot; allowfullscreen=&quot;&quot; height=&quot;415&quot; width=&quot;738&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place. Even if you don’t like speed and power, racing and all this stuff, but you love your car, you are still in the right place because you might be interested in professional spare parts. Nowadays car is not just a vehicle, it is a part of you, it influences your style and your character. Car is a part of culture because we spend a significant amount of time of our lives by the steering wheel. We spend endless hours in traffic jams; we like to eat in a car, like to listen to music and so on. Our industry made a great number of legendary cars, and this is a true argument that it is essential part of our life. You know, psychologists claim that style of driving shows some striking features of character. And you know it is true. Car is more than a piece of a metal, it became a social phenomenon. Have you ever noticed that we often try to talk to the car as if it was a human?&lt;/p&gt;\r\n&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'FK Duplex Sports Exhaust Complete System For Audi', 'FK Duplex Sports Exhaust Complete System For Audi', 'FK Duplex Sports Exhaust Complete System For Audi', 'FK Duplex Sports Exhaust Complete System For Audi'),
-(32, 3, 'FK Duplex Sports Exhaust Complete System For Audi', '&lt;iframe src=&quot;//www.youtube.com/embed/CHsMnE_iUWQ?Rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;wmode=transparent&quot; allowfullscreen=&quot;&quot; height=&quot;415&quot; width=&quot;738&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place. Even if you don’t like speed and power, racing and all this stuff, but you love your car, you are still in the right place because you might be interested in professional spare parts. Nowadays car is not just a vehicle, it is a part of you, it influences your style and your character. Car is a part of culture because we spend a significant amount of time of our lives by the steering wheel. We spend endless hours in traffic jams; we like to eat in a car, like to listen to music and so on. Our industry made a great number of legendary cars, and this is a true argument that it is essential part of our life. You know, psychologists claim that style of driving shows some striking features of character. And you know it is true. Car is more than a piece of a metal, it became a social phenomenon. Have you ever noticed that we often try to talk to the car as if it was a human?&lt;/p&gt;\r\n&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'FK Duplex Sports Exhaust Complete System For Audi', 'FK Duplex Sports Exhaust Complete System For Audi', 'FK Duplex Sports Exhaust Complete System For Audi', 'FK Duplex Sports Exhaust Complete System For Audi'),
-(31, 1, 'Daylight Headlight Set Audi A6 Typ 4b', '&lt;iframe src=&quot;//www.youtube.com/embed/CHsMnE_iUWQ?Rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;wmode=transparent&quot; allowfullscreen=&quot;&quot; height=&quot;415&quot; width=&quot;738&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place. Even if you don’t like speed and power, racing and all this stuff, but you love your car, you are still in the right place because you might be interested in professional spare parts. Nowadays car is not just a vehicle, it is a part of you, it influences your style and your character. Car is a part of culture because we spend a significant amount of time of our lives by the steering wheel. We spend endless hours in traffic jams; we like to eat in a car, like to listen to music and so on. Our industry made a great number of legendary cars, and this is a true argument that it is essential part of our life. You know, psychologists claim that style of driving shows some striking features of character. And you know it is true. Car is more than a piece of a metal, it became a social phenomenon. Have you ever noticed that we often try to talk to the car as if it was a human?&lt;/p&gt;\r\n&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Daylight Headlight Set Audi A6 Typ 4b', 'Daylight Headlight Set Audi A6 Typ 4b', 'Daylight Headlight Set Audi A6 Typ 4b', 'Daylight Headlight Set Audi A6 Typ 4b'),
-(31, 2, 'Daylight Headlight Set Audi A6 Typ 4b', '&lt;iframe src=&quot;//www.youtube.com/embed/CHsMnE_iUWQ?Rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;wmode=transparent&quot; allowfullscreen=&quot;&quot; height=&quot;415&quot; width=&quot;738&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place. Even if you don’t like speed and power, racing and all this stuff, but you love your car, you are still in the right place because you might be interested in professional spare parts. Nowadays car is not just a vehicle, it is a part of you, it influences your style and your character. Car is a part of culture because we spend a significant amount of time of our lives by the steering wheel. We spend endless hours in traffic jams; we like to eat in a car, like to listen to music and so on. Our industry made a great number of legendary cars, and this is a true argument that it is essential part of our life. You know, psychologists claim that style of driving shows some striking features of character. And you know it is true. Car is more than a piece of a metal, it became a social phenomenon. Have you ever noticed that we often try to talk to the car as if it was a human?&lt;/p&gt;\r\n&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Daylight Headlight Set Audi A6 Typ 4b', 'Daylight Headlight Set Audi A6 Typ 4b', 'Daylight Headlight Set Audi A6 Typ 4b', 'Daylight Headlight Set Audi A6 Typ 4b'),
-(30, 1, 'Carbon Bonnet Hood Opel Astra J', '&lt;iframe src=&quot;//www.youtube.com/embed/CHsMnE_iUWQ?Rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;wmode=transparent&quot; allowfullscreen=&quot;&quot; height=&quot;415&quot; width=&quot;738&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place. Even if you don’t like speed and power, racing and all this stuff, but you love your car, you are still in the right place because you might be interested in professional spare parts. Nowadays car is not just a vehicle, it is a part of you, it influences your style and your character. Car is a part of culture because we spend a significant amount of time of our lives by the steering wheel. We spend endless hours in traffic jams; we like to eat in a car, like to listen to music and so on. Our industry made a great number of legendary cars, and this is a true argument that it is essential part of our life. You know, psychologists claim that style of driving shows some striking features of character. And you know it is true. Car is more than a piece of a metal, it became a social phenomenon. Have you ever noticed that we often try to talk to the car as if it was a human?&lt;/p&gt;\r\n&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Carbon Bonnet Hood Opel Astra J', 'Carbon Bonnet Hood Opel Astra J', 'Carbon Bonnet Hood Opel Astra J', 'Carbon Bonnet Hood Opel Astra J'),
-(28, 1, 'Air Intake Hose for Toyota Camry 2.2L 4CYL', '&lt;iframe src=&quot;//www.youtube.com/embed/CHsMnE_iUWQ?Rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;wmode=transparent&quot; allowfullscreen=&quot;&quot; height=&quot;415&quot; width=&quot;738&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place. Even if you don’t like speed and power, racing and all this stuff, but you love your car, you are still in the right place because you might be interested in professional spare parts. Nowadays car is not just a vehicle, it is a part of you, it influences your style and your character. Car is a part of culture because we spend a significant amount of time of our lives by the steering wheel. We spend endless hours in traffic jams; we like to eat in a car, like to listen to music and so on. Our industry made a great number of legendary cars, and this is a true argument that it is essential part of our life. You know, psychologists claim that style of driving shows some striking features of character. And you know it is true. Car is more than a piece of a metal, it became a social phenomenon. Have you ever noticed that we often try to talk to the car as if it was a human?&lt;/p&gt;\r\n&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Air Intake Hose for Toyota Camry 2.2L 4CYL', 'Air Intake Hose for Toyota Camry 2.2L 4CYL', 'Air Intake Hose for Toyota Camry 2.2L 4CYL', 'Air Intake Hose for Toyota Camry 2.2L 4CYL'),
-(29, 1, 'Angel Eye Headlight BMW 3er Limo', '&lt;iframe src=&quot;//www.youtube.com/embed/CHsMnE_iUWQ?Rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;wmode=transparent&quot; allowfullscreen=&quot;&quot; height=&quot;415&quot; width=&quot;738&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place. Even if you don’t like speed and power, racing and all this stuff, but you love your car, you are still in the right place because you might be interested in professional spare parts. Nowadays car is not just a vehicle, it is a part of you, it influences your style and your character. Car is a part of culture because we spend a significant amount of time of our lives by the steering wheel. We spend endless hours in traffic jams; we like to eat in a car, like to listen to music and so on. Our industry made a great number of legendary cars, and this is a true argument that it is essential part of our life. You know, psychologists claim that style of driving shows some striking features of character. And you know it is true. Car is more than a piece of a metal, it became a social phenomenon. Have you ever noticed that we often try to talk to the car as if it was a human?&lt;/p&gt;\r\n&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Angel Eye Headlight BMW 3er Limo', 'Angel Eye Headlight BMW 3er Limo', 'Angel Eye Headlight BMW 3er Limo', 'Angel Eye Headlight BMW 3er Limo'),
-(29, 2, 'Angel Eye Headlight BMW 3er Limo', '&lt;iframe src=&quot;//www.youtube.com/embed/CHsMnE_iUWQ?Rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;wmode=transparent&quot; allowfullscreen=&quot;&quot; height=&quot;415&quot; width=&quot;738&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place. Even if you don’t like speed and power, racing and all this stuff, but you love your car, you are still in the right place because you might be interested in professional spare parts. Nowadays car is not just a vehicle, it is a part of you, it influences your style and your character. Car is a part of culture because we spend a significant amount of time of our lives by the steering wheel. We spend endless hours in traffic jams; we like to eat in a car, like to listen to music and so on. Our industry made a great number of legendary cars, and this is a true argument that it is essential part of our life. You know, psychologists claim that style of driving shows some striking features of character. And you know it is true. Car is more than a piece of a metal, it became a social phenomenon. Have you ever noticed that we often try to talk to the car as if it was a human?&lt;/p&gt;\r\n&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Angel Eye Headlight BMW 3er Limo', 'Angel Eye Headlight BMW 3er Limo', 'Angel Eye Headlight BMW 3er Limo', 'Angel Eye Headlight BMW 3er Limo'),
-(29, 3, 'Angel Eye Headlight BMW 3er Limo', '&lt;iframe src=&quot;//www.youtube.com/embed/CHsMnE_iUWQ?Rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;wmode=transparent&quot; allowfullscreen=&quot;&quot; height=&quot;415&quot; width=&quot;738&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place. Even if you don’t like speed and power, racing and all this stuff, but you love your car, you are still in the right place because you might be interested in professional spare parts. Nowadays car is not just a vehicle, it is a part of you, it influences your style and your character. Car is a part of culture because we spend a significant amount of time of our lives by the steering wheel. We spend endless hours in traffic jams; we like to eat in a car, like to listen to music and so on. Our industry made a great number of legendary cars, and this is a true argument that it is essential part of our life. You know, psychologists claim that style of driving shows some striking features of character. And you know it is true. Car is more than a piece of a metal, it became a social phenomenon. Have you ever noticed that we often try to talk to the car as if it was a human?&lt;/p&gt;\r\n&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Angel Eye Headlight BMW 3er Limo', 'Angel Eye Headlight BMW 3er Limo', 'Angel Eye Headlight BMW 3er Limo', 'Angel Eye Headlight BMW 3er Limo'),
-(42, 1, 'Portseat Set Las Vegas Artificial Leather Black', '&lt;iframe src=&quot;//www.youtube.com/embed/CHsMnE_iUWQ?Rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;wmode=transparent&quot; allowfullscreen=&quot;&quot; height=&quot;415&quot; width=&quot;738&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place. Even if you don’t like speed and power, racing and all this stuff, but you love your car, you are still in the right place because you might be interested in professional spare parts. Nowadays car is not just a vehicle, it is a part of you, it influences your style and your character. Car is a part of culture because we spend a significant amount of time of our lives by the steering wheel. We spend endless hours in traffic jams; we like to eat in a car, like to listen to music and so on. Our industry made a great number of legendary cars, and this is a true argument that it is essential part of our life. You know, psychologists claim that style of driving shows some striking features of character. And you know it is true. Car is more than a piece of a metal, it became a social phenomenon. Have you ever noticed that we often try to talk to the car as if it was a human?&lt;/p&gt;\r\n&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Portseat Set Las Vegas Artificial Leather Black', 'Portseat Set Las Vegas Artificial Leather Black', 'Portseat Set Las Vegas Artificial Leather Black', 'Portseat Set Las Vegas Artificial Leather Black'),
-(46, 1, 'Sport Air Filter Replacement Filter Peugeot 206', '&lt;iframe src=&quot;//www.youtube.com/embed/CHsMnE_iUWQ?Rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;wmode=transparent&quot; allowfullscreen=&quot;&quot; height=&quot;415&quot; width=&quot;738&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place. Even if you don’t like speed and power, racing and all this stuff, but you love your car, you are still in the right place because you might be interested in professional spare parts. Nowadays car is not just a vehicle, it is a part of you, it influences your style and your character. Car is a part of culture because we spend a significant amount of time of our lives by the steering wheel. We spend endless hours in traffic jams; we like to eat in a car, like to listen to music and so on. Our industry made a great number of legendary cars, and this is a true argument that it is essential part of our life. You know, psychologists claim that style of driving shows some striking features of character. And you know it is true. Car is more than a piece of a metal, it became a social phenomenon. Have you ever noticed that we often try to talk to the car as if it was a human?&lt;/p&gt;\r\n&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Sport Air Filter Replacement Filter Peugeot 206', 'Sport Air Filter Replacement Filter Peugeot 206', 'Sport Air Filter Replacement Filter Peugeot 206', 'Sport Air Filter Replacement Filter Peugeot 206'),
-(47, 3, 'Sportseat Set Evolution Fabric Red', '&lt;iframe src=&quot;//www.youtube.com/embed/CHsMnE_iUWQ?Rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;wmode=transparent&quot; allowfullscreen=&quot;&quot; height=&quot;415&quot; width=&quot;738&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place. Even if you don’t like speed and power, racing and all this stuff, but you love your car, you are still in the right place because you might be interested in professional spare parts. Nowadays car is not just a vehicle, it is a part of you, it influences your style and your character. Car is a part of culture because we spend a significant amount of time of our lives by the steering wheel. We spend endless hours in traffic jams; we like to eat in a car, like to listen to music and so on. Our industry made a great number of legendary cars, and this is a true argument that it is essential part of our life. You know, psychologists claim that style of driving shows some striking features of character. And you know it is true. Car is more than a piece of a metal, it became a social phenomenon. Have you ever noticed that we often try to talk to the car as if it was a human?&lt;/p&gt;\r\n&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Sportseat Set Evolution Fabric Red', 'Sportseat Set Evolution Fabric Red', 'Sportseat Set Evolution Fabric Red', 'Sportseat Set Evolution Fabric Red'),
-(47, 2, 'Sportseat Set Evolution Fabric Red', '&lt;iframe src=&quot;//www.youtube.com/embed/CHsMnE_iUWQ?Rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;wmode=transparent&quot; allowfullscreen=&quot;&quot; height=&quot;415&quot; width=&quot;738&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place. Even if you don’t like speed and power, racing and all this stuff, but you love your car, you are still in the right place because you might be interested in professional spare parts. Nowadays car is not just a vehicle, it is a part of you, it influences your style and your character. Car is a part of culture because we spend a significant amount of time of our lives by the steering wheel. We spend endless hours in traffic jams; we like to eat in a car, like to listen to music and so on. Our industry made a great number of legendary cars, and this is a true argument that it is essential part of our life. You know, psychologists claim that style of driving shows some striking features of character. And you know it is true. Car is more than a piece of a metal, it became a social phenomenon. Have you ever noticed that we often try to talk to the car as if it was a human?&lt;/p&gt;\r\n&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Sportseat Set Evolution Fabric Red', 'Sportseat Set Evolution Fabric Red', 'Sportseat Set Evolution Fabric Red', 'Sportseat Set Evolution Fabric Red'),
-(50, 1, 'Stanley J5C09 1000 Peak Amp Jump Starter', '&lt;iframe src=&quot;//www.youtube.com/embed/CHsMnE_iUWQ?Rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;wmode=transparent&quot; allowfullscreen=&quot;&quot; height=&quot;415&quot; width=&quot;738&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place. Even if you don’t like speed and power, racing and all this stuff, but you love your car, you are still in the right place because you might be interested in professional spare parts. Nowadays car is not just a vehicle, it is a part of you, it influences your style and your character. Car is a part of culture because we spend a significant amount of time of our lives by the steering wheel. We spend endless hours in traffic jams; we like to eat in a car, like to listen to music and so on. Our industry made a great number of legendary cars, and this is a true argument that it is essential part of our life. You know, psychologists claim that style of driving shows some striking features of character. And you know it is true. Car is more than a piece of a metal, it became a social phenomenon. Have you ever noticed that we often try to talk to the car as if it was a human?&lt;/p&gt;\r\n&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Stanley J5C09 1000 Peak Amp Jump Starter', 'Stanley J5C09 1000 Peak Amp Jump Starter', 'Stanley J5C09 1000 Peak Amp Jump Starter', 'Stanley J5C09 1000 Peak Amp Jump Starter');
-INSERT INTO `oc_product_description` (`product_id`, `language_id`, `name`, `description`, `tag`, `meta_title`, `meta_description`, `meta_keyword`) VALUES
-(50, 2, 'Stanley J5C09 1000 Peak Amp Jump Starter', '&lt;iframe src=&quot;//www.youtube.com/embed/CHsMnE_iUWQ?Rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;wmode=transparent&quot; allowfullscreen=&quot;&quot; height=&quot;415&quot; width=&quot;738&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place. Even if you don’t like speed and power, racing and all this stuff, but you love your car, you are still in the right place because you might be interested in professional spare parts. Nowadays car is not just a vehicle, it is a part of you, it influences your style and your character. Car is a part of culture because we spend a significant amount of time of our lives by the steering wheel. We spend endless hours in traffic jams; we like to eat in a car, like to listen to music and so on. Our industry made a great number of legendary cars, and this is a true argument that it is essential part of our life. You know, psychologists claim that style of driving shows some striking features of character. And you know it is true. Car is more than a piece of a metal, it became a social phenomenon. Have you ever noticed that we often try to talk to the car as if it was a human?&lt;/p&gt;\r\n&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Stanley J5C09 1000 Peak Amp Jump Starter', 'Stanley J5C09 1000 Peak Amp Jump Starter', 'Stanley J5C09 1000 Peak Amp Jump Starter', 'Stanley J5C09 1000 Peak Amp Jump Starter'),
-(50, 3, 'Stanley J5C09 1000 Peak Amp Jump Starter', '&lt;iframe src=&quot;//www.youtube.com/embed/CHsMnE_iUWQ?Rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;wmode=transparent&quot; allowfullscreen=&quot;&quot; height=&quot;415&quot; width=&quot;738&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place. Even if you don’t like speed and power, racing and all this stuff, but you love your car, you are still in the right place because you might be interested in professional spare parts. Nowadays car is not just a vehicle, it is a part of you, it influences your style and your character. Car is a part of culture because we spend a significant amount of time of our lives by the steering wheel. We spend endless hours in traffic jams; we like to eat in a car, like to listen to music and so on. Our industry made a great number of legendary cars, and this is a true argument that it is essential part of our life. You know, psychologists claim that style of driving shows some striking features of character. And you know it is true. Car is more than a piece of a metal, it became a social phenomenon. Have you ever noticed that we often try to talk to the car as if it was a human?&lt;/p&gt;\r\n&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Stanley J5C09 1000 Peak Amp Jump Starter', 'Stanley J5C09 1000 Peak Amp Jump Starter', 'Stanley J5C09 1000 Peak Amp Jump Starter', 'Stanley J5C09 1000 Peak Amp Jump Starter'),
-(33, 1, 'FRS BRZ WRX FA20 Stage 3 Short Block', '&lt;iframe src=&quot;//www.youtube.com/embed/CHsMnE_iUWQ?Rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;wmode=transparent&quot; allowfullscreen=&quot;&quot; height=&quot;415&quot; width=&quot;738&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place. Even if you don’t like speed and power, racing and all this stuff, but you love your car, you are still in the right place because you might be interested in professional spare parts. Nowadays car is not just a vehicle, it is a part of you, it influences your style and your character. Car is a part of culture because we spend a significant amount of time of our lives by the steering wheel. We spend endless hours in traffic jams; we like to eat in a car, like to listen to music and so on. Our industry made a great number of legendary cars, and this is a true argument that it is essential part of our life. You know, psychologists claim that style of driving shows some striking features of character. And you know it is true. Car is more than a piece of a metal, it became a social phenomenon. Have you ever noticed that we often try to talk to the car as if it was a human?&lt;/p&gt;\r\n&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'FRS BRZ WRX FA20 Stage 3 Short Block', 'FRS BRZ WRX FA20 Stage 3 Short Block', 'FRS BRZ WRX FA20 Stage 3 Short Block', 'FRS BRZ WRX FA20 Stage 3 Short Block'),
-(35, 1, 'Headlight VW Polo Typ 6N', '&lt;iframe src=&quot;//www.youtube.com/embed/CHsMnE_iUWQ?Rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;wmode=transparent&quot; allowfullscreen=&quot;&quot; height=&quot;415&quot; width=&quot;738&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place. Even if you don’t like speed and power, racing and all this stuff, but you love your car, you are still in the right place because you might be interested in professional spare parts. Nowadays car is not just a vehicle, it is a part of you, it influences your style and your character. Car is a part of culture because we spend a significant amount of time of our lives by the steering wheel. We spend endless hours in traffic jams; we like to eat in a car, like to listen to music and so on. Our industry made a great number of legendary cars, and this is a true argument that it is essential part of our life. You know, psychologists claim that style of driving shows some striking features of character. And you know it is true. Car is more than a piece of a metal, it became a social phenomenon. Have you ever noticed that we often try to talk to the car as if it was a human?&lt;/p&gt;\r\n&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Headlight VW Polo Typ 6N', 'Headlight VW Polo Typ 6N', 'Headlight VW Polo Typ 6N', 'Headlight VW Polo Typ 6N'),
-(35, 2, 'Headlight VW Polo Typ 6N', '&lt;iframe src=&quot;//www.youtube.com/embed/CHsMnE_iUWQ?Rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;wmode=transparent&quot; allowfullscreen=&quot;&quot; height=&quot;415&quot; width=&quot;738&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place. Even if you don’t like speed and power, racing and all this stuff, but you love your car, you are still in the right place because you might be interested in professional spare parts. Nowadays car is not just a vehicle, it is a part of you, it influences your style and your character. Car is a part of culture because we spend a significant amount of time of our lives by the steering wheel. We spend endless hours in traffic jams; we like to eat in a car, like to listen to music and so on. Our industry made a great number of legendary cars, and this is a true argument that it is essential part of our life. You know, psychologists claim that style of driving shows some striking features of character. And you know it is true. Car is more than a piece of a metal, it became a social phenomenon. Have you ever noticed that we often try to talk to the car as if it was a human?&lt;/p&gt;\r\n&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Headlight VW Polo Typ 6N', 'Headlight VW Polo Typ 6N', 'Headlight VW Polo Typ 6N', 'Headlight VW Polo Typ 6N'),
-(35, 3, 'Headlight VW Polo Typ 6N', '&lt;iframe src=&quot;//www.youtube.com/embed/CHsMnE_iUWQ?Rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;wmode=transparent&quot; allowfullscreen=&quot;&quot; height=&quot;415&quot; width=&quot;738&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place. Even if you don’t like speed and power, racing and all this stuff, but you love your car, you are still in the right place because you might be interested in professional spare parts. Nowadays car is not just a vehicle, it is a part of you, it influences your style and your character. Car is a part of culture because we spend a significant amount of time of our lives by the steering wheel. We spend endless hours in traffic jams; we like to eat in a car, like to listen to music and so on. Our industry made a great number of legendary cars, and this is a true argument that it is essential part of our life. You know, psychologists claim that style of driving shows some striking features of character. And you know it is true. Car is more than a piece of a metal, it became a social phenomenon. Have you ever noticed that we often try to talk to the car as if it was a human?&lt;/p&gt;\r\n&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Headlight VW Polo Typ 6N', 'Headlight VW Polo Typ 6N', 'Headlight VW Polo Typ 6N', 'Headlight VW Polo Typ 6N'),
-(43, 1, 'Richmond Gear Super Street 5 Speed Transmission', '&lt;iframe src=&quot;//www.youtube.com/embed/CHsMnE_iUWQ?Rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;wmode=transparent&quot; allowfullscreen=&quot;&quot; height=&quot;415&quot; width=&quot;738&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place. Even if you don’t like speed and power, racing and all this stuff, but you love your car, you are still in the right place because you might be interested in professional spare parts. Nowadays car is not just a vehicle, it is a part of you, it influences your style and your character. Car is a part of culture because we spend a significant amount of time of our lives by the steering wheel. We spend endless hours in traffic jams; we like to eat in a car, like to listen to music and so on. Our industry made a great number of legendary cars, and this is a true argument that it is essential part of our life. You know, psychologists claim that style of driving shows some striking features of character. And you know it is true. Car is more than a piece of a metal, it became a social phenomenon. Have you ever noticed that we often try to talk to the car as if it was a human?&lt;/p&gt;\r\n&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Richmond Gear Super Street 5 Speed Transmission', 'Richmond Gear Super Street 5 Speed Transmission', 'Richmond Gear Super Street 5 Speed Transmission', 'Richmond Gear Super Street 5 Speed Transmission'),
-(43, 2, 'Richmond Gear Super Street 5 Speed Transmission', '&lt;iframe src=&quot;//www.youtube.com/embed/CHsMnE_iUWQ?Rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;wmode=transparent&quot; allowfullscreen=&quot;&quot; height=&quot;415&quot; width=&quot;738&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place. Even if you don’t like speed and power, racing and all this stuff, but you love your car, you are still in the right place because you might be interested in professional spare parts. Nowadays car is not just a vehicle, it is a part of you, it influences your style and your character. Car is a part of culture because we spend a significant amount of time of our lives by the steering wheel. We spend endless hours in traffic jams; we like to eat in a car, like to listen to music and so on. Our industry made a great number of legendary cars, and this is a true argument that it is essential part of our life. You know, psychologists claim that style of driving shows some striking features of character. And you know it is true. Car is more than a piece of a metal, it became a social phenomenon. Have you ever noticed that we often try to talk to the car as if it was a human?&lt;/p&gt;\r\n&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Richmond Gear Super Street 5 Speed Transmission', 'Richmond Gear Super Street 5 Speed Transmission', 'Richmond Gear Super Street 5 Speed Transmission', 'Richmond Gear Super Street 5 Speed Transmission'),
-(41, 1, 'NOCO Genius Boost GB30 12V UltraSafe Lithium Jump Starter', '&lt;iframe src=&quot;//www.youtube.com/embed/CHsMnE_iUWQ?Rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;wmode=transparent&quot; allowfullscreen=&quot;&quot; height=&quot;415&quot; width=&quot;738&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place. Even if you don’t like speed and power, racing and all this stuff, but you love your car, you are still in the right place because you might be interested in professional spare parts. Nowadays car is not just a vehicle, it is a part of you, it influences your style and your character. Car is a part of culture because we spend a significant amount of time of our lives by the steering wheel. We spend endless hours in traffic jams; we like to eat in a car, like to listen to music and so on. Our industry made a great number of legendary cars, and this is a true argument that it is essential part of our life. You know, psychologists claim that style of driving shows some striking features of character. And you know it is true. Car is more than a piece of a metal, it became a social phenomenon. Have you ever noticed that we often try to talk to the car as if it was a human?&lt;/p&gt;\r\n&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'NOCO Genius Boost GB30 12V UltraSafe Lithium Jump Starter', 'NOCO Genius Boost GB30 12V UltraSafe Lithium Jump Starter', 'NOCO Genius Boost GB30 12V UltraSafe Lithium Jump Starter', 'NOCO Genius Boost GB30 12V UltraSafe Lithium Jump Starter'),
-(49, 1, 'Sport Shock Absorber High Tec Fiat 500 74 KW', '&lt;iframe src=&quot;//www.youtube.com/embed/CHsMnE_iUWQ?Rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;wmode=transparent&quot; allowfullscreen=&quot;&quot; height=&quot;415&quot; width=&quot;738&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place. Even if you don’t like speed and power, racing and all this stuff, but you love your car, you are still in the right place because you might be interested in professional spare parts. Nowadays car is not just a vehicle, it is a part of you, it influences your style and your character. Car is a part of culture because we spend a significant amount of time of our lives by the steering wheel. We spend endless hours in traffic jams; we like to eat in a car, like to listen to music and so on. Our industry made a great number of legendary cars, and this is a true argument that it is essential part of our life. You know, psychologists claim that style of driving shows some striking features of character. And you know it is true. Car is more than a piece of a metal, it became a social phenomenon. Have you ever noticed that we often try to talk to the car as if it was a human?&lt;/p&gt;\r\n&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Sport Shock Absorber High Tec Fiat 500 74 KW', 'Sport Shock Absorber High Tec Fiat 500 74 KW', 'Sport Shock Absorber High Tec Fiat 500 74 KW', 'Sport Shock Absorber High Tec Fiat 500 74 KW'),
-(44, 1, 'Spare Parts Headlight Left Ford KA (TYP RBT)', '&lt;iframe src=&quot;//www.youtube.com/embed/CHsMnE_iUWQ?Rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;wmode=transparent&quot; allowfullscreen=&quot;&quot; height=&quot;415&quot; width=&quot;738&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place. Even if you don’t like speed and power, racing and all this stuff, but you love your car, you are still in the right place because you might be interested in professional spare parts. Nowadays car is not just a vehicle, it is a part of you, it influences your style and your character. Car is a part of culture because we spend a significant amount of time of our lives by the steering wheel. We spend endless hours in traffic jams; we like to eat in a car, like to listen to music and so on. Our industry made a great number of legendary cars, and this is a true argument that it is essential part of our life. You know, psychologists claim that style of driving shows some striking features of character. And you know it is true. Car is more than a piece of a metal, it became a social phenomenon. Have you ever noticed that we often try to talk to the car as if it was a human?&lt;/p&gt;\r\n&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Spare Parts Headlight Left Ford KA (TYP RBT)', 'Spare Parts Headlight Left Ford KA (TYP RBT)', 'Spare Parts Headlight Left Ford KA (TYP RBT)', 'Spare Parts Headlight Left Ford KA (TYP RBT)'),
-(46, 2, 'Sport Air Filter Replacement Filter Peugeot 206', '&lt;iframe src=&quot;//www.youtube.com/embed/CHsMnE_iUWQ?Rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;wmode=transparent&quot; allowfullscreen=&quot;&quot; height=&quot;415&quot; width=&quot;738&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place. Even if you don’t like speed and power, racing and all this stuff, but you love your car, you are still in the right place because you might be interested in professional spare parts. Nowadays car is not just a vehicle, it is a part of you, it influences your style and your character. Car is a part of culture because we spend a significant amount of time of our lives by the steering wheel. We spend endless hours in traffic jams; we like to eat in a car, like to listen to music and so on. Our industry made a great number of legendary cars, and this is a true argument that it is essential part of our life. You know, psychologists claim that style of driving shows some striking features of character. And you know it is true. Car is more than a piece of a metal, it became a social phenomenon. Have you ever noticed that we often try to talk to the car as if it was a human?&lt;/p&gt;\r\n&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Sport Air Filter Replacement Filter Peugeot 206', 'Sport Air Filter Replacement Filter Peugeot 206', 'Sport Air Filter Replacement Filter Peugeot 206', 'Sport Air Filter Replacement Filter Peugeot 206'),
-(46, 3, 'Sport Air Filter Replacement Filter Peugeot 206', '&lt;iframe src=&quot;//www.youtube.com/embed/CHsMnE_iUWQ?Rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;wmode=transparent&quot; allowfullscreen=&quot;&quot; height=&quot;415&quot; width=&quot;738&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place. Even if you don’t like speed and power, racing and all this stuff, but you love your car, you are still in the right place because you might be interested in professional spare parts. Nowadays car is not just a vehicle, it is a part of you, it influences your style and your character. Car is a part of culture because we spend a significant amount of time of our lives by the steering wheel. We spend endless hours in traffic jams; we like to eat in a car, like to listen to music and so on. Our industry made a great number of legendary cars, and this is a true argument that it is essential part of our life. You know, psychologists claim that style of driving shows some striking features of character. And you know it is true. Car is more than a piece of a metal, it became a social phenomenon. Have you ever noticed that we often try to talk to the car as if it was a human?&lt;/p&gt;\r\n&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Sport Air Filter Replacement Filter Peugeot 206', 'Sport Air Filter Replacement Filter Peugeot 206', 'Sport Air Filter Replacement Filter Peugeot 206', 'Sport Air Filter Replacement Filter Peugeot 206'),
-(48, 1, 'Sport Shock Absorber High Tec BMW Mini Cooper', '&lt;iframe src=&quot;//www.youtube.com/embed/CHsMnE_iUWQ?Rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;wmode=transparent&quot; allowfullscreen=&quot;&quot; height=&quot;415&quot; width=&quot;738&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place. Even if you don’t like speed and power, racing and all this stuff, but you love your car, you are still in the right place because you might be interested in professional spare parts. Nowadays car is not just a vehicle, it is a part of you, it influences your style and your character. Car is a part of culture because we spend a significant amount of time of our lives by the steering wheel. We spend endless hours in traffic jams; we like to eat in a car, like to listen to music and so on. Our industry made a great number of legendary cars, and this is a true argument that it is essential part of our life. You know, psychologists claim that style of driving shows some striking features of character. And you know it is true. Car is more than a piece of a metal, it became a social phenomenon. Have you ever noticed that we often try to talk to the car as if it was a human?&lt;/p&gt;\r\n&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Sport Shock Absorber High Tec BMW Mini Cooper', 'Sport Shock Absorber High Tec BMW Mini Cooper', 'Sport Shock Absorber High Tec BMW Mini Cooper', 'Sport Shock Absorber High Tec BMW Mini Cooper'),
-(48, 2, 'Sport Shock Absorber High Tec BMW Mini Cooper', '&lt;iframe src=&quot;//www.youtube.com/embed/CHsMnE_iUWQ?Rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;wmode=transparent&quot; allowfullscreen=&quot;&quot; height=&quot;415&quot; width=&quot;738&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place. Even if you don’t like speed and power, racing and all this stuff, but you love your car, you are still in the right place because you might be interested in professional spare parts. Nowadays car is not just a vehicle, it is a part of you, it influences your style and your character. Car is a part of culture because we spend a significant amount of time of our lives by the steering wheel. We spend endless hours in traffic jams; we like to eat in a car, like to listen to music and so on. Our industry made a great number of legendary cars, and this is a true argument that it is essential part of our life. You know, psychologists claim that style of driving shows some striking features of character. And you know it is true. Car is more than a piece of a metal, it became a social phenomenon. Have you ever noticed that we often try to talk to the car as if it was a human?&lt;/p&gt;\r\n&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Sport Shock Absorber High Tec BMW Mini Cooper', 'Sport Shock Absorber High Tec BMW Mini Cooper', 'Sport Shock Absorber High Tec BMW Mini Cooper', 'Sport Shock Absorber High Tec BMW Mini Cooper'),
-(48, 3, 'Sport Shock Absorber High Tec BMW Mini Cooper', '&lt;iframe src=&quot;//www.youtube.com/embed/CHsMnE_iUWQ?Rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;wmode=transparent&quot; allowfullscreen=&quot;&quot; height=&quot;415&quot; width=&quot;738&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place. Even if you don’t like speed and power, racing and all this stuff, but you love your car, you are still in the right place because you might be interested in professional spare parts. Nowadays car is not just a vehicle, it is a part of you, it influences your style and your character. Car is a part of culture because we spend a significant amount of time of our lives by the steering wheel. We spend endless hours in traffic jams; we like to eat in a car, like to listen to music and so on. Our industry made a great number of legendary cars, and this is a true argument that it is essential part of our life. You know, psychologists claim that style of driving shows some striking features of character. And you know it is true. Car is more than a piece of a metal, it became a social phenomenon. Have you ever noticed that we often try to talk to the car as if it was a human?&lt;/p&gt;\r\n&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Sport Shock Absorber High Tec BMW Mini Cooper', 'Sport Shock Absorber High Tec BMW Mini Cooper', 'Sport Shock Absorber High Tec BMW Mini Cooper', 'Sport Shock Absorber High Tec BMW Mini Cooper'),
-(28, 2, 'Air Intake Hose for Toyota Camry 2.2L 4CYL', '&lt;iframe src=&quot;//www.youtube.com/embed/CHsMnE_iUWQ?Rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;wmode=transparent&quot; allowfullscreen=&quot;&quot; height=&quot;415&quot; width=&quot;738&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place. Even if you don’t like speed and power, racing and all this stuff, but you love your car, you are still in the right place because you might be interested in professional spare parts. Nowadays car is not just a vehicle, it is a part of you, it influences your style and your character. Car is a part of culture because we spend a significant amount of time of our lives by the steering wheel. We spend endless hours in traffic jams; we like to eat in a car, like to listen to music and so on. Our industry made a great number of legendary cars, and this is a true argument that it is essential part of our life. You know, psychologists claim that style of driving shows some striking features of character. And you know it is true. Car is more than a piece of a metal, it became a social phenomenon. Have you ever noticed that we often try to talk to the car as if it was a human?&lt;/p&gt;\r\n&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Air Intake Hose for Toyota Camry 2.2L 4CYL', 'Air Intake Hose for Toyota Camry 2.2L 4CYL', 'Air Intake Hose for Toyota Camry 2.2L 4CYL', 'Air Intake Hose for Toyota Camry 2.2L 4CYL'),
-(28, 3, 'Air Intake Hose for Toyota Camry 2.2L 4CYL', '&lt;iframe src=&quot;//www.youtube.com/embed/CHsMnE_iUWQ?Rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;wmode=transparent&quot; allowfullscreen=&quot;&quot; height=&quot;415&quot; width=&quot;738&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place. Even if you don’t like speed and power, racing and all this stuff, but you love your car, you are still in the right place because you might be interested in professional spare parts. Nowadays car is not just a vehicle, it is a part of you, it influences your style and your character. Car is a part of culture because we spend a significant amount of time of our lives by the steering wheel. We spend endless hours in traffic jams; we like to eat in a car, like to listen to music and so on. Our industry made a great number of legendary cars, and this is a true argument that it is essential part of our life. You know, psychologists claim that style of driving shows some striking features of character. And you know it is true. Car is more than a piece of a metal, it became a social phenomenon. Have you ever noticed that we often try to talk to the car as if it was a human?&lt;/p&gt;\r\n&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Air Intake Hose for Toyota Camry 2.2L 4CYL', 'Air Intake Hose for Toyota Camry 2.2L 4CYL', 'Air Intake Hose for Toyota Camry 2.2L 4CYL', 'Air Intake Hose for Toyota Camry 2.2L 4CYL');
-INSERT INTO `oc_product_description` (`product_id`, `language_id`, `name`, `description`, `tag`, `meta_title`, `meta_description`, `meta_keyword`) VALUES
-(30, 2, 'Carbon Bonnet Hood Opel Astra J', '&lt;iframe src=&quot;//www.youtube.com/embed/CHsMnE_iUWQ?Rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;wmode=transparent&quot; allowfullscreen=&quot;&quot; height=&quot;415&quot; width=&quot;738&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place. Even if you don’t like speed and power, racing and all this stuff, but you love your car, you are still in the right place because you might be interested in professional spare parts. Nowadays car is not just a vehicle, it is a part of you, it influences your style and your character. Car is a part of culture because we spend a significant amount of time of our lives by the steering wheel. We spend endless hours in traffic jams; we like to eat in a car, like to listen to music and so on. Our industry made a great number of legendary cars, and this is a true argument that it is essential part of our life. You know, psychologists claim that style of driving shows some striking features of character. And you know it is true. Car is more than a piece of a metal, it became a social phenomenon. Have you ever noticed that we often try to talk to the car as if it was a human?&lt;/p&gt;\r\n&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Carbon Bonnet Hood Opel Astra J', 'Carbon Bonnet Hood Opel Astra J', 'Carbon Bonnet Hood Opel Astra J', 'Carbon Bonnet Hood Opel Astra J'),
-(30, 3, 'Carbon Bonnet Hood Opel Astra J', '&lt;iframe src=&quot;//www.youtube.com/embed/CHsMnE_iUWQ?Rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;wmode=transparent&quot; allowfullscreen=&quot;&quot; height=&quot;415&quot; width=&quot;738&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place. Even if you don’t like speed and power, racing and all this stuff, but you love your car, you are still in the right place because you might be interested in professional spare parts. Nowadays car is not just a vehicle, it is a part of you, it influences your style and your character. Car is a part of culture because we spend a significant amount of time of our lives by the steering wheel. We spend endless hours in traffic jams; we like to eat in a car, like to listen to music and so on. Our industry made a great number of legendary cars, and this is a true argument that it is essential part of our life. You know, psychologists claim that style of driving shows some striking features of character. And you know it is true. Car is more than a piece of a metal, it became a social phenomenon. Have you ever noticed that we often try to talk to the car as if it was a human?&lt;/p&gt;\r\n&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Carbon Bonnet Hood Opel Astra J', 'Carbon Bonnet Hood Opel Astra J', 'Carbon Bonnet Hood Opel Astra J', 'Carbon Bonnet Hood Opel Astra J'),
-(31, 3, 'Daylight Headlight Set Audi A6 Typ 4b', '&lt;iframe src=&quot;//www.youtube.com/embed/CHsMnE_iUWQ?Rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;wmode=transparent&quot; allowfullscreen=&quot;&quot; height=&quot;415&quot; width=&quot;738&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place. Even if you don’t like speed and power, racing and all this stuff, but you love your car, you are still in the right place because you might be interested in professional spare parts. Nowadays car is not just a vehicle, it is a part of you, it influences your style and your character. Car is a part of culture because we spend a significant amount of time of our lives by the steering wheel. We spend endless hours in traffic jams; we like to eat in a car, like to listen to music and so on. Our industry made a great number of legendary cars, and this is a true argument that it is essential part of our life. You know, psychologists claim that style of driving shows some striking features of character. And you know it is true. Car is more than a piece of a metal, it became a social phenomenon. Have you ever noticed that we often try to talk to the car as if it was a human?&lt;/p&gt;\r\n&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Daylight Headlight Set Audi A6 Typ 4b', 'Daylight Headlight Set Audi A6 Typ 4b', 'Daylight Headlight Set Audi A6 Typ 4b', 'Daylight Headlight Set Audi A6 Typ 4b'),
-(33, 2, 'FRS BRZ WRX FA20 Stage 3 Short Block', '&lt;iframe src=&quot;//www.youtube.com/embed/CHsMnE_iUWQ?Rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;wmode=transparent&quot; allowfullscreen=&quot;&quot; height=&quot;415&quot; width=&quot;738&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place. Even if you don’t like speed and power, racing and all this stuff, but you love your car, you are still in the right place because you might be interested in professional spare parts. Nowadays car is not just a vehicle, it is a part of you, it influences your style and your character. Car is a part of culture because we spend a significant amount of time of our lives by the steering wheel. We spend endless hours in traffic jams; we like to eat in a car, like to listen to music and so on. Our industry made a great number of legendary cars, and this is a true argument that it is essential part of our life. You know, psychologists claim that style of driving shows some striking features of character. And you know it is true. Car is more than a piece of a metal, it became a social phenomenon. Have you ever noticed that we often try to talk to the car as if it was a human?&lt;/p&gt;\r\n&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'FRS BRZ WRX FA20 Stage 3 Short Block', 'FRS BRZ WRX FA20 Stage 3 Short Block', 'FRS BRZ WRX FA20 Stage 3 Short Block', 'FRS BRZ WRX FA20 Stage 3 Short Block'),
-(33, 3, 'FRS BRZ WRX FA20 Stage 3 Short Block', '&lt;iframe src=&quot;//www.youtube.com/embed/CHsMnE_iUWQ?Rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;wmode=transparent&quot; allowfullscreen=&quot;&quot; height=&quot;415&quot; width=&quot;738&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place. Even if you don’t like speed and power, racing and all this stuff, but you love your car, you are still in the right place because you might be interested in professional spare parts. Nowadays car is not just a vehicle, it is a part of you, it influences your style and your character. Car is a part of culture because we spend a significant amount of time of our lives by the steering wheel. We spend endless hours in traffic jams; we like to eat in a car, like to listen to music and so on. Our industry made a great number of legendary cars, and this is a true argument that it is essential part of our life. You know, psychologists claim that style of driving shows some striking features of character. And you know it is true. Car is more than a piece of a metal, it became a social phenomenon. Have you ever noticed that we often try to talk to the car as if it was a human?&lt;/p&gt;\r\n&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'FRS BRZ WRX FA20 Stage 3 Short Block', 'FRS BRZ WRX FA20 Stage 3 Short Block', 'FRS BRZ WRX FA20 Stage 3 Short Block', 'FRS BRZ WRX FA20 Stage 3 Short Block'),
-(34, 1, 'Headlight Daylight Mercedes E Class 211', '&lt;iframe src=&quot;//www.youtube.com/embed/CHsMnE_iUWQ?Rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;wmode=transparent&quot; allowfullscreen=&quot;&quot; height=&quot;415&quot; width=&quot;738&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place. Even if you don’t like speed and power, racing and all this stuff, but you love your car, you are still in the right place because you might be interested in professional spare parts. Nowadays car is not just a vehicle, it is a part of you, it influences your style and your character. Car is a part of culture because we spend a significant amount of time of our lives by the steering wheel. We spend endless hours in traffic jams; we like to eat in a car, like to listen to music and so on. Our industry made a great number of legendary cars, and this is a true argument that it is essential part of our life. You know, psychologists claim that style of driving shows some striking features of character. And you know it is true. Car is more than a piece of a metal, it became a social phenomenon. Have you ever noticed that we often try to talk to the car as if it was a human?&lt;/p&gt;\r\n&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Headlight Daylight Mercedes E Class 211', 'Headlight Daylight Mercedes E Class 211', 'Headlight Daylight Mercedes E Class 211', 'Headlight Daylight Mercedes E Class 211'),
-(34, 2, 'Headlight Daylight Mercedes E Class 211', '&lt;iframe src=&quot;//www.youtube.com/embed/CHsMnE_iUWQ?Rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;wmode=transparent&quot; allowfullscreen=&quot;&quot; height=&quot;415&quot; width=&quot;738&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place. Even if you don’t like speed and power, racing and all this stuff, but you love your car, you are still in the right place because you might be interested in professional spare parts. Nowadays car is not just a vehicle, it is a part of you, it influences your style and your character. Car is a part of culture because we spend a significant amount of time of our lives by the steering wheel. We spend endless hours in traffic jams; we like to eat in a car, like to listen to music and so on. Our industry made a great number of legendary cars, and this is a true argument that it is essential part of our life. You know, psychologists claim that style of driving shows some striking features of character. And you know it is true. Car is more than a piece of a metal, it became a social phenomenon. Have you ever noticed that we often try to talk to the car as if it was a human?&lt;/p&gt;\r\n&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Headlight Daylight Mercedes E Class 211', 'Headlight Daylight Mercedes E Class 211', 'Headlight Daylight Mercedes E Class 211', 'Headlight Daylight Mercedes E Class 211'),
-(34, 3, 'Headlight Daylight Mercedes E Class 211', '&lt;iframe src=&quot;//www.youtube.com/embed/CHsMnE_iUWQ?Rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;wmode=transparent&quot; allowfullscreen=&quot;&quot; height=&quot;415&quot; width=&quot;738&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place. Even if you don’t like speed and power, racing and all this stuff, but you love your car, you are still in the right place because you might be interested in professional spare parts. Nowadays car is not just a vehicle, it is a part of you, it influences your style and your character. Car is a part of culture because we spend a significant amount of time of our lives by the steering wheel. We spend endless hours in traffic jams; we like to eat in a car, like to listen to music and so on. Our industry made a great number of legendary cars, and this is a true argument that it is essential part of our life. You know, psychologists claim that style of driving shows some striking features of character. And you know it is true. Car is more than a piece of a metal, it became a social phenomenon. Have you ever noticed that we often try to talk to the car as if it was a human?&lt;/p&gt;\r\n&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Headlight Daylight Mercedes E Class 211', 'Headlight Daylight Mercedes E Class 211', 'Headlight Daylight Mercedes E Class 211', 'Headlight Daylight Mercedes E Class 211'),
-(36, 3, 'Lamborghini Gallardo LP 520 Front Differential', '&lt;iframe src=&quot;//www.youtube.com/embed/CHsMnE_iUWQ?Rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;wmode=transparent&quot; allowfullscreen=&quot;&quot; height=&quot;415&quot; width=&quot;738&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place. Even if you don’t like speed and power, racing and all this stuff, but you love your car, you are still in the right place because you might be interested in professional spare parts. Nowadays car is not just a vehicle, it is a part of you, it influences your style and your character. Car is a part of culture because we spend a significant amount of time of our lives by the steering wheel. We spend endless hours in traffic jams; we like to eat in a car, like to listen to music and so on. Our industry made a great number of legendary cars, and this is a true argument that it is essential part of our life. You know, psychologists claim that style of driving shows some striking features of character. And you know it is true. Car is more than a piece of a metal, it became a social phenomenon. Have you ever noticed that we often try to talk to the car as if it was a human?&lt;/p&gt;\r\n&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Lamborghini Gallardo LP 520 Front Differential', 'Lamborghini Gallardo LP 520 Front Differential', 'Lamborghini Gallardo LP 520 Front Differential', 'Lamborghini Gallardo LP 520 Front Differential'),
-(36, 2, 'Lamborghini Gallardo LP 520 Front Differential', '&lt;iframe src=&quot;//www.youtube.com/embed/CHsMnE_iUWQ?Rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;wmode=transparent&quot; allowfullscreen=&quot;&quot; height=&quot;415&quot; width=&quot;738&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place. Even if you don’t like speed and power, racing and all this stuff, but you love your car, you are still in the right place because you might be interested in professional spare parts. Nowadays car is not just a vehicle, it is a part of you, it influences your style and your character. Car is a part of culture because we spend a significant amount of time of our lives by the steering wheel. We spend endless hours in traffic jams; we like to eat in a car, like to listen to music and so on. Our industry made a great number of legendary cars, and this is a true argument that it is essential part of our life. You know, psychologists claim that style of driving shows some striking features of character. And you know it is true. Car is more than a piece of a metal, it became a social phenomenon. Have you ever noticed that we often try to talk to the car as if it was a human?&lt;/p&gt;\r\n&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Lamborghini Gallardo LP 520 Front Differential', 'Lamborghini Gallardo LP 520 Front Differential', 'Lamborghini Gallardo LP 520 Front Differential', 'Lamborghini Gallardo LP 520 Front Differential'),
-(40, 3, 'Maserati Granturismo Gearbox Transmission', '&lt;iframe src=&quot;//www.youtube.com/embed/CHsMnE_iUWQ?Rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;wmode=transparent&quot; allowfullscreen=&quot;&quot; height=&quot;415&quot; width=&quot;738&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place. Even if you don’t like speed and power, racing and all this stuff, but you love your car, you are still in the right place because you might be interested in professional spare parts. Nowadays car is not just a vehicle, it is a part of you, it influences your style and your character. Car is a part of culture because we spend a significant amount of time of our lives by the steering wheel. We spend endless hours in traffic jams; we like to eat in a car, like to listen to music and so on. Our industry made a great number of legendary cars, and this is a true argument that it is essential part of our life. You know, psychologists claim that style of driving shows some striking features of character. And you know it is true. Car is more than a piece of a metal, it became a social phenomenon. Have you ever noticed that we often try to talk to the car as if it was a human?&lt;/p&gt;\r\n&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Maserati Granturismo Gearbox Transmission', 'Maserati Granturismo Gearbox Transmission', 'Maserati Granturismo Gearbox Transmission', 'Maserati Granturismo Gearbox Transmission'),
-(41, 2, 'NOCO Genius Boost GB30 12V UltraSafe Lithium Jump Starter', '&lt;iframe src=&quot;//www.youtube.com/embed/CHsMnE_iUWQ?Rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;wmode=transparent&quot; allowfullscreen=&quot;&quot; height=&quot;415&quot; width=&quot;738&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place. Even if you don’t like speed and power, racing and all this stuff, but you love your car, you are still in the right place because you might be interested in professional spare parts. Nowadays car is not just a vehicle, it is a part of you, it influences your style and your character. Car is a part of culture because we spend a significant amount of time of our lives by the steering wheel. We spend endless hours in traffic jams; we like to eat in a car, like to listen to music and so on. Our industry made a great number of legendary cars, and this is a true argument that it is essential part of our life. You know, psychologists claim that style of driving shows some striking features of character. And you know it is true. Car is more than a piece of a metal, it became a social phenomenon. Have you ever noticed that we often try to talk to the car as if it was a human?&lt;/p&gt;\r\n&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'NOCO Genius Boost GB30 12V UltraSafe Lithium Jump Starter', 'NOCO Genius Boost GB30 12V UltraSafe Lithium Jump Starter', 'NOCO Genius Boost GB30 12V UltraSafe Lithium Jump Starter', 'NOCO Genius Boost GB30 12V UltraSafe Lithium Jump Starter'),
-(41, 3, 'NOCO Genius Boost GB30 12V UltraSafe Lithium Jump Starter', '&lt;iframe src=&quot;//www.youtube.com/embed/CHsMnE_iUWQ?Rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;wmode=transparent&quot; allowfullscreen=&quot;&quot; height=&quot;415&quot; width=&quot;738&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place. Even if you don’t like speed and power, racing and all this stuff, but you love your car, you are still in the right place because you might be interested in professional spare parts. Nowadays car is not just a vehicle, it is a part of you, it influences your style and your character. Car is a part of culture because we spend a significant amount of time of our lives by the steering wheel. We spend endless hours in traffic jams; we like to eat in a car, like to listen to music and so on. Our industry made a great number of legendary cars, and this is a true argument that it is essential part of our life. You know, psychologists claim that style of driving shows some striking features of character. And you know it is true. Car is more than a piece of a metal, it became a social phenomenon. Have you ever noticed that we often try to talk to the car as if it was a human?&lt;/p&gt;\r\n&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'NOCO Genius Boost GB30 12V UltraSafe Lithium Jump Starter', 'NOCO Genius Boost GB30 12V UltraSafe Lithium Jump Starter', 'NOCO Genius Boost GB30 12V UltraSafe Lithium Jump Starter', 'NOCO Genius Boost GB30 12V UltraSafe Lithium Jump Starter'),
-(42, 2, 'Portseat Set Las Vegas Artificial Leather Black', '&lt;iframe src=&quot;//www.youtube.com/embed/CHsMnE_iUWQ?Rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;wmode=transparent&quot; allowfullscreen=&quot;&quot; height=&quot;415&quot; width=&quot;738&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place. Even if you don’t like speed and power, racing and all this stuff, but you love your car, you are still in the right place because you might be interested in professional spare parts. Nowadays car is not just a vehicle, it is a part of you, it influences your style and your character. Car is a part of culture because we spend a significant amount of time of our lives by the steering wheel. We spend endless hours in traffic jams; we like to eat in a car, like to listen to music and so on. Our industry made a great number of legendary cars, and this is a true argument that it is essential part of our life. You know, psychologists claim that style of driving shows some striking features of character. And you know it is true. Car is more than a piece of a metal, it became a social phenomenon. Have you ever noticed that we often try to talk to the car as if it was a human?&lt;/p&gt;\r\n&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Portseat Set Las Vegas Artificial Leather Black', 'Portseat Set Las Vegas Artificial Leather Black', 'Portseat Set Las Vegas Artificial Leather Black', 'Portseat Set Las Vegas Artificial Leather Black'),
-(42, 3, 'Portseat Set Las Vegas Artificial Leather Black', '&lt;iframe src=&quot;//www.youtube.com/embed/CHsMnE_iUWQ?Rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;wmode=transparent&quot; allowfullscreen=&quot;&quot; height=&quot;415&quot; width=&quot;738&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place. Even if you don’t like speed and power, racing and all this stuff, but you love your car, you are still in the right place because you might be interested in professional spare parts. Nowadays car is not just a vehicle, it is a part of you, it influences your style and your character. Car is a part of culture because we spend a significant amount of time of our lives by the steering wheel. We spend endless hours in traffic jams; we like to eat in a car, like to listen to music and so on. Our industry made a great number of legendary cars, and this is a true argument that it is essential part of our life. You know, psychologists claim that style of driving shows some striking features of character. And you know it is true. Car is more than a piece of a metal, it became a social phenomenon. Have you ever noticed that we often try to talk to the car as if it was a human?&lt;/p&gt;\r\n&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Portseat Set Las Vegas Artificial Leather Black', 'Portseat Set Las Vegas Artificial Leather Black', 'Portseat Set Las Vegas Artificial Leather Black', 'Portseat Set Las Vegas Artificial Leather Black'),
-(43, 3, 'Richmond Gear Super Street 5 Speed Transmission', '&lt;iframe src=&quot;//www.youtube.com/embed/CHsMnE_iUWQ?Rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;wmode=transparent&quot; allowfullscreen=&quot;&quot; height=&quot;415&quot; width=&quot;738&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place. Even if you don’t like speed and power, racing and all this stuff, but you love your car, you are still in the right place because you might be interested in professional spare parts. Nowadays car is not just a vehicle, it is a part of you, it influences your style and your character. Car is a part of culture because we spend a significant amount of time of our lives by the steering wheel. We spend endless hours in traffic jams; we like to eat in a car, like to listen to music and so on. Our industry made a great number of legendary cars, and this is a true argument that it is essential part of our life. You know, psychologists claim that style of driving shows some striking features of character. And you know it is true. Car is more than a piece of a metal, it became a social phenomenon. Have you ever noticed that we often try to talk to the car as if it was a human?&lt;/p&gt;\r\n&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Richmond Gear Super Street 5 Speed Transmission', 'Richmond Gear Super Street 5 Speed Transmission', 'Richmond Gear Super Street 5 Speed Transmission', 'Richmond Gear Super Street 5 Speed Transmission'),
-(44, 2, 'Spare Parts Headlight Left Ford KA (TYP RBT)', '&lt;iframe src=&quot;//www.youtube.com/embed/CHsMnE_iUWQ?Rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;wmode=transparent&quot; allowfullscreen=&quot;&quot; height=&quot;415&quot; width=&quot;738&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place. Even if you don’t like speed and power, racing and all this stuff, but you love your car, you are still in the right place because you might be interested in professional spare parts. Nowadays car is not just a vehicle, it is a part of you, it influences your style and your character. Car is a part of culture because we spend a significant amount of time of our lives by the steering wheel. We spend endless hours in traffic jams; we like to eat in a car, like to listen to music and so on. Our industry made a great number of legendary cars, and this is a true argument that it is essential part of our life. You know, psychologists claim that style of driving shows some striking features of character. And you know it is true. Car is more than a piece of a metal, it became a social phenomenon. Have you ever noticed that we often try to talk to the car as if it was a human?&lt;/p&gt;\r\n&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Spare Parts Headlight Left Ford KA (TYP RBT)', 'Spare Parts Headlight Left Ford KA (TYP RBT)', 'Spare Parts Headlight Left Ford KA (TYP RBT)', 'Spare Parts Headlight Left Ford KA (TYP RBT)'),
-(44, 3, 'Spare Parts Headlight Left Ford KA (TYP RBT)', '&lt;iframe src=&quot;//www.youtube.com/embed/CHsMnE_iUWQ?Rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;wmode=transparent&quot; allowfullscreen=&quot;&quot; height=&quot;415&quot; width=&quot;738&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place. Even if you don’t like speed and power, racing and all this stuff, but you love your car, you are still in the right place because you might be interested in professional spare parts. Nowadays car is not just a vehicle, it is a part of you, it influences your style and your character. Car is a part of culture because we spend a significant amount of time of our lives by the steering wheel. We spend endless hours in traffic jams; we like to eat in a car, like to listen to music and so on. Our industry made a great number of legendary cars, and this is a true argument that it is essential part of our life. You know, psychologists claim that style of driving shows some striking features of character. And you know it is true. Car is more than a piece of a metal, it became a social phenomenon. Have you ever noticed that we often try to talk to the car as if it was a human?&lt;/p&gt;\r\n&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Spare Parts Headlight Left Ford KA (TYP RBT)', 'Spare Parts Headlight Left Ford KA (TYP RBT)', 'Spare Parts Headlight Left Ford KA (TYP RBT)', 'Spare Parts Headlight Left Ford KA (TYP RBT)');
-INSERT INTO `oc_product_description` (`product_id`, `language_id`, `name`, `description`, `tag`, `meta_title`, `meta_description`, `meta_keyword`) VALUES
-(45, 3, 'Sport Air Filter Replacement Filter Audi A6', '&lt;iframe src=&quot;//www.youtube.com/embed/CHsMnE_iUWQ?Rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;wmode=transparent&quot; allowfullscreen=&quot;&quot; height=&quot;415&quot; width=&quot;738&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place. Even if you don’t like speed and power, racing and all this stuff, but you love your car, you are still in the right place because you might be interested in professional spare parts. Nowadays car is not just a vehicle, it is a part of you, it influences your style and your character. Car is a part of culture because we spend a significant amount of time of our lives by the steering wheel. We spend endless hours in traffic jams; we like to eat in a car, like to listen to music and so on. Our industry made a great number of legendary cars, and this is a true argument that it is essential part of our life. You know, psychologists claim that style of driving shows some striking features of character. And you know it is true. Car is more than a piece of a metal, it became a social phenomenon. Have you ever noticed that we often try to talk to the car as if it was a human?&lt;/p&gt;\r\n&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Sport Air Filter Replacement Filter Audi A6', 'Sport Air Filter Replacement Filter Audi A6', 'Sport Air Filter Replacement Filter Audi A6', 'Sport Air Filter Replacement Filter Audi A6'),
-(45, 1, 'Sport Air Filter Replacement Filter Audi A6', '&lt;iframe src=&quot;//www.youtube.com/embed/CHsMnE_iUWQ?Rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;wmode=transparent&quot; allowfullscreen=&quot;&quot; height=&quot;415&quot; width=&quot;738&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place. Even if you don’t like speed and power, racing and all this stuff, but you love your car, you are still in the right place because you might be interested in professional spare parts. Nowadays car is not just a vehicle, it is a part of you, it influences your style and your character. Car is a part of culture because we spend a significant amount of time of our lives by the steering wheel. We spend endless hours in traffic jams; we like to eat in a car, like to listen to music and so on. Our industry made a great number of legendary cars, and this is a true argument that it is essential part of our life. You know, psychologists claim that style of driving shows some striking features of character. And you know it is true. Car is more than a piece of a metal, it became a social phenomenon. Have you ever noticed that we often try to talk to the car as if it was a human?&lt;/p&gt;\r\n&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Sport Air Filter Replacement Filter Audi A6', 'Sport Air Filter Replacement Filter Audi A6', 'Sport Air Filter Replacement Filter Audi A6', 'Sport Air Filter Replacement Filter Audi A6'),
-(45, 2, 'Sport Air Filter Replacement Filter Audi A6', '&lt;iframe src=&quot;//www.youtube.com/embed/CHsMnE_iUWQ?Rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;wmode=transparent&quot; allowfullscreen=&quot;&quot; height=&quot;415&quot; width=&quot;738&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place. Even if you don’t like speed and power, racing and all this stuff, but you love your car, you are still in the right place because you might be interested in professional spare parts. Nowadays car is not just a vehicle, it is a part of you, it influences your style and your character. Car is a part of culture because we spend a significant amount of time of our lives by the steering wheel. We spend endless hours in traffic jams; we like to eat in a car, like to listen to music and so on. Our industry made a great number of legendary cars, and this is a true argument that it is essential part of our life. You know, psychologists claim that style of driving shows some striking features of character. And you know it is true. Car is more than a piece of a metal, it became a social phenomenon. Have you ever noticed that we often try to talk to the car as if it was a human?&lt;/p&gt;\r\n&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Sport Air Filter Replacement Filter Audi A6', 'Sport Air Filter Replacement Filter Audi A6', 'Sport Air Filter Replacement Filter Audi A6', 'Sport Air Filter Replacement Filter Audi A6'),
-(47, 1, 'Sportseat Set Evolution Fabric Red', '&lt;iframe src=&quot;//www.youtube.com/embed/CHsMnE_iUWQ?Rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;wmode=transparent&quot; allowfullscreen=&quot;&quot; height=&quot;415&quot; width=&quot;738&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place. Even if you don’t like speed and power, racing and all this stuff, but you love your car, you are still in the right place because you might be interested in professional spare parts. Nowadays car is not just a vehicle, it is a part of you, it influences your style and your character. Car is a part of culture because we spend a significant amount of time of our lives by the steering wheel. We spend endless hours in traffic jams; we like to eat in a car, like to listen to music and so on. Our industry made a great number of legendary cars, and this is a true argument that it is essential part of our life. You know, psychologists claim that style of driving shows some striking features of character. And you know it is true. Car is more than a piece of a metal, it became a social phenomenon. Have you ever noticed that we often try to talk to the car as if it was a human?&lt;/p&gt;\r\n&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Sportseat Set Evolution Fabric Red', 'Sportseat Set Evolution Fabric Red', 'Sportseat Set Evolution Fabric Red', 'Sportseat Set Evolution Fabric Red'),
-(49, 3, 'Sport Shock Absorber High Tec Fiat 500 74 KW', '&lt;iframe src=&quot;//www.youtube.com/embed/CHsMnE_iUWQ?Rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;wmode=transparent&quot; allowfullscreen=&quot;&quot; height=&quot;415&quot; width=&quot;738&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place. Even if you don’t like speed and power, racing and all this stuff, but you love your car, you are still in the right place because you might be interested in professional spare parts. Nowadays car is not just a vehicle, it is a part of you, it influences your style and your character. Car is a part of culture because we spend a significant amount of time of our lives by the steering wheel. We spend endless hours in traffic jams; we like to eat in a car, like to listen to music and so on. Our industry made a great number of legendary cars, and this is a true argument that it is essential part of our life. You know, psychologists claim that style of driving shows some striking features of character. And you know it is true. Car is more than a piece of a metal, it became a social phenomenon. Have you ever noticed that we often try to talk to the car as if it was a human?&lt;/p&gt;\r\n&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Sport Shock Absorber High Tec Fiat 500 74 KW', 'Sport Shock Absorber High Tec Fiat 500 74 KW', 'Sport Shock Absorber High Tec Fiat 500 74 KW', 'Sport Shock Absorber High Tec Fiat 500 74 KW'),
-(49, 2, 'Sport Shock Absorber High Tec Fiat 500 74 KW', '&lt;iframe src=&quot;//www.youtube.com/embed/CHsMnE_iUWQ?Rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;wmode=transparent&quot; allowfullscreen=&quot;&quot; height=&quot;415&quot; width=&quot;738&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place. Even if you don’t like speed and power, racing and all this stuff, but you love your car, you are still in the right place because you might be interested in professional spare parts. Nowadays car is not just a vehicle, it is a part of you, it influences your style and your character. Car is a part of culture because we spend a significant amount of time of our lives by the steering wheel. We spend endless hours in traffic jams; we like to eat in a car, like to listen to music and so on. Our industry made a great number of legendary cars, and this is a true argument that it is essential part of our life. You know, psychologists claim that style of driving shows some striking features of character. And you know it is true. Car is more than a piece of a metal, it became a social phenomenon. Have you ever noticed that we often try to talk to the car as if it was a human?&lt;/p&gt;\r\n&lt;p&gt;We are honored to present you our products. We provide auto spare parts and our main goal is to satisfy all of our customers. The secret of our success is that our goods are an unbeaten combination of high quality and fair price. We produce and sell only professional parts - that’s why we have a great number of devoted clients all over the country and there is nothing better than the happy and satisfied customers. Our goods are real bestsellers; we are offering a great list of some unique spare parts that have no analogues. We believe that everything must be perfect in our business.&lt;/p&gt;\r\n&lt;p&gt;Our parts are the standard of real reliability and durability. We use the achievements of progress and provide some new technologies. Our manufacturers and vendors guarantee its high quality.&lt;/p&gt;\r\n&lt;p&gt;Just remember that we estimate our clients and improve our support and delivery systems. And don’t forget you can save your money with the help of our system of benefits and discounts.&lt;/p&gt;\r\n&lt;p&gt;Please note that we ship nationwide, so you make an order not leaving you room. Have a positive and safe hunting and fishing experience!&lt;/p&gt;', 'Sport Shock Absorber High Tec Fiat 500 74 KW', 'Sport Shock Absorber High Tec Fiat 500 74 KW', 'Sport Shock Absorber High Tec Fiat 500 74 KW', 'Sport Shock Absorber High Tec Fiat 500 74 KW');
+(52, 1, 'test product', '&lt;p&gt;test product&amp;nbsp;test product&amp;nbsp;test product&amp;nbsp;test product&lt;br&gt;&lt;/p&gt;', 'test product', 'test product', 'test product', 'test product');
 
 -- --------------------------------------------------------
 
@@ -3756,15 +2820,6 @@ CREATE TABLE `oc_product_discount` (
   `date_end` date NOT NULL DEFAULT '0000-00-00'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `oc_product_discount`
---
-
-INSERT INTO `oc_product_discount` (`product_discount_id`, `product_id`, `customer_group_id`, `quantity`, `priority`, `price`, `date_start`, `date_end`) VALUES
-(467, 42, 1, 30, 1, '84.0000', '2017-01-01', '2020-01-01'),
-(466, 42, 1, 20, 1, '96.0000', '2017-01-01', '2020-01-01'),
-(465, 42, 1, 10, 1, '108.0000', '2017-01-01', '2020-01-01');
-
 -- --------------------------------------------------------
 
 --
@@ -3775,17 +2830,6 @@ CREATE TABLE `oc_product_filter` (
   `product_id` int(11) NOT NULL,
   `filter_id` int(11) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `oc_product_filter`
---
-
-INSERT INTO `oc_product_filter` (`product_id`, `filter_id`) VALUES
-(29, 2),
-(33, 1),
-(33, 2),
-(47, 1),
-(47, 3);
 
 -- --------------------------------------------------------
 
@@ -3800,74 +2844,6 @@ CREATE TABLE `oc_product_image` (
   `sort_order` int(3) NOT NULL DEFAULT 0
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `oc_product_image`
---
-
-INSERT INTO `oc_product_image` (`product_image_id`, `product_id`, `image`, `sort_order`) VALUES
-(2782, 41, 'catalog/products/product-42.png', 0),
-(2803, 47, 'catalog/products/product-68.png', 0),
-(2810, 29, 'catalog/products/product-7.png', 1),
-(2761, 30, 'catalog/products/product-10.png', 0),
-(2760, 30, 'catalog/products/product-11.png', 0),
-(2788, 43, 'catalog/products/product-50.png', 0),
-(2791, 44, 'catalog/products/product-54.png', 0),
-(2831, 45, 'catalog/products/product-60.png', 0),
-(2813, 33, 'catalog/products/product-23.png', 1),
-(2812, 33, 'catalog/products/product-24.png', 0),
-(2820, 46, 'catalog/products/product-62.png', 0),
-(2823, 48, 'catalog/products/product-71.png', 0),
-(2822, 48, 'catalog/products/product-70.png', 0),
-(2802, 47, 'catalog/products/product-67.png', 1),
-(2772, 34, 'catalog/products/product-27.png', 0),
-(2773, 34, 'catalog/products/product-28.png', 0),
-(2821, 48, 'catalog/products/product-72.png', 0),
-(2767, 32, 'catalog/products/product-18.png', 0),
-(2759, 30, 'catalog/products/product-12.png', 0),
-(2764, 31, 'catalog/products/product-14.png', 0),
-(2763, 31, 'catalog/products/product-15.png', 0),
-(2762, 31, 'catalog/products/product-16.png', 0),
-(2787, 43, 'catalog/products/product-51.png', 0),
-(2790, 44, 'catalog/products/product-55.png', 0),
-(2830, 45, 'catalog/products/product-59.png', 0),
-(2766, 32, 'catalog/products/product-19.png', 0),
-(2765, 32, 'catalog/products/product-20.png', 0),
-(2819, 46, 'catalog/products/product-63.png', 0),
-(2826, 49, 'catalog/products/product-76.png', 0),
-(2825, 49, 'catalog/products/product-75.png', 0),
-(2824, 49, 'catalog/products/product-74.png', 0),
-(2786, 43, 'catalog/products/product-52.png', 0),
-(2785, 42, 'catalog/products/product-46.png', 0),
-(2784, 42, 'catalog/products/product-47.png', 0),
-(2783, 42, 'catalog/products/product-48.png', 0),
-(2771, 34, 'catalog/products/product-26.png', 0),
-(2776, 35, 'catalog/products/product-30.png', 0),
-(2775, 35, 'catalog/products/product-31.png', 0),
-(2774, 35, 'catalog/products/product-32.png', 0),
-(2779, 36, 'catalog/products/product-34.png', 0),
-(2778, 36, 'catalog/products/product-35.png', 0),
-(2777, 36, 'catalog/products/product-36.png', 0),
-(2715, 40, 'catalog/products/product-38.png', 0),
-(2714, 40, 'catalog/products/product-39.png', 0),
-(2713, 40, 'catalog/products/product-40.png', 0),
-(2781, 41, 'catalog/products/product-43.png', 0),
-(2780, 41, 'catalog/products/product-44.png', 0),
-(2789, 44, 'catalog/products/product-56.png', 0),
-(2829, 45, 'catalog/products/product-58.png', 0),
-(2818, 46, 'catalog/products/product-64.png', 0),
-(2801, 47, 'catalog/products/product-66.png', 2),
-(2806, 50, 'catalog/products/product-78.png', 0),
-(2805, 50, 'catalog/products/product-79.png', 0),
-(2804, 50, 'catalog/products/product-80.png', 0),
-(2827, 28, 'catalog/products/product-3.png', 0),
-(2809, 29, 'catalog/products/product-8.png', 0),
-(2828, 28, 'catalog/products/product-4.png', 1),
-(2811, 29, 'catalog/products/product-6.png', 2),
-(2814, 33, 'catalog/products/product-22.png', 2),
-(2815, 33, 'catalog/products/product-23.png', 3),
-(2816, 33, 'catalog/products/product-21.png', 4),
-(2817, 33, 'catalog/products/product-22.png', 5);
-
 -- --------------------------------------------------------
 
 --
@@ -3881,72 +2857,6 @@ CREATE TABLE `oc_product_option` (
   `value` text NOT NULL,
   `required` tinyint(1) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `oc_product_option`
---
-
-INSERT INTO `oc_product_option` (`product_option_id`, `product_id`, `option_id`, `value`, `required`) VALUES
-(227, 28, 11, '', 1),
-(277, 47, 17, '', 1),
-(266, 44, 11, '', 1),
-(267, 44, 16, '', 1),
-(268, 44, 17, '', 1),
-(263, 43, 11, '', 1),
-(264, 43, 16, '', 1),
-(265, 43, 17, '', 1),
-(228, 28, 16, '', 1),
-(260, 42, 11, '', 1),
-(261, 42, 16, '', 1),
-(262, 42, 17, '', 1),
-(229, 28, 17, '', 1),
-(230, 29, 11, '', 1),
-(231, 29, 16, '', 1),
-(232, 29, 17, '', 1),
-(233, 30, 11, '', 1),
-(234, 30, 16, '', 1),
-(235, 30, 17, '', 1),
-(236, 31, 11, '', 1),
-(237, 31, 16, '', 1),
-(238, 31, 17, '', 1),
-(239, 32, 11, '', 1),
-(240, 32, 16, '', 1),
-(241, 32, 17, '', 1),
-(242, 33, 11, '', 1),
-(243, 33, 16, '', 1),
-(244, 33, 17, '', 1),
-(247, 34, 17, '', 1),
-(246, 34, 16, '', 1),
-(245, 34, 11, '', 1),
-(248, 35, 11, '', 1),
-(249, 35, 16, '', 1),
-(250, 35, 17, '', 1),
-(251, 36, 11, '', 1),
-(252, 36, 16, '', 1),
-(253, 36, 17, '', 1),
-(254, 40, 11, '', 1),
-(255, 40, 16, '', 1),
-(256, 40, 17, '', 1),
-(257, 41, 11, '', 1),
-(258, 41, 16, '', 1),
-(259, 41, 17, '', 1),
-(271, 45, 17, '', 1),
-(270, 45, 16, '', 1),
-(269, 45, 11, '', 1),
-(272, 46, 11, '', 1),
-(273, 46, 16, '', 1),
-(274, 46, 17, '', 1),
-(276, 47, 16, '', 1),
-(275, 47, 11, '', 1),
-(280, 48, 17, '', 1),
-(279, 48, 16, '', 1),
-(278, 48, 11, '', 1),
-(283, 49, 17, '', 1),
-(282, 49, 16, '', 1),
-(281, 49, 11, '', 1),
-(284, 50, 11, '', 1),
-(285, 50, 16, '', 1),
-(286, 50, 17, '', 1);
 
 -- --------------------------------------------------------
 
@@ -3969,132 +2879,6 @@ CREATE TABLE `oc_product_option_value` (
   `weight` decimal(15,8) NOT NULL,
   `weight_prefix` varchar(1) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `oc_product_option_value`
---
-
-INSERT INTO `oc_product_option_value` (`product_option_value_id`, `product_option_id`, `product_id`, `option_id`, `option_value_id`, `quantity`, `subtract`, `price`, `price_prefix`, `points`, `points_prefix`, `weight`, `weight_prefix`) VALUES
-(106, 260, 42, 11, 61, 100, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(109, 261, 42, 16, 59, 100, 1, '2.0000', '+', 0, '+', '0.00000000', '+'),
-(107, 260, 42, 11, 62, 100, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(110, 261, 42, 16, 60, 100, 1, '2.0000', '+', 0, '+', '0.00000000', '+'),
-(113, 262, 42, 17, 67, 100, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(112, 262, 42, 17, 66, 100, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(18, 227, 28, 11, 61, 100, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(25, 229, 28, 17, 67, 100, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(24, 229, 28, 17, 66, 100, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(22, 228, 28, 16, 60, 100, 1, '2.0000', '+', 0, '+', '0.00000000', '+'),
-(21, 228, 28, 16, 59, 100, 1, '2.0000', '+', 0, '+', '0.00000000', '+'),
-(20, 227, 28, 11, 62, 100, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(26, 230, 29, 11, 61, 100, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(33, 232, 29, 17, 67, 99, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(32, 232, 29, 17, 66, 100, 1, '2.0000', '+', 0, '+', '0.00000000', '+'),
-(30, 231, 29, 16, 60, 100, 1, '2.0000', '+', 0, '+', '0.00000000', '+'),
-(29, 231, 29, 16, 59, 99, 1, '2.0000', '+', 0, '+', '0.00000000', '+'),
-(27, 230, 29, 11, 62, 99, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(34, 233, 30, 11, 61, 100, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(35, 233, 30, 11, 62, 100, 1, '2.0000', '+', 0, '+', '0.00000000', '+'),
-(37, 234, 30, 16, 59, 100, 1, '2.0000', '+', 0, '+', '0.00000000', '+'),
-(38, 234, 30, 16, 60, 100, 1, '2.0000', '+', 0, '+', '0.00000000', '+'),
-(40, 235, 30, 17, 66, 100, 1, '3.0000', '+', 0, '+', '0.00000000', '+'),
-(41, 235, 30, 17, 67, 100, 1, '2.0000', '+', 0, '+', '0.00000000', '+'),
-(42, 236, 31, 11, 61, 100, 1, '2.0000', '+', 0, '+', '0.00000000', '+'),
-(43, 236, 31, 11, 62, 100, 1, '3.0000', '+', 0, '+', '0.00000000', '+'),
-(45, 237, 31, 16, 59, 100, 1, '2.0000', '+', 0, '+', '0.00000000', '+'),
-(49, 238, 31, 17, 67, 100, 1, '3.0000', '+', 0, '+', '0.00000000', '+'),
-(48, 238, 31, 17, 66, 100, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(46, 237, 31, 16, 60, 100, 1, '2.0000', '+', 0, '+', '0.00000000', '+'),
-(50, 239, 32, 11, 61, 100, 1, '3.0000', '+', 0, '+', '0.00000000', '+'),
-(52, 239, 32, 11, 62, 100, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(53, 240, 32, 16, 59, 100, 1, '2.0000', '+', 0, '+', '0.00000000', '+'),
-(54, 240, 32, 16, 60, 100, 1, '2.0000', '+', 0, '+', '0.00000000', '+'),
-(56, 241, 32, 17, 66, 100, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(57, 241, 32, 17, 67, 100, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(58, 242, 33, 11, 61, 100, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(60, 242, 33, 11, 62, 100, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(61, 243, 33, 16, 59, 100, 1, '2.0000', '+', 0, '+', '0.00000000', '+'),
-(65, 244, 33, 17, 67, 100, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(64, 244, 33, 17, 66, 100, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(62, 243, 33, 16, 60, 100, 1, '2.0000', '+', 0, '+', '0.00000000', '+'),
-(72, 247, 34, 17, 66, 100, 1, '2.0000', '+', 0, '+', '0.00000000', '+'),
-(73, 247, 34, 17, 67, 100, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(69, 246, 34, 16, 59, 100, 1, '2.0000', '+', 0, '+', '0.00000000', '+'),
-(68, 245, 34, 11, 62, 100, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(66, 245, 34, 11, 61, 100, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(70, 246, 34, 16, 60, 100, 1, '2.0000', '+', 0, '+', '0.00000000', '+'),
-(74, 248, 35, 11, 61, 100, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(76, 248, 35, 11, 62, 100, 1, '2.0000', '+', 0, '+', '0.00000000', '+'),
-(77, 249, 35, 16, 59, 100, 1, '2.0000', '+', 0, '+', '0.00000000', '+'),
-(78, 249, 35, 16, 60, 100, 1, '2.0000', '+', 0, '+', '0.00000000', '+'),
-(81, 250, 35, 17, 67, 100, 1, '2.0000', '+', 0, '+', '0.00000000', '+'),
-(80, 250, 35, 17, 66, 100, 1, '3.0000', '+', 0, '+', '0.00000000', '+'),
-(82, 251, 36, 11, 61, 100, 1, '2.0000', '+', 0, '+', '0.00000000', '+'),
-(83, 251, 36, 11, 62, 100, 1, '3.0000', '+', 0, '+', '0.00000000', '+'),
-(85, 252, 36, 16, 59, 100, 1, '2.0000', '+', 0, '+', '0.00000000', '+'),
-(86, 252, 36, 16, 60, 100, 1, '2.0000', '+', 0, '+', '0.00000000', '+'),
-(88, 253, 36, 17, 66, 100, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(89, 253, 36, 17, 67, 100, 1, '3.0000', '+', 0, '+', '0.00000000', '+'),
-(90, 254, 40, 11, 61, 100, 1, '3.0000', '+', 0, '+', '0.00000000', '+'),
-(91, 254, 40, 11, 62, 99, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(93, 255, 40, 16, 59, 99, 1, '2.0000', '+', 0, '+', '0.00000000', '+'),
-(94, 255, 40, 16, 60, 100, 1, '2.0000', '+', 0, '+', '0.00000000', '+'),
-(96, 256, 40, 17, 66, 100, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(97, 256, 40, 17, 67, 99, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(98, 257, 41, 11, 61, 100, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(100, 257, 41, 11, 62, 100, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(101, 258, 41, 16, 59, 100, 1, '2.0000', '+', 0, '+', '0.00000000', '+'),
-(102, 258, 41, 16, 60, 100, 1, '2.0000', '+', 0, '+', '0.00000000', '+'),
-(105, 259, 41, 17, 67, 100, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(104, 259, 41, 17, 66, 100, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(114, 263, 43, 11, 61, 100, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(116, 263, 43, 11, 62, 100, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(117, 264, 43, 16, 59, 100, 1, '2.0000', '+', 0, '+', '0.00000000', '+'),
-(118, 264, 43, 16, 60, 100, 1, '2.0000', '+', 0, '+', '0.00000000', '+'),
-(121, 265, 43, 17, 67, 100, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(120, 265, 43, 17, 66, 100, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(122, 266, 44, 11, 61, 100, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(124, 266, 44, 11, 62, 100, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(125, 267, 44, 16, 59, 100, 1, '2.0000', '+', 0, '+', '0.00000000', '+'),
-(126, 267, 44, 16, 60, 100, 1, '2.0000', '+', 0, '+', '0.00000000', '+'),
-(129, 268, 44, 17, 67, 100, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(128, 268, 44, 17, 66, 100, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(136, 271, 45, 17, 66, 100, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(137, 271, 45, 17, 67, 100, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(133, 270, 45, 16, 59, 100, 1, '2.0000', '+', 0, '+', '0.00000000', '+'),
-(134, 270, 45, 16, 60, 100, 1, '2.0000', '+', 0, '+', '0.00000000', '+'),
-(132, 269, 45, 11, 62, 100, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(130, 269, 45, 11, 61, 100, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(138, 272, 46, 11, 61, 100, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(140, 272, 46, 11, 62, 100, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(141, 273, 46, 16, 59, 100, 1, '2.0000', '+', 0, '+', '0.00000000', '+'),
-(145, 274, 46, 17, 67, 100, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(144, 274, 46, 17, 66, 100, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(142, 273, 46, 16, 60, 100, 1, '2.0000', '+', 0, '+', '0.00000000', '+'),
-(152, 277, 47, 17, 66, 100, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(153, 277, 47, 17, 67, 100, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(149, 276, 47, 16, 59, 100, 1, '2.0000', '+', 0, '+', '0.00000000', '+'),
-(150, 276, 47, 16, 60, 100, 1, '2.0000', '+', 0, '+', '0.00000000', '+'),
-(146, 275, 47, 11, 61, 100, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(147, 275, 47, 11, 62, 100, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(160, 280, 48, 17, 66, 100, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(161, 280, 48, 17, 67, 100, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(157, 279, 48, 16, 59, 100, 1, '2.0000', '+', 0, '+', '0.00000000', '+'),
-(158, 279, 48, 16, 60, 100, 1, '2.0000', '+', 0, '+', '0.00000000', '+'),
-(154, 278, 48, 11, 61, 100, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(156, 278, 48, 11, 62, 100, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(168, 283, 49, 17, 66, 100, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(169, 283, 49, 17, 67, 100, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(165, 282, 49, 16, 59, 100, 1, '2.0000', '+', 0, '+', '0.00000000', '+'),
-(166, 282, 49, 16, 60, 100, 1, '2.0000', '+', 0, '+', '0.00000000', '+'),
-(162, 281, 49, 11, 61, 100, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(163, 281, 49, 11, 62, 100, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(170, 284, 50, 11, 61, 100, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(172, 284, 50, 11, 62, 100, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(173, 285, 50, 16, 59, 100, 1, '2.0000', '+', 0, '+', '0.00000000', '+'),
-(174, 285, 50, 16, 60, 100, 1, '2.0000', '+', 0, '+', '0.00000000', '+'),
-(176, 286, 50, 17, 66, 100, 1, '1.0000', '+', 0, '+', '0.00000000', '+'),
-(177, 286, 50, 17, 67, 100, 1, '1.0000', '+', 0, '+', '0.00000000', '+');
 
 -- --------------------------------------------------------
 
@@ -4119,43 +2903,6 @@ CREATE TABLE `oc_product_related` (
   `related_id` int(11) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `oc_product_related`
---
-
-INSERT INTO `oc_product_related` (`product_id`, `related_id`) VALUES
-(28, 46),
-(33, 50),
-(35, 48),
-(35, 49),
-(35, 50),
-(41, 46),
-(41, 48),
-(41, 49),
-(42, 48),
-(42, 49),
-(42, 50),
-(44, 50),
-(46, 28),
-(46, 41),
-(46, 47),
-(47, 46),
-(47, 47),
-(47, 48),
-(47, 49),
-(48, 35),
-(48, 41),
-(48, 42),
-(48, 47),
-(49, 35),
-(49, 41),
-(49, 42),
-(49, 47),
-(50, 33),
-(50, 35),
-(50, 42),
-(50, 44);
-
 -- --------------------------------------------------------
 
 --
@@ -4168,20 +2915,6 @@ CREATE TABLE `oc_product_reward` (
   `customer_group_id` int(11) NOT NULL DEFAULT 0,
   `points` int(8) NOT NULL DEFAULT 0
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `oc_product_reward`
---
-
-INSERT INTO `oc_product_reward` (`product_reward_id`, `product_id`, `customer_group_id`, `points`) VALUES
-(601, 42, 1, 100),
-(606, 47, 1, 300),
-(602, 43, 1, 600),
-(609, 28, 1, 400),
-(603, 44, 1, 700),
-(610, 45, 1, 800),
-(600, 30, 1, 200),
-(608, 49, 1, 1000);
 
 -- --------------------------------------------------------
 
@@ -4204,18 +2937,7 @@ CREATE TABLE `oc_product_special` (
 --
 
 INSERT INTO `oc_product_special` (`product_special_id`, `product_id`, `customer_group_id`, `priority`, `price`, `date_start`, `date_end`) VALUES
-(530, 29, 1, 1, '77.6000', '2017-01-01', '2020-01-01'),
-(533, 28, 1, 1, '15.2000', '2017-01-01', '2020-01-01'),
-(520, 32, 1, 1, '368.0000', '2017-01-01', '2020-01-01'),
-(531, 33, 1, 1, '2080.0000', '2017-01-01', '2020-01-01'),
-(522, 41, 1, 1, '64.0000', '2017-01-01', '2020-01-01'),
-(524, 43, 1, 1, '2720.0000', '2017-01-01', '2020-01-01'),
-(525, 44, 1, 1, '32.0000', '2017-01-01', '2020-01-01'),
-(534, 45, 1, 1, '368.0000', '2017-01-01', '2020-01-01'),
-(519, 30, 1, 1, '35.2000', '2017-01-01', '2020-01-01'),
-(523, 42, 1, 1, '96.0000', '2017-01-01', '2020-01-01'),
-(528, 47, 1, 1, '32.0000', '2017-01-01', '2020-01-01'),
-(532, 49, 1, 1, '8.8000', '2017-01-01', '2020-01-01');
+(535, 52, 1, 2, '150.0000', '0000-00-00', '0000-00-00');
 
 -- --------------------------------------------------------
 
@@ -4227,239 +2949,6 @@ CREATE TABLE `oc_product_to_category` (
   `product_id` int(11) NOT NULL,
   `category_id` int(11) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `oc_product_to_category`
---
-
-INSERT INTO `oc_product_to_category` (`product_id`, `category_id`) VALUES
-(28, 43),
-(28, 46),
-(28, 60),
-(28, 62),
-(28, 68),
-(29, 42),
-(29, 43),
-(29, 44),
-(29, 45),
-(29, 46),
-(29, 47),
-(29, 48),
-(29, 49),
-(29, 50),
-(29, 51),
-(29, 52),
-(29, 53),
-(29, 54),
-(29, 55),
-(29, 56),
-(29, 58),
-(29, 59),
-(29, 60),
-(29, 61),
-(29, 62),
-(29, 63),
-(29, 64),
-(29, 65),
-(29, 66),
-(29, 67),
-(29, 68),
-(29, 69),
-(30, 46),
-(30, 47),
-(30, 49),
-(30, 58),
-(30, 60),
-(30, 62),
-(30, 64),
-(30, 67),
-(31, 42),
-(31, 43),
-(31, 44),
-(31, 45),
-(31, 46),
-(31, 47),
-(31, 48),
-(31, 49),
-(31, 50),
-(31, 51),
-(31, 52),
-(31, 53),
-(31, 54),
-(31, 55),
-(31, 56),
-(31, 58),
-(31, 59),
-(31, 60),
-(31, 61),
-(31, 62),
-(31, 63),
-(31, 64),
-(31, 65),
-(31, 66),
-(31, 67),
-(31, 68),
-(31, 69),
-(32, 42),
-(32, 43),
-(32, 46),
-(32, 60),
-(32, 62),
-(32, 68),
-(33, 42),
-(33, 43),
-(33, 44),
-(33, 45),
-(33, 46),
-(33, 47),
-(33, 48),
-(33, 49),
-(33, 50),
-(33, 51),
-(33, 52),
-(33, 53),
-(33, 54),
-(33, 55),
-(33, 56),
-(33, 58),
-(33, 59),
-(33, 60),
-(33, 61),
-(33, 62),
-(33, 63),
-(33, 64),
-(33, 65),
-(33, 66),
-(33, 67),
-(33, 68),
-(33, 69),
-(35, 42),
-(35, 43),
-(35, 46),
-(35, 51),
-(35, 55),
-(35, 57),
-(35, 60),
-(35, 68),
-(36, 42),
-(36, 43),
-(36, 46),
-(36, 47),
-(36, 51),
-(36, 52),
-(36, 57),
-(36, 68),
-(36, 69),
-(40, 42),
-(40, 43),
-(40, 46),
-(40, 60),
-(40, 62),
-(40, 68),
-(41, 44),
-(41, 46),
-(41, 53),
-(41, 54),
-(42, 42),
-(42, 43),
-(42, 44),
-(42, 45),
-(42, 46),
-(42, 47),
-(42, 48),
-(42, 49),
-(42, 50),
-(42, 51),
-(42, 52),
-(42, 53),
-(42, 54),
-(42, 55),
-(42, 56),
-(42, 58),
-(42, 59),
-(42, 60),
-(42, 61),
-(42, 62),
-(42, 63),
-(42, 64),
-(42, 65),
-(42, 66),
-(42, 67),
-(42, 68),
-(42, 69),
-(43, 43),
-(43, 46),
-(43, 49),
-(43, 60),
-(43, 62),
-(43, 68),
-(44, 42),
-(44, 43),
-(44, 51),
-(44, 52),
-(44, 55),
-(44, 57),
-(44, 66),
-(44, 68),
-(44, 69),
-(45, 42),
-(45, 43),
-(45, 46),
-(45, 51),
-(45, 52),
-(45, 55),
-(45, 57),
-(45, 60),
-(45, 62),
-(45, 66),
-(45, 68),
-(45, 69),
-(46, 43),
-(46, 46),
-(46, 60),
-(46, 62),
-(46, 68),
-(47, 42),
-(47, 43),
-(47, 46),
-(47, 47),
-(47, 51),
-(47, 52),
-(47, 57),
-(47, 60),
-(47, 62),
-(47, 68),
-(47, 69),
-(48, 42),
-(48, 46),
-(48, 48),
-(48, 51),
-(48, 57),
-(48, 60),
-(48, 62),
-(48, 65),
-(48, 68),
-(48, 69),
-(49, 42),
-(49, 43),
-(49, 46),
-(49, 51),
-(49, 55),
-(49, 57),
-(49, 62),
-(49, 68),
-(50, 42),
-(50, 43),
-(50, 46),
-(50, 51),
-(50, 52),
-(50, 55),
-(50, 57),
-(50, 60),
-(50, 62),
-(50, 66),
-(50, 68),
-(50, 69);
 
 -- --------------------------------------------------------
 
@@ -4489,26 +2978,7 @@ CREATE TABLE `oc_product_to_layout` (
 --
 
 INSERT INTO `oc_product_to_layout` (`product_id`, `store_id`, `layout_id`) VALUES
-(50, 0, 0),
-(47, 0, 0),
-(49, 0, 0),
-(48, 0, 0),
-(46, 0, 0),
-(45, 0, 0),
-(44, 0, 0),
-(43, 0, 0),
-(42, 0, 0),
-(36, 0, 0),
-(35, 0, 0),
-(41, 0, 0),
-(40, 0, 0),
-(29, 0, 0),
-(34, 0, 0),
-(33, 0, 0),
-(32, 0, 0),
-(31, 0, 0),
-(30, 0, 0),
-(28, 0, 0);
+(52, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -4526,26 +2996,7 @@ CREATE TABLE `oc_product_to_store` (
 --
 
 INSERT INTO `oc_product_to_store` (`product_id`, `store_id`) VALUES
-(28, 0),
-(29, 0),
-(30, 0),
-(31, 0),
-(32, 0),
-(33, 0),
-(34, 0),
-(35, 0),
-(36, 0),
-(40, 0),
-(41, 0),
-(42, 0),
-(43, 0),
-(44, 0),
-(45, 0),
-(46, 0),
-(47, 0),
-(48, 0),
-(49, 0),
-(50, 0);
+(52, 0);
 
 -- --------------------------------------------------------
 
@@ -4735,15 +3186,6 @@ CREATE TABLE `oc_review` (
   `date_modified` datetime NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `oc_review`
---
-
-INSERT INTO `oc_review` (`review_id`, `product_id`, `customer_id`, `author`, `text`, `rating`, `status`, `date_added`, `date_modified`) VALUES
-(1, 47, 2, 'Mark', 'Hi, my order arrived yesterday. I love it! Thank you! What a fast service...you guys are great! I wish every site was like this one', 4, 1, '2017-08-31 18:36:55', '2017-08-31 18:40:01'),
-(2, 42, 2, 'Tom', 'Thank you again and again! I have experienced the fastest support ever. My order arrived on my door step the following day. Your team is always, friendly and very helpful. You managed to exceed my expectations!', 4, 1, '2017-09-21 16:20:46', '2017-09-21 16:21:38'),
-(3, 29, 2, 'Barry', 'I loved everything about buying from you! My purchase was carefully packaged and quickly shipped. I was also pleased with great service and delivery times. There is no such awesome store on the web that can match you :)', 4, 1, '2017-09-21 16:29:57', '2017-09-21 16:30:25');
-
 -- --------------------------------------------------------
 
 --
@@ -4763,20 +3205,10 @@ CREATE TABLE `oc_seo_url` (
 --
 
 INSERT INTO `oc_seo_url` (`seo_url_id`, `store_id`, `language_id`, `query`, `keyword`) VALUES
-(952, 0, 1, 'product_id=48', 'ipod-classic'),
 (855, 0, 1, 'information_id=4', 'about_us'),
-(942, 0, 1, 'product_id=42', 'test'),
-(915, 0, 1, 'category_id=57', 'tablet'),
 (786, 0, 1, 'category_id=17', 'software'),
 (787, 0, 1, 'category_id=24', 'smartphone'),
-(948, 0, 1, 'product_id=47', 'hp-lp3065'),
-(943, 0, 1, 'product_id=43', 'macbook'),
-(944, 0, 1, 'product_id=44', 'macbook-air'),
-(954, 0, 1, 'product_id=45', 'macbook-pro'),
-(953, 0, 1, 'product_id=49', 'samsung-galaxy-tab-10-1'),
 (939, 0, 0, 'simple_blog_article_id=10', 'Jessica Prinston'),
-(951, 0, 1, 'product_id=46', 'sony-vaio'),
-(941, 0, 1, 'product_id=41', 'imac'),
 (856, 0, 1, 'information_id=6', 'delivery'),
 (858, 0, 1, 'information_id=3', 'privacy'),
 (857, 0, 1, 'information_id=5', 'terms'),
@@ -4871,7 +3303,7 @@ INSERT INTO `oc_session` (`session_id`, `data`, `expire`) VALUES
 ('de8bba7ec27280bcc669c7298b', '{\"language\":\"en-gb\",\"currency\":\"USD\"}', '2017-08-28 12:44:32'),
 ('e952afe6aa28df02093b762d3a', '{\"language\":\"en-gb\",\"currency\":\"USD\"}', '2017-09-14 14:01:57'),
 ('ec9366d8bae95118d42114a39d', '{\"language\":\"en-gb\",\"currency\":\"USD\"}', '2017-09-01 16:41:04'),
-('ed5219ca1feb279cd4b68ba36a', '{\"user_id\":\"1\",\"user_token\":\"Y4M48PNWsSD5NZbU1T0RMvqw6sKRVhXr\",\"language\":\"en-gb\",\"currency\":\"USD\"}', '2021-05-10 18:17:47'),
+('ed5219ca1feb279cd4b68ba36a', '{\"user_id\":\"1\",\"user_token\":\"YgCB3OljZOCXBz7BJKbhgUlJx3IGNR51\",\"language\":\"en-gb\",\"currency\":\"USD\"}', '2021-05-16 16:53:11'),
 ('ee2df234f13a51ad11e4de2ee3', '{\"language\":\"en-gb\",\"currency\":\"USD\",\"user_id\":\"1\",\"user_token\":\"HaSw9n5LbNO9cDGJ5AasgdIEGboszJi7\",\"install\":\"jzLoV8aFGN\"}', '2017-09-19 13:24:07'),
 ('f50cc7eb167e87b3815455449b', '{\"language\":\"en-gb\",\"currency\":\"USD\"}', '2017-09-27 07:50:59'),
 ('f633c391c63750b4791d35a314', '{\"language\":\"en-gb\",\"currency\":\"USD\",\"user_id\":\"1\",\"user_token\":\"J1xqMNT9QK6ykpmVxnnCB6lQywTAyb4V\",\"install\":\"9oEjOBVUtE\",\"customer_id\":\"1\",\"payment_address\":{\"address_id\":\"1\",\"firstname\":\"qwe\",\"lastname\":\"qwe\",\"company\":\"\",\"address_1\":\"address\",\"address_2\":\"\",\"postcode\":\"12345\",\"city\":\"city\",\"zone_id\":\"869\",\"zone\":\"Ciego de Avila\",\"zone_code\":\"CD\",\"country_id\":\"54\",\"country\":\"Cuba\",\"iso_code_2\":\"CU\",\"iso_code_3\":\"CUB\",\"address_format\":\"\",\"custom_field\":null},\"shipping_address\":{\"address_id\":\"1\",\"firstname\":\"qwe\",\"lastname\":\"qwe\",\"company\":\"\",\"address_1\":\"address\",\"address_2\":\"\",\"postcode\":\"12345\",\"city\":\"city\",\"zone_id\":\"869\",\"zone\":\"Ciego de Avila\",\"zone_code\":\"CD\",\"country_id\":\"54\",\"country\":\"Cuba\",\"iso_code_2\":\"CU\",\"iso_code_3\":\"CUB\",\"address_format\":\"\",\"custom_field\":null}}', '2017-08-23 15:18:33');
@@ -5052,8 +3484,7 @@ INSERT INTO `oc_setting` (`setting_id`, `store_id`, `code`, `key`, `value`, `ser
 (2953, 0, 'config', 'config_voucher_min', '1', 0),
 (2812, 0, 'theme_jetimpex783', 'theme_jetimpex783_simple_blog_related_articles', '1', 0),
 (2952, 0, 'config', 'config_review_guest', '1', 0),
-(1963, 0, 'module_jetimpex_color_switcher', 'module_jetimpex_color_switcher_status', '1', 0),
-(1964, 0, 'module_jetimpex_color_switcher', 'module_jetimpex_color_switcher_scheme', 'color_scheme_1', 0),
+(3014, 0, 'module_jetimpex_color_switcher', 'module_jetimpex_color_switcher_status', '1', 0),
 (2951, 0, 'config', 'config_review_status', '1', 0),
 (2950, 0, 'config', 'config_limit_admin', '30', 0),
 (2949, 0, 'config', 'config_product_count', '0', 0),
@@ -5106,7 +3537,8 @@ INSERT INTO `oc_setting` (`setting_id`, `store_id`, `code`, `key`, `value`, `ser
 (3008, 0, 'config', 'config_file_mime_allowed', 'text/plain\r\nimage/png\r\nimage/jpeg\r\nimage/gif\r\nimage/bmp\r\nimage/tiff\r\nimage/svg+xml\r\napplication/zip\r\n&quot;application/zip&quot;\r\napplication/x-zip\r\n&quot;application/x-zip&quot;\r\napplication/x-zip-compressed\r\n&quot;application/x-zip-compressed&quot;\r\napplication/rar\r\n&quot;application/rar&quot;\r\napplication/x-rar\r\n&quot;application/x-rar&quot;\r\napplication/x-rar-compressed\r\n&quot;application/x-rar-compressed&quot;\r\napplication/octet-stream\r\n&quot;application/octet-stream&quot;\r\naudio/mpeg\r\nvideo/quicktime\r\napplication/pdf', 0),
 (3009, 0, 'config', 'config_error_display', '1', 0),
 (3010, 0, 'config', 'config_error_log', '1', 0),
-(3011, 0, 'config', 'config_error_filename', 'error.log', 0);
+(3011, 0, 'config', 'config_error_filename', 'error.log', 0),
+(3015, 0, 'module_jetimpex_color_switcher', 'module_jetimpex_color_switcher_scheme', 'color_scheme_3', 0);
 
 -- --------------------------------------------------------
 
@@ -5853,7 +4285,7 @@ CREATE TABLE `oc_user_group` (
 --
 
 INSERT INTO `oc_user_group` (`user_group_id`, `name`, `permission`) VALUES
-(1, 'Administrator', '{\"access\":[\"catalog\\/attribute\",\"catalog\\/attribute_group\",\"catalog\\/category\",\"catalog\\/download\",\"catalog\\/filter\",\"catalog\\/information\",\"catalog\\/manufacturer\",\"catalog\\/option\",\"catalog\\/product\",\"catalog\\/recurring\",\"catalog\\/review\",\"common\\/column_left\",\"common\\/developer\",\"common\\/filemanager\",\"common\\/profile\",\"common\\/security\",\"customer\\/custom_field\",\"customer\\/customer\",\"customer\\/customer_approval\",\"customer\\/customer_group\",\"design\\/banner\",\"design\\/layout\",\"design\\/seo_url\",\"design\\/theme\",\"design\\/translation\",\"event\\/language\",\"event\\/statistics\",\"event\\/theme\",\"extension\\/analytics\\/google\",\"extension\\/captcha\\/basic\",\"extension\\/captcha\\/google\",\"extension\\/dashboard\\/activity\",\"extension\\/dashboard\\/chart\",\"extension\\/dashboard\\/customer\",\"extension\\/dashboard\\/map\",\"extension\\/dashboard\\/online\",\"extension\\/dashboard\\/order\",\"extension\\/dashboard\\/recent\",\"extension\\/dashboard\\/sale\",\"extension\\/extension\\/analytics\",\"extension\\/extension\\/captcha\",\"extension\\/extension\\/dashboard\",\"extension\\/extension\\/feed\",\"extension\\/extension\\/fraud\",\"extension\\/extension\\/menu\",\"extension\\/extension\\/module\",\"extension\\/extension\\/payment\",\"extension\\/extension\\/report\",\"extension\\/extension\\/shipping\",\"extension\\/extension\\/theme\",\"extension\\/extension\\/total\",\"extension\\/feed\\/google_base\",\"extension\\/feed\\/google_sitemap\",\"extension\\/feed\\/openbaypro\",\"extension\\/fraud\\/fraudlabspro\",\"extension\\/fraud\\/ip\",\"extension\\/fraud\\/maxmind\",\"extension\\/module\\/account\",\"extension\\/module\\/amazon_login\",\"extension\\/module\\/amazon_pay\",\"extension\\/module\\/banner\",\"extension\\/module\\/bestseller\",\"extension\\/module\\/carousel\",\"extension\\/module\\/category\",\"extension\\/module\\/divido_calculator\",\"extension\\/module\\/ebay_listing\",\"extension\\/module\\/featured\",\"extension\\/module\\/filter\",\"extension\\/module\\/google_hangouts\",\"extension\\/module\\/html\",\"extension\\/module\\/information\",\"extension\\/module\\/jetimpex_blog_articles\",\"extension\\/module\\/jetimpex_category\",\"extension\\/module\\/jetimpex_color_switcher\",\"extension\\/module\\/jetimpex_footer_links\",\"extension\\/module\\/jetimpex_google_map\",\"extension\\/module\\/jetimpex_layout_builder\",\"extension\\/module\\/jetimpex_megamenu\",\"extension\\/module\\/jetimpex_newsletter\",\"extension\\/module\\/jetimpex_parallax\",\"extension\\/module\\/jetimpex_slideshow\",\"extension\\/module\\/jetimpex_social_list\",\"extension\\/module\\/klarna_checkout_module\",\"extension\\/module\\/latest\",\"extension\\/module\\/laybuy_layout\",\"extension\\/module\\/pilibaba_button\",\"extension\\/module\\/pp_braintree_button\",\"extension\\/module\\/pp_button\",\"extension\\/module\\/pp_login\",\"extension\\/module\\/sagepay_direct_cards\",\"extension\\/module\\/sagepay_server_cards\",\"extension\\/module\\/slideshow\",\"extension\\/module\\/special\",\"extension\\/module\\/store\",\"extension\\/openbay\\/amazon\",\"extension\\/openbay\\/amazon_listing\",\"extension\\/openbay\\/amazon_product\",\"extension\\/openbay\\/amazonus\",\"extension\\/openbay\\/amazonus_listing\",\"extension\\/openbay\\/amazonus_product\",\"extension\\/openbay\\/ebay\",\"extension\\/openbay\\/ebay_profile\",\"extension\\/openbay\\/ebay_template\",\"extension\\/openbay\\/etsy\",\"extension\\/openbay\\/etsy_product\",\"extension\\/openbay\\/etsy_shipping\",\"extension\\/openbay\\/etsy_shop\",\"extension\\/openbay\\/fba\",\"extension\\/payment\\/alipay\",\"extension\\/payment\\/alipay_cross\",\"extension\\/payment\\/amazon_login_pay\",\"extension\\/payment\\/authorizenet_aim\",\"extension\\/payment\\/authorizenet_sim\",\"extension\\/payment\\/bank_transfer\",\"extension\\/payment\\/bluepay_hosted\",\"extension\\/payment\\/bluepay_redirect\",\"extension\\/payment\\/cardconnect\",\"extension\\/payment\\/cardinity\",\"extension\\/payment\\/cheque\",\"extension\\/payment\\/cod\",\"extension\\/payment\\/divido\",\"extension\\/payment\\/eway\",\"extension\\/payment\\/firstdata\",\"extension\\/payment\\/firstdata_remote\",\"extension\\/payment\\/free_checkout\",\"extension\\/payment\\/g2apay\",\"extension\\/payment\\/globalpay\",\"extension\\/payment\\/globalpay_remote\",\"extension\\/payment\\/klarna_account\",\"extension\\/payment\\/klarna_checkout\",\"extension\\/payment\\/klarna_invoice\",\"extension\\/payment\\/laybuy\",\"extension\\/payment\\/liqpay\",\"extension\\/payment\\/nochex\",\"extension\\/payment\\/paymate\",\"extension\\/payment\\/paypoint\",\"extension\\/payment\\/payza\",\"extension\\/payment\\/perpetual_payments\",\"extension\\/payment\\/pilibaba\",\"extension\\/payment\\/pp_braintree\",\"extension\\/payment\\/pp_express\",\"extension\\/payment\\/pp_payflow\",\"extension\\/payment\\/pp_payflow_iframe\",\"extension\\/payment\\/pp_pro\",\"extension\\/payment\\/pp_pro_iframe\",\"extension\\/payment\\/pp_standard\",\"extension\\/payment\\/realex\",\"extension\\/payment\\/realex_remote\",\"extension\\/payment\\/sagepay_direct\",\"extension\\/payment\\/sagepay_server\",\"extension\\/payment\\/sagepay_us\",\"extension\\/payment\\/securetrading_pp\",\"extension\\/payment\\/securetrading_ws\",\"extension\\/payment\\/skrill\",\"extension\\/payment\\/squareup\",\"extension\\/payment\\/twocheckout\",\"extension\\/payment\\/web_payment_software\",\"extension\\/payment\\/wechat_pay\",\"extension\\/payment\\/worldpay\",\"extension\\/report\\/customer_activity\",\"extension\\/report\\/customer_order\",\"extension\\/report\\/customer_reward\",\"extension\\/report\\/customer_search\",\"extension\\/report\\/customer_transaction\",\"extension\\/report\\/marketing\",\"extension\\/report\\/product_purchased\",\"extension\\/report\\/product_viewed\",\"extension\\/report\\/sale_coupon\",\"extension\\/report\\/sale_order\",\"extension\\/report\\/sale_return\",\"extension\\/report\\/sale_shipping\",\"extension\\/report\\/sale_tax\",\"extension\\/shipping\\/auspost\",\"extension\\/shipping\\/citylink\",\"extension\\/shipping\\/ec_ship\",\"extension\\/shipping\\/fedex\",\"extension\\/shipping\\/flat\",\"extension\\/shipping\\/free\",\"extension\\/shipping\\/item\",\"extension\\/shipping\\/parcelforce_48\",\"extension\\/shipping\\/pickup\",\"extension\\/shipping\\/royal_mail\",\"extension\\/shipping\\/ups\",\"extension\\/shipping\\/usps\",\"extension\\/shipping\\/weight\",\"extension\\/theme\\/default\",\"extension\\/theme\\/jetimpex\",\"extension\\/total\\/coupon\",\"extension\\/total\\/credit\",\"extension\\/total\\/handling\",\"extension\\/total\\/klarna_fee\",\"extension\\/total\\/low_order_fee\",\"extension\\/total\\/reward\",\"extension\\/total\\/shipping\",\"extension\\/total\\/sub_total\",\"extension\\/total\\/tax\",\"extension\\/total\\/total\",\"extension\\/total\\/voucher\",\"localisation\\/country\",\"localisation\\/currency\",\"localisation\\/geo_zone\",\"localisation\\/language\",\"localisation\\/length_class\",\"localisation\\/location\",\"localisation\\/order_status\",\"localisation\\/return_action\",\"localisation\\/return_reason\",\"localisation\\/return_status\",\"localisation\\/stock_status\",\"localisation\\/tax_class\",\"localisation\\/tax_rate\",\"localisation\\/weight_class\",\"localisation\\/zone\",\"mail\\/affiliate\",\"mail\\/customer\",\"mail\\/forgotten\",\"mail\\/return\",\"mail\\/reward\",\"mail\\/transaction\",\"marketing\\/contact\",\"marketing\\/coupon\",\"marketing\\/marketing\",\"marketplace\\/api\",\"marketplace\\/event\",\"marketplace\\/extension\",\"marketplace\\/install\",\"marketplace\\/installer\",\"marketplace\\/marketplace\",\"marketplace\\/modification\",\"marketplace\\/openbay\",\"report\\/online\",\"report\\/report\",\"report\\/statistics\",\"sale\\/order\",\"sale\\/recurring\",\"sale\\/return\",\"sale\\/voucher\",\"sale\\/voucher_theme\",\"setting\\/setting\",\"setting\\/store\",\"simple_blog\\/article\",\"simple_blog\\/author\",\"simple_blog\\/category\",\"simple_blog\\/comment\",\"simple_blog\\/install\",\"simple_blog\\/report\",\"startup\\/error\",\"startup\\/event\",\"startup\\/login\",\"startup\\/permission\",\"startup\\/router\",\"startup\\/sass\",\"startup\\/startup\",\"tool\\/backup\",\"tool\\/export_import\",\"tool\\/log\",\"tool\\/upload\",\"user\\/api\",\"user\\/user\",\"user\\/user_permission\",\"extension\\/module\\/category\",\"extension\\/module\\/filter\",\"extension\\/module\\/special\",\"extension\\/module\\/bestseller\",\"extension\\/theme\\/zemez783\",\"extension\\/theme\\/zemez783\",\"extension\\/theme\\/jetimpex783\"],\"modify\":[\"catalog\\/attribute\",\"catalog\\/attribute_group\",\"catalog\\/category\",\"catalog\\/download\",\"catalog\\/filter\",\"catalog\\/information\",\"catalog\\/manufacturer\",\"catalog\\/option\",\"catalog\\/product\",\"catalog\\/recurring\",\"catalog\\/review\",\"common\\/column_left\",\"common\\/developer\",\"common\\/filemanager\",\"common\\/profile\",\"common\\/security\",\"customer\\/custom_field\",\"customer\\/customer\",\"customer\\/customer_approval\",\"customer\\/customer_group\",\"design\\/banner\",\"design\\/layout\",\"design\\/seo_url\",\"design\\/theme\",\"design\\/translation\",\"event\\/language\",\"event\\/statistics\",\"event\\/theme\",\"extension\\/analytics\\/google\",\"extension\\/captcha\\/basic\",\"extension\\/captcha\\/google\",\"extension\\/dashboard\\/activity\",\"extension\\/dashboard\\/chart\",\"extension\\/dashboard\\/customer\",\"extension\\/dashboard\\/map\",\"extension\\/dashboard\\/online\",\"extension\\/dashboard\\/order\",\"extension\\/dashboard\\/recent\",\"extension\\/dashboard\\/sale\",\"extension\\/extension\\/analytics\",\"extension\\/extension\\/captcha\",\"extension\\/extension\\/dashboard\",\"extension\\/extension\\/feed\",\"extension\\/extension\\/fraud\",\"extension\\/extension\\/menu\",\"extension\\/extension\\/module\",\"extension\\/extension\\/payment\",\"extension\\/extension\\/report\",\"extension\\/extension\\/shipping\",\"extension\\/extension\\/theme\",\"extension\\/extension\\/total\",\"extension\\/feed\\/google_base\",\"extension\\/feed\\/google_sitemap\",\"extension\\/feed\\/openbaypro\",\"extension\\/fraud\\/fraudlabspro\",\"extension\\/fraud\\/ip\",\"extension\\/fraud\\/maxmind\",\"extension\\/module\\/account\",\"extension\\/module\\/amazon_login\",\"extension\\/module\\/amazon_pay\",\"extension\\/module\\/banner\",\"extension\\/module\\/bestseller\",\"extension\\/module\\/carousel\",\"extension\\/module\\/category\",\"extension\\/module\\/divido_calculator\",\"extension\\/module\\/ebay_listing\",\"extension\\/module\\/featured\",\"extension\\/module\\/filter\",\"extension\\/module\\/google_hangouts\",\"extension\\/module\\/html\",\"extension\\/module\\/information\",\"extension\\/module\\/jetimpex_blog_articles\",\"extension\\/module\\/jetimpex_category\",\"extension\\/module\\/jetimpex_color_switcher\",\"extension\\/module\\/jetimpex_footer_links\",\"extension\\/module\\/jetimpex_google_map\",\"extension\\/module\\/jetimpex_layout_builder\",\"extension\\/module\\/jetimpex_megamenu\",\"extension\\/module\\/jetimpex_newsletter\",\"extension\\/module\\/jetimpex_parallax\",\"extension\\/module\\/jetimpex_slideshow\",\"extension\\/module\\/jetimpex_social_list\",\"extension\\/module\\/klarna_checkout_module\",\"extension\\/module\\/latest\",\"extension\\/module\\/laybuy_layout\",\"extension\\/module\\/pilibaba_button\",\"extension\\/module\\/pp_braintree_button\",\"extension\\/module\\/pp_button\",\"extension\\/module\\/pp_login\",\"extension\\/module\\/sagepay_direct_cards\",\"extension\\/module\\/sagepay_server_cards\",\"extension\\/module\\/slideshow\",\"extension\\/module\\/special\",\"extension\\/module\\/store\",\"extension\\/openbay\\/amazon\",\"extension\\/openbay\\/amazon_listing\",\"extension\\/openbay\\/amazon_product\",\"extension\\/openbay\\/amazonus\",\"extension\\/openbay\\/amazonus_listing\",\"extension\\/openbay\\/amazonus_product\",\"extension\\/openbay\\/ebay\",\"extension\\/openbay\\/ebay_profile\",\"extension\\/openbay\\/ebay_template\",\"extension\\/openbay\\/etsy\",\"extension\\/openbay\\/etsy_product\",\"extension\\/openbay\\/etsy_shipping\",\"extension\\/openbay\\/etsy_shop\",\"extension\\/openbay\\/fba\",\"extension\\/payment\\/alipay\",\"extension\\/payment\\/alipay_cross\",\"extension\\/payment\\/amazon_login_pay\",\"extension\\/payment\\/authorizenet_aim\",\"extension\\/payment\\/authorizenet_sim\",\"extension\\/payment\\/bank_transfer\",\"extension\\/payment\\/bluepay_hosted\",\"extension\\/payment\\/bluepay_redirect\",\"extension\\/payment\\/cardconnect\",\"extension\\/payment\\/cardinity\",\"extension\\/payment\\/cheque\",\"extension\\/payment\\/cod\",\"extension\\/payment\\/divido\",\"extension\\/payment\\/eway\",\"extension\\/payment\\/firstdata\",\"extension\\/payment\\/firstdata_remote\",\"extension\\/payment\\/free_checkout\",\"extension\\/payment\\/g2apay\",\"extension\\/payment\\/globalpay\",\"extension\\/payment\\/globalpay_remote\",\"extension\\/payment\\/klarna_account\",\"extension\\/payment\\/klarna_checkout\",\"extension\\/payment\\/klarna_invoice\",\"extension\\/payment\\/laybuy\",\"extension\\/payment\\/liqpay\",\"extension\\/payment\\/nochex\",\"extension\\/payment\\/paymate\",\"extension\\/payment\\/paypoint\",\"extension\\/payment\\/payza\",\"extension\\/payment\\/perpetual_payments\",\"extension\\/payment\\/pilibaba\",\"extension\\/payment\\/pp_braintree\",\"extension\\/payment\\/pp_express\",\"extension\\/payment\\/pp_payflow\",\"extension\\/payment\\/pp_payflow_iframe\",\"extension\\/payment\\/pp_pro\",\"extension\\/payment\\/pp_pro_iframe\",\"extension\\/payment\\/pp_standard\",\"extension\\/payment\\/realex\",\"extension\\/payment\\/realex_remote\",\"extension\\/payment\\/sagepay_direct\",\"extension\\/payment\\/sagepay_server\",\"extension\\/payment\\/sagepay_us\",\"extension\\/payment\\/securetrading_pp\",\"extension\\/payment\\/securetrading_ws\",\"extension\\/payment\\/skrill\",\"extension\\/payment\\/squareup\",\"extension\\/payment\\/twocheckout\",\"extension\\/payment\\/web_payment_software\",\"extension\\/payment\\/wechat_pay\",\"extension\\/payment\\/worldpay\",\"extension\\/report\\/customer_activity\",\"extension\\/report\\/customer_order\",\"extension\\/report\\/customer_reward\",\"extension\\/report\\/customer_search\",\"extension\\/report\\/customer_transaction\",\"extension\\/report\\/marketing\",\"extension\\/report\\/product_purchased\",\"extension\\/report\\/product_viewed\",\"extension\\/report\\/sale_coupon\",\"extension\\/report\\/sale_order\",\"extension\\/report\\/sale_return\",\"extension\\/report\\/sale_shipping\",\"extension\\/report\\/sale_tax\",\"extension\\/shipping\\/auspost\",\"extension\\/shipping\\/citylink\",\"extension\\/shipping\\/ec_ship\",\"extension\\/shipping\\/fedex\",\"extension\\/shipping\\/flat\",\"extension\\/shipping\\/free\",\"extension\\/shipping\\/item\",\"extension\\/shipping\\/parcelforce_48\",\"extension\\/shipping\\/pickup\",\"extension\\/shipping\\/royal_mail\",\"extension\\/shipping\\/ups\",\"extension\\/shipping\\/usps\",\"extension\\/shipping\\/weight\",\"extension\\/theme\\/default\",\"extension\\/theme\\/jetimpex\",\"extension\\/total\\/coupon\",\"extension\\/total\\/credit\",\"extension\\/total\\/handling\",\"extension\\/total\\/klarna_fee\",\"extension\\/total\\/low_order_fee\",\"extension\\/total\\/reward\",\"extension\\/total\\/shipping\",\"extension\\/total\\/sub_total\",\"extension\\/total\\/tax\",\"extension\\/total\\/total\",\"extension\\/total\\/voucher\",\"localisation\\/country\",\"localisation\\/currency\",\"localisation\\/geo_zone\",\"localisation\\/language\",\"localisation\\/length_class\",\"localisation\\/location\",\"localisation\\/order_status\",\"localisation\\/return_action\",\"localisation\\/return_reason\",\"localisation\\/return_status\",\"localisation\\/stock_status\",\"localisation\\/tax_class\",\"localisation\\/tax_rate\",\"localisation\\/weight_class\",\"localisation\\/zone\",\"mail\\/affiliate\",\"mail\\/customer\",\"mail\\/forgotten\",\"mail\\/return\",\"mail\\/reward\",\"mail\\/transaction\",\"marketing\\/contact\",\"marketing\\/coupon\",\"marketing\\/marketing\",\"marketplace\\/api\",\"marketplace\\/event\",\"marketplace\\/extension\",\"marketplace\\/install\",\"marketplace\\/installer\",\"marketplace\\/marketplace\",\"marketplace\\/modification\",\"marketplace\\/openbay\",\"report\\/online\",\"report\\/report\",\"report\\/statistics\",\"sale\\/order\",\"sale\\/recurring\",\"sale\\/return\",\"sale\\/voucher\",\"sale\\/voucher_theme\",\"setting\\/setting\",\"setting\\/store\",\"simple_blog\\/article\",\"simple_blog\\/author\",\"simple_blog\\/category\",\"simple_blog\\/comment\",\"simple_blog\\/install\",\"simple_blog\\/report\",\"startup\\/error\",\"startup\\/event\",\"startup\\/login\",\"startup\\/permission\",\"startup\\/router\",\"startup\\/sass\",\"startup\\/startup\",\"tool\\/backup\",\"tool\\/export_import\",\"tool\\/log\",\"tool\\/upload\",\"user\\/api\",\"user\\/user\",\"user\\/user_permission\",\"extension\\/module\\/category\",\"extension\\/module\\/filter\",\"extension\\/module\\/special\",\"extension\\/module\\/bestseller\",\"extension\\/theme\\/zemez783\",\"extension\\/theme\\/zemez783\",\"extension\\/theme\\/jetimpex783\"]}'),
+(1, 'Administrator', '{\"access\":[\"catalog\\/attribute\",\"catalog\\/attribute_group\",\"catalog\\/category\",\"catalog\\/download\",\"catalog\\/filter\",\"catalog\\/information\",\"catalog\\/manufacturer\",\"catalog\\/option\",\"catalog\\/product\",\"catalog\\/recurring\",\"catalog\\/review\",\"common\\/column_left\",\"common\\/developer\",\"common\\/filemanager\",\"common\\/profile\",\"common\\/security\",\"customer\\/custom_field\",\"customer\\/customer\",\"customer\\/customer_approval\",\"customer\\/customer_group\",\"design\\/banner\",\"design\\/layout\",\"design\\/seo_url\",\"design\\/theme\",\"design\\/translation\",\"event\\/language\",\"event\\/statistics\",\"event\\/theme\",\"extension\\/analytics\\/google\",\"extension\\/captcha\\/basic\",\"extension\\/captcha\\/google\",\"extension\\/dashboard\\/activity\",\"extension\\/dashboard\\/chart\",\"extension\\/dashboard\\/customer\",\"extension\\/dashboard\\/map\",\"extension\\/dashboard\\/online\",\"extension\\/dashboard\\/order\",\"extension\\/dashboard\\/recent\",\"extension\\/dashboard\\/sale\",\"extension\\/extension\\/analytics\",\"extension\\/extension\\/captcha\",\"extension\\/extension\\/dashboard\",\"extension\\/extension\\/feed\",\"extension\\/extension\\/fraud\",\"extension\\/extension\\/menu\",\"extension\\/extension\\/module\",\"extension\\/extension\\/payment\",\"extension\\/extension\\/report\",\"extension\\/extension\\/shipping\",\"extension\\/extension\\/theme\",\"extension\\/extension\\/total\",\"extension\\/feed\\/google_base\",\"extension\\/feed\\/google_sitemap\",\"extension\\/feed\\/openbaypro\",\"extension\\/fraud\\/fraudlabspro\",\"extension\\/fraud\\/ip\",\"extension\\/fraud\\/maxmind\",\"extension\\/module\\/account\",\"extension\\/module\\/amazon_login\",\"extension\\/module\\/amazon_pay\",\"extension\\/module\\/banner\",\"extension\\/module\\/bestseller\",\"extension\\/module\\/carousel\",\"extension\\/module\\/category\",\"extension\\/module\\/divido_calculator\",\"extension\\/module\\/ebay_listing\",\"extension\\/module\\/featured\",\"extension\\/module\\/filter\",\"extension\\/module\\/google_hangouts\",\"extension\\/module\\/html\",\"extension\\/module\\/information\",\"extension\\/module\\/jetimpex_blog_articles\",\"extension\\/module\\/jetimpex_category\",\"extension\\/module\\/jetimpex_color_switcher\",\"extension\\/module\\/jetimpex_footer_links\",\"extension\\/module\\/jetimpex_google_map\",\"extension\\/module\\/jetimpex_layout_builder\",\"extension\\/module\\/jetimpex_megamenu\",\"extension\\/module\\/jetimpex_newsletter\",\"extension\\/module\\/jetimpex_parallax\",\"extension\\/module\\/jetimpex_slideshow\",\"extension\\/module\\/jetimpex_social_list\",\"extension\\/module\\/klarna_checkout_module\",\"extension\\/module\\/latest\",\"extension\\/module\\/laybuy_layout\",\"extension\\/module\\/pilibaba_button\",\"extension\\/module\\/pp_braintree_button\",\"extension\\/module\\/pp_button\",\"extension\\/module\\/pp_login\",\"extension\\/module\\/sagepay_direct_cards\",\"extension\\/module\\/sagepay_server_cards\",\"extension\\/module\\/slideshow\",\"extension\\/module\\/special\",\"extension\\/module\\/store\",\"extension\\/openbay\\/amazon\",\"extension\\/openbay\\/amazon_listing\",\"extension\\/openbay\\/amazon_product\",\"extension\\/openbay\\/amazonus\",\"extension\\/openbay\\/amazonus_listing\",\"extension\\/openbay\\/amazonus_product\",\"extension\\/openbay\\/ebay\",\"extension\\/openbay\\/ebay_profile\",\"extension\\/openbay\\/ebay_template\",\"extension\\/openbay\\/etsy\",\"extension\\/openbay\\/etsy_product\",\"extension\\/openbay\\/etsy_shipping\",\"extension\\/openbay\\/etsy_shop\",\"extension\\/openbay\\/fba\",\"extension\\/payment\\/alipay\",\"extension\\/payment\\/alipay_cross\",\"extension\\/payment\\/amazon_login_pay\",\"extension\\/payment\\/authorizenet_aim\",\"extension\\/payment\\/authorizenet_sim\",\"extension\\/payment\\/bank_transfer\",\"extension\\/payment\\/bluepay_hosted\",\"extension\\/payment\\/bluepay_redirect\",\"extension\\/payment\\/cardconnect\",\"extension\\/payment\\/cardinity\",\"extension\\/payment\\/cheque\",\"extension\\/payment\\/cod\",\"extension\\/payment\\/divido\",\"extension\\/payment\\/eway\",\"extension\\/payment\\/firstdata\",\"extension\\/payment\\/firstdata_remote\",\"extension\\/payment\\/free_checkout\",\"extension\\/payment\\/g2apay\",\"extension\\/payment\\/globalpay\",\"extension\\/payment\\/globalpay_remote\",\"extension\\/payment\\/klarna_account\",\"extension\\/payment\\/klarna_checkout\",\"extension\\/payment\\/klarna_invoice\",\"extension\\/payment\\/laybuy\",\"extension\\/payment\\/liqpay\",\"extension\\/payment\\/nochex\",\"extension\\/payment\\/paymate\",\"extension\\/payment\\/paypoint\",\"extension\\/payment\\/payza\",\"extension\\/payment\\/perpetual_payments\",\"extension\\/payment\\/pilibaba\",\"extension\\/payment\\/pp_braintree\",\"extension\\/payment\\/pp_express\",\"extension\\/payment\\/pp_payflow\",\"extension\\/payment\\/pp_payflow_iframe\",\"extension\\/payment\\/pp_pro\",\"extension\\/payment\\/pp_pro_iframe\",\"extension\\/payment\\/pp_standard\",\"extension\\/payment\\/realex\",\"extension\\/payment\\/realex_remote\",\"extension\\/payment\\/sagepay_direct\",\"extension\\/payment\\/sagepay_server\",\"extension\\/payment\\/sagepay_us\",\"extension\\/payment\\/securetrading_pp\",\"extension\\/payment\\/securetrading_ws\",\"extension\\/payment\\/skrill\",\"extension\\/payment\\/squareup\",\"extension\\/payment\\/twocheckout\",\"extension\\/payment\\/web_payment_software\",\"extension\\/payment\\/wechat_pay\",\"extension\\/payment\\/worldpay\",\"extension\\/report\\/customer_activity\",\"extension\\/report\\/customer_order\",\"extension\\/report\\/customer_reward\",\"extension\\/report\\/customer_search\",\"extension\\/report\\/customer_transaction\",\"extension\\/report\\/marketing\",\"extension\\/report\\/product_purchased\",\"extension\\/report\\/product_viewed\",\"extension\\/report\\/sale_coupon\",\"extension\\/report\\/sale_order\",\"extension\\/report\\/sale_return\",\"extension\\/report\\/sale_shipping\",\"extension\\/report\\/sale_tax\",\"extension\\/shipping\\/auspost\",\"extension\\/shipping\\/citylink\",\"extension\\/shipping\\/ec_ship\",\"extension\\/shipping\\/fedex\",\"extension\\/shipping\\/flat\",\"extension\\/shipping\\/free\",\"extension\\/shipping\\/item\",\"extension\\/shipping\\/parcelforce_48\",\"extension\\/shipping\\/pickup\",\"extension\\/shipping\\/royal_mail\",\"extension\\/shipping\\/ups\",\"extension\\/shipping\\/usps\",\"extension\\/shipping\\/weight\",\"extension\\/theme\\/default\",\"extension\\/theme\\/jetimpex\",\"extension\\/total\\/coupon\",\"extension\\/total\\/credit\",\"extension\\/total\\/handling\",\"extension\\/total\\/klarna_fee\",\"extension\\/total\\/low_order_fee\",\"extension\\/total\\/reward\",\"extension\\/total\\/shipping\",\"extension\\/total\\/sub_total\",\"extension\\/total\\/tax\",\"extension\\/total\\/total\",\"extension\\/total\\/voucher\",\"localisation\\/country\",\"localisation\\/currency\",\"localisation\\/geo_zone\",\"localisation\\/language\",\"localisation\\/length_class\",\"localisation\\/location\",\"localisation\\/order_status\",\"localisation\\/return_action\",\"localisation\\/return_reason\",\"localisation\\/return_status\",\"localisation\\/stock_status\",\"localisation\\/tax_class\",\"localisation\\/tax_rate\",\"localisation\\/weight_class\",\"localisation\\/zone\",\"mail\\/affiliate\",\"mail\\/customer\",\"mail\\/forgotten\",\"mail\\/return\",\"mail\\/reward\",\"mail\\/transaction\",\"marketing\\/contact\",\"marketing\\/coupon\",\"marketing\\/marketing\",\"marketplace\\/api\",\"marketplace\\/event\",\"marketplace\\/extension\",\"marketplace\\/install\",\"marketplace\\/installer\",\"marketplace\\/marketplace\",\"marketplace\\/modification\",\"marketplace\\/openbay\",\"report\\/online\",\"report\\/report\",\"report\\/statistics\",\"sale\\/order\",\"sale\\/recurring\",\"sale\\/return\",\"sale\\/voucher\",\"sale\\/voucher_theme\",\"setting\\/setting\",\"setting\\/store\",\"simple_blog\\/article\",\"simple_blog\\/author\",\"simple_blog\\/category\",\"simple_blog\\/comment\",\"simple_blog\\/install\",\"simple_blog\\/report\",\"startup\\/error\",\"startup\\/event\",\"startup\\/login\",\"startup\\/permission\",\"startup\\/router\",\"startup\\/sass\",\"startup\\/startup\",\"tool\\/backup\",\"tool\\/export_import\",\"tool\\/log\",\"tool\\/upload\",\"user\\/api\",\"user\\/user\",\"user\\/user_permission\",\"extension\\/module\\/category\",\"extension\\/module\\/filter\",\"extension\\/module\\/special\",\"extension\\/module\\/bestseller\",\"extension\\/theme\\/zemez783\",\"extension\\/theme\\/zemez783\",\"extension\\/theme\\/jetimpex783\",\"extension\\/module\\/html\"],\"modify\":[\"catalog\\/attribute\",\"catalog\\/attribute_group\",\"catalog\\/category\",\"catalog\\/download\",\"catalog\\/filter\",\"catalog\\/information\",\"catalog\\/manufacturer\",\"catalog\\/option\",\"catalog\\/product\",\"catalog\\/recurring\",\"catalog\\/review\",\"common\\/column_left\",\"common\\/developer\",\"common\\/filemanager\",\"common\\/profile\",\"common\\/security\",\"customer\\/custom_field\",\"customer\\/customer\",\"customer\\/customer_approval\",\"customer\\/customer_group\",\"design\\/banner\",\"design\\/layout\",\"design\\/seo_url\",\"design\\/theme\",\"design\\/translation\",\"event\\/language\",\"event\\/statistics\",\"event\\/theme\",\"extension\\/analytics\\/google\",\"extension\\/captcha\\/basic\",\"extension\\/captcha\\/google\",\"extension\\/dashboard\\/activity\",\"extension\\/dashboard\\/chart\",\"extension\\/dashboard\\/customer\",\"extension\\/dashboard\\/map\",\"extension\\/dashboard\\/online\",\"extension\\/dashboard\\/order\",\"extension\\/dashboard\\/recent\",\"extension\\/dashboard\\/sale\",\"extension\\/extension\\/analytics\",\"extension\\/extension\\/captcha\",\"extension\\/extension\\/dashboard\",\"extension\\/extension\\/feed\",\"extension\\/extension\\/fraud\",\"extension\\/extension\\/menu\",\"extension\\/extension\\/module\",\"extension\\/extension\\/payment\",\"extension\\/extension\\/report\",\"extension\\/extension\\/shipping\",\"extension\\/extension\\/theme\",\"extension\\/extension\\/total\",\"extension\\/feed\\/google_base\",\"extension\\/feed\\/google_sitemap\",\"extension\\/feed\\/openbaypro\",\"extension\\/fraud\\/fraudlabspro\",\"extension\\/fraud\\/ip\",\"extension\\/fraud\\/maxmind\",\"extension\\/module\\/account\",\"extension\\/module\\/amazon_login\",\"extension\\/module\\/amazon_pay\",\"extension\\/module\\/banner\",\"extension\\/module\\/bestseller\",\"extension\\/module\\/carousel\",\"extension\\/module\\/category\",\"extension\\/module\\/divido_calculator\",\"extension\\/module\\/ebay_listing\",\"extension\\/module\\/featured\",\"extension\\/module\\/filter\",\"extension\\/module\\/google_hangouts\",\"extension\\/module\\/html\",\"extension\\/module\\/information\",\"extension\\/module\\/jetimpex_blog_articles\",\"extension\\/module\\/jetimpex_category\",\"extension\\/module\\/jetimpex_color_switcher\",\"extension\\/module\\/jetimpex_footer_links\",\"extension\\/module\\/jetimpex_google_map\",\"extension\\/module\\/jetimpex_layout_builder\",\"extension\\/module\\/jetimpex_megamenu\",\"extension\\/module\\/jetimpex_newsletter\",\"extension\\/module\\/jetimpex_parallax\",\"extension\\/module\\/jetimpex_slideshow\",\"extension\\/module\\/jetimpex_social_list\",\"extension\\/module\\/klarna_checkout_module\",\"extension\\/module\\/latest\",\"extension\\/module\\/laybuy_layout\",\"extension\\/module\\/pilibaba_button\",\"extension\\/module\\/pp_braintree_button\",\"extension\\/module\\/pp_button\",\"extension\\/module\\/pp_login\",\"extension\\/module\\/sagepay_direct_cards\",\"extension\\/module\\/sagepay_server_cards\",\"extension\\/module\\/slideshow\",\"extension\\/module\\/special\",\"extension\\/module\\/store\",\"extension\\/openbay\\/amazon\",\"extension\\/openbay\\/amazon_listing\",\"extension\\/openbay\\/amazon_product\",\"extension\\/openbay\\/amazonus\",\"extension\\/openbay\\/amazonus_listing\",\"extension\\/openbay\\/amazonus_product\",\"extension\\/openbay\\/ebay\",\"extension\\/openbay\\/ebay_profile\",\"extension\\/openbay\\/ebay_template\",\"extension\\/openbay\\/etsy\",\"extension\\/openbay\\/etsy_product\",\"extension\\/openbay\\/etsy_shipping\",\"extension\\/openbay\\/etsy_shop\",\"extension\\/openbay\\/fba\",\"extension\\/payment\\/alipay\",\"extension\\/payment\\/alipay_cross\",\"extension\\/payment\\/amazon_login_pay\",\"extension\\/payment\\/authorizenet_aim\",\"extension\\/payment\\/authorizenet_sim\",\"extension\\/payment\\/bank_transfer\",\"extension\\/payment\\/bluepay_hosted\",\"extension\\/payment\\/bluepay_redirect\",\"extension\\/payment\\/cardconnect\",\"extension\\/payment\\/cardinity\",\"extension\\/payment\\/cheque\",\"extension\\/payment\\/cod\",\"extension\\/payment\\/divido\",\"extension\\/payment\\/eway\",\"extension\\/payment\\/firstdata\",\"extension\\/payment\\/firstdata_remote\",\"extension\\/payment\\/free_checkout\",\"extension\\/payment\\/g2apay\",\"extension\\/payment\\/globalpay\",\"extension\\/payment\\/globalpay_remote\",\"extension\\/payment\\/klarna_account\",\"extension\\/payment\\/klarna_checkout\",\"extension\\/payment\\/klarna_invoice\",\"extension\\/payment\\/laybuy\",\"extension\\/payment\\/liqpay\",\"extension\\/payment\\/nochex\",\"extension\\/payment\\/paymate\",\"extension\\/payment\\/paypoint\",\"extension\\/payment\\/payza\",\"extension\\/payment\\/perpetual_payments\",\"extension\\/payment\\/pilibaba\",\"extension\\/payment\\/pp_braintree\",\"extension\\/payment\\/pp_express\",\"extension\\/payment\\/pp_payflow\",\"extension\\/payment\\/pp_payflow_iframe\",\"extension\\/payment\\/pp_pro\",\"extension\\/payment\\/pp_pro_iframe\",\"extension\\/payment\\/pp_standard\",\"extension\\/payment\\/realex\",\"extension\\/payment\\/realex_remote\",\"extension\\/payment\\/sagepay_direct\",\"extension\\/payment\\/sagepay_server\",\"extension\\/payment\\/sagepay_us\",\"extension\\/payment\\/securetrading_pp\",\"extension\\/payment\\/securetrading_ws\",\"extension\\/payment\\/skrill\",\"extension\\/payment\\/squareup\",\"extension\\/payment\\/twocheckout\",\"extension\\/payment\\/web_payment_software\",\"extension\\/payment\\/wechat_pay\",\"extension\\/payment\\/worldpay\",\"extension\\/report\\/customer_activity\",\"extension\\/report\\/customer_order\",\"extension\\/report\\/customer_reward\",\"extension\\/report\\/customer_search\",\"extension\\/report\\/customer_transaction\",\"extension\\/report\\/marketing\",\"extension\\/report\\/product_purchased\",\"extension\\/report\\/product_viewed\",\"extension\\/report\\/sale_coupon\",\"extension\\/report\\/sale_order\",\"extension\\/report\\/sale_return\",\"extension\\/report\\/sale_shipping\",\"extension\\/report\\/sale_tax\",\"extension\\/shipping\\/auspost\",\"extension\\/shipping\\/citylink\",\"extension\\/shipping\\/ec_ship\",\"extension\\/shipping\\/fedex\",\"extension\\/shipping\\/flat\",\"extension\\/shipping\\/free\",\"extension\\/shipping\\/item\",\"extension\\/shipping\\/parcelforce_48\",\"extension\\/shipping\\/pickup\",\"extension\\/shipping\\/royal_mail\",\"extension\\/shipping\\/ups\",\"extension\\/shipping\\/usps\",\"extension\\/shipping\\/weight\",\"extension\\/theme\\/default\",\"extension\\/theme\\/jetimpex\",\"extension\\/total\\/coupon\",\"extension\\/total\\/credit\",\"extension\\/total\\/handling\",\"extension\\/total\\/klarna_fee\",\"extension\\/total\\/low_order_fee\",\"extension\\/total\\/reward\",\"extension\\/total\\/shipping\",\"extension\\/total\\/sub_total\",\"extension\\/total\\/tax\",\"extension\\/total\\/total\",\"extension\\/total\\/voucher\",\"localisation\\/country\",\"localisation\\/currency\",\"localisation\\/geo_zone\",\"localisation\\/language\",\"localisation\\/length_class\",\"localisation\\/location\",\"localisation\\/order_status\",\"localisation\\/return_action\",\"localisation\\/return_reason\",\"localisation\\/return_status\",\"localisation\\/stock_status\",\"localisation\\/tax_class\",\"localisation\\/tax_rate\",\"localisation\\/weight_class\",\"localisation\\/zone\",\"mail\\/affiliate\",\"mail\\/customer\",\"mail\\/forgotten\",\"mail\\/return\",\"mail\\/reward\",\"mail\\/transaction\",\"marketing\\/contact\",\"marketing\\/coupon\",\"marketing\\/marketing\",\"marketplace\\/api\",\"marketplace\\/event\",\"marketplace\\/extension\",\"marketplace\\/install\",\"marketplace\\/installer\",\"marketplace\\/marketplace\",\"marketplace\\/modification\",\"marketplace\\/openbay\",\"report\\/online\",\"report\\/report\",\"report\\/statistics\",\"sale\\/order\",\"sale\\/recurring\",\"sale\\/return\",\"sale\\/voucher\",\"sale\\/voucher_theme\",\"setting\\/setting\",\"setting\\/store\",\"simple_blog\\/article\",\"simple_blog\\/author\",\"simple_blog\\/category\",\"simple_blog\\/comment\",\"simple_blog\\/install\",\"simple_blog\\/report\",\"startup\\/error\",\"startup\\/event\",\"startup\\/login\",\"startup\\/permission\",\"startup\\/router\",\"startup\\/sass\",\"startup\\/startup\",\"tool\\/backup\",\"tool\\/export_import\",\"tool\\/log\",\"tool\\/upload\",\"user\\/api\",\"user\\/user\",\"user\\/user_permission\",\"extension\\/module\\/category\",\"extension\\/module\\/filter\",\"extension\\/module\\/special\",\"extension\\/module\\/bestseller\",\"extension\\/theme\\/zemez783\",\"extension\\/theme\\/zemez783\",\"extension\\/theme\\/jetimpex783\",\"extension\\/module\\/html\"]}'),
 (10, 'Demonstration', '');
 
 -- --------------------------------------------------------
@@ -11309,7 +9741,7 @@ ALTER TABLE `oc_event`
 -- AUTO_INCREMENT for table `oc_extension`
 --
 ALTER TABLE `oc_extension`
-  MODIFY `extension_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=65;
+  MODIFY `extension_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=66;
 
 --
 -- AUTO_INCREMENT for table `oc_extension_install`
@@ -11369,13 +9801,13 @@ ALTER TABLE `oc_layout`
 -- AUTO_INCREMENT for table `oc_layout_module`
 --
 ALTER TABLE `oc_layout_module`
-  MODIFY `layout_module_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=479;
+  MODIFY `layout_module_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=493;
 
 --
 -- AUTO_INCREMENT for table `oc_layout_route`
 --
 ALTER TABLE `oc_layout_route`
-  MODIFY `layout_route_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=134;
+  MODIFY `layout_route_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=136;
 
 --
 -- AUTO_INCREMENT for table `oc_length_class`
@@ -11411,7 +9843,7 @@ ALTER TABLE `oc_modification`
 -- AUTO_INCREMENT for table `oc_module`
 --
 ALTER TABLE `oc_module`
-  MODIFY `module_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
+  MODIFY `module_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
 
 --
 -- AUTO_INCREMENT for table `oc_option`
@@ -11489,7 +9921,7 @@ ALTER TABLE `oc_order_voucher`
 -- AUTO_INCREMENT for table `oc_product`
 --
 ALTER TABLE `oc_product`
-  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
+  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
 
 --
 -- AUTO_INCREMENT for table `oc_product_discount`
@@ -11525,7 +9957,7 @@ ALTER TABLE `oc_product_reward`
 -- AUTO_INCREMENT for table `oc_product_special`
 --
 ALTER TABLE `oc_product_special`
-  MODIFY `product_special_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=535;
+  MODIFY `product_special_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=536;
 
 --
 -- AUTO_INCREMENT for table `oc_recurring`
@@ -11579,7 +10011,7 @@ ALTER TABLE `oc_seo_url`
 -- AUTO_INCREMENT for table `oc_setting`
 --
 ALTER TABLE `oc_setting`
-  MODIFY `setting_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3012;
+  MODIFY `setting_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3016;
 
 --
 -- AUTO_INCREMENT for table `oc_simple_blog_article`
