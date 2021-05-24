@@ -93,7 +93,7 @@ input[type="radio"]:checked + label:after,
 #top,
 .copyright,
 .contact_page .panel .contact-logo {
-  background-color: #000000; }
+  background-color: #bfc459; }
 
 .banners > div:hover .banner-box,
 .thumbnail a:hover:after,
@@ -101,8 +101,8 @@ input[type="radio"]:checked + label:after,
   border-color: #ffdb14; }
 
 .btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open > .dropdown-toggle.btn-primary.focus, .open > .dropdown-toggle.btn-primary:focus, .open > .dropdown-toggle.btn-primary:hover {
-  background: #000000;
-  border-color: #000000; }
+  background: #bfc459;
+  border-color: #bfc459; }
 
 .btn, .btn:visited,
 .btn-default,
@@ -117,7 +117,7 @@ input[type="radio"]:checked + label:after,
 .btn-warning:visited,
 .btn-danger,
 .btn-danger:visited {
-  color: #000;
+  color: #bfc459;
   background: #fff; }
 .btn:hover, .btn:focus, .btn:active,
 .btn-default:hover,
@@ -139,20 +139,20 @@ input[type="radio"]:checked + label:after,
 .btn-danger:focus,
 .btn-danger:active {
   color: #fff;
-  border-color: #000000;
-  background: #000000; }
+  border-color: #bfc459;
+  background: #bfc459; }
 
 .pagination > li.active > a, .pagination > li.active > span, .pagination > li.active > a:hover, .pagination > li.active > span:hover, .pagination > li.active > a:focus, .pagination > li.active > span:focus {
   background-color: #ffdb14; }
 
 .btn-primary, .btn-primary:visited {
-  color: #000;
+  color: #bfc459;
   border-color: #ffdb14;
   background: #ffdb14; }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   color: #fff;
-  border-color: #000000;
-  background: #000000; }
+  border-color: #bfc459;
+  background: #bfc459; }
 
 .product-btn:hover, .product-btn:focus, .product-btn:active {
   color: #ffdb14; }
@@ -183,7 +183,7 @@ input[type="radio"]:checked + label:after,
 .category_menu > li > ul a, .category_menu > li > ul a:visited {
   color: #ffdb14; }
 .category_menu > li > ul a:hover, .category_menu > li > ul a:focus, .category_menu > li > ul a:active, .category_menu > li > ul a.active {
-  color: #000; }
+  color: #bfc459; }
 
 #livesearch_search_results li:hover a, #livesearch_search_results li:hover a:visited, #livesearch_search_results li.highlighted a, #livesearch_search_results li.highlighted a:visited {
   color: #ffdb14; }
@@ -196,17 +196,17 @@ input[type="radio"]:checked + label:after,
 footer ul li a, footer ul li a:visited {
   color: #ffdb14; }
 footer ul li a:hover, footer ul li a:focus, footer ul li a:active {
-  color: #000; }
+  color: #bfc459; }
 footer ul li.footer-invert a, footer ul li.footer-invert a:visited {
   color: #888; }
 footer ul li.footer-invert a:hover, footer ul li.footer-invert a:focus, footer ul li.footer-invert a:active {
-  color: #000; }
+  color: #bfc459; }
 
 .search button, .search button:focus, .search button:active {
   background: #ffdb14; }
 .search button:hover, .search button:focus:hover, .search button:active:hover {
   color: #ffdb14;
-  background: #000000; }
+  background: #bfc459; }
 
 @media (min-width: 768px) {
   .search input[type="text"]:focus {

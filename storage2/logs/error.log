@@ -6652,3 +6652,5 @@
 2021-05-12 13:48:53 - PHP Unknown:  array_key_exists(): Using array_key_exists() on objects is deprecated. Use isset() or property_exists() instead in C:\xampp\htdocs\fanous\system\library\template\Twig\Template.php on line 533
 2021-05-12 14:02:39 - PHP Unknown:  array_key_exists(): Using array_key_exists() on objects is deprecated. Use isset() or property_exists() instead in C:\xampp\htdocs\fanous\system\library\template\Twig\Template.php on line 533
 2021-05-12 14:02:39 - PHP Unknown:  array_key_exists(): Using array_key_exists() on objects is deprecated. Use isset() or property_exists() instead in C:\xampp\htdocs\fanous\system\library\template\Twig\Template.php on line 533
+2021-05-17 15:48:02 - PHP Warning:  unlink(C:/xampp/storage2/cache/cache.admin.language.1621186023): No such file or directory in C:\xampp\htdocs\fanous\system\library\cache\file.php on line 17
+2021-05-17 15:48:12 - PHP Warning:  unlink(C:/xampp/storage2/cache/cache.catalog.language.1621270083): No such file or directory in C:\xampp\htdocs\fanous\system\library\cache\file.php on line 68
